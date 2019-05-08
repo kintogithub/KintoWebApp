@@ -1,0 +1,111 @@
+.deployment-environment-sidebar {
+  padding-bottom: $margin-base * 8;
+  overflow: hidden;
+  .top-fixed {
+    background-color: #edf3fd;
+    top: $margin-base * 6;
+    left: 0px;
+    padding: 0 $margin-base-3;
+    width: 320px;
+    box-shadow: 0 2px 4px $kinto-box-shadow,
+      0 $margin-base $margin-base-4 $kinto-box-shadow;
+    .return-link {
+      padding: $margin-base-3 0 $margin-base;
+      display: flex;
+      align-items: center;
+      color: #22424b;
+      font-size: $margin-base + 6;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: $default-line-height;
+      img {
+        margin-right: $margin-base;
+      }
+    }
+    .line {
+      width: 100%;
+      border-top: 2px solid #dbe8fb;
+      margin-bottom: 0px;
+    }
+    .title {
+      padding: $margin-base-2 0px;
+      display: flex;
+      font-weight: bold;
+      color: #556f7d;
+      justify-content: space-between;
+    }
+  }
+
+  .add-new-environment {
+    background-color: $kinto-white;
+    border-radius: $margin-base + 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 28px $margin-base-2;
+    width: 260px;
+    margin-top: $margin-base;
+    margin-bottom: $margin-base-2;
+    @extend .box-shadow-standard;
+    &:hover {
+      cursor: pointer;
+    }
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.icon.plus {
+  height: $margin-base-2;
+  width: $margin-base-2;
+  margin-left: 0;
+  opacity: 1;
+  @include backgroundImage('/images/icon-blue-new.svg');
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  &.hide {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.success {
+  .heading {
+    border-top-color: $kinto-green;
+  }
+}
+
+.failed {
+  .heading {
+    border-top-color: $kinto-coral;
+  }
+}
+
+.contextual-sidebar-list {
+  height: calc(100vh - 228px);
+  .sidebar-list-inner {
+    padding-bottom: calc(100vh - 400px);
+    padding-right: $margin-base-3;
+    padding-left: $margin-base-3;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.sidebar-card-container {
+  z-index: 5;
+}
+
+.deployment-environment-sidebar .button-promote {
+  visibility: visible;
+}
+
+.sidebar-list-inner.kintoblocks {
+  display: grid;
+  grid-row-gap: 20px;
+}

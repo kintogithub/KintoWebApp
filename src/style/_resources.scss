@@ -1,0 +1,54 @@
+.resources.content {
+  margin-top: 0;
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    @include abovetablet {
+      justify-content: space-between;
+    }
+    flex-wrap: wrap;
+  }
+}
+
+.resource-card {
+  height: 220px;
+  width: 300px;
+  margin: $margin-base;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    width: 310px;
+    margin: 0 0 $margin-base-2 0;
+  }
+  @include desktop {
+    width: 300px;
+    margin: 0 0 $margin-base-2 0;
+  }
+  border-radius: $margin-base + 2;
+  &.news {
+    background: $kinto-blue-light;
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7,0.10), 0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7,0.10);
+  }
+  &.press {
+    background: $kinto-lapis-light;
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7,0.10), 0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7,0.10);
+  }
+  &.info {
+    background: $kinto-purple-light;
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7,0.10), 0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7,0.10);
+  }
+  .icon {
+    background-size: contain;
+    height: $margin-base * 8;
+    width: $margin-base * 8;
+    margin-bottom: $margin-base*2;
+  }
+  h4:not(.bold) {
+    font-weight: normal;
+  }
+  h4{
+    color: $kinto-white;
+  }
+}

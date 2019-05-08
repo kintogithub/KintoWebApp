@@ -1,0 +1,26 @@
+.main-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .large-letter {
+    position: absolute;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 42px;
+    color: $kinto-white;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 46px;
+  }
+  &.small {
+    &, img {
+      width: $margin-base-4;
+      height: $margin-base-4;
+    }
+    .large-letter {
+      font-size: $margin-base-2;
+    }
+  }
+}

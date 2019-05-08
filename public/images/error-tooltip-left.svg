@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>error-tooltip-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-94.0%" y="-87.5%" width="288.0%" height="335.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.666666667   0 0 0 0 0.270588235   0 0 0 0 0.270588235  0 0 0 0.398833786 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-130.0%" y="-137.5%" width="360.0%" height="425.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.666666667   0 0 0 0 0.270588235   0 0 0 0 0.270588235  0 0 0 0.196303216 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop/error-tooltip" transform="translate(50.000000, 50.000000)">
+            <g id="desktop/tooltip" filter="url(#filter-1)">
+                <g id="base" filter="url(#filter-2)">
+                    <path d="M4,-0.000218284553 L36.2918313,-2.24843321e-05 C38.5644453,-8.70442843e-06 40.6420027,1.28399763 41.6583515,3.31668293 L50,19.9998787 L41.6583557,36.6832686 C40.6420062,38.7159799 38.5644236,40 36.291786,40 L4,40 C1.790861,40 6.93188386e-15,38.209139 6.66134154e-15,36 L-2.42537657e-05,3.99975746 C-2.42537657e-05,1.79061846 1.79083675,-0.000242538392 3.99997575,-0.000242538392 C3.99998383,-0.000242538392 3.99999192,-0.000242538367 4,-0.000242538318 Z" id="Rectangle" fill="#F46464"></path>
+                    <circle id="Combined-Shape" fill="#AA4545" cx="20" cy="20" r="10"></circle>
+                    <path d="M20.0024814,13.5 C20.2655242,13.5 20.5303318,13.5474518 20.796904,13.6423554 C21.2170763,13.791931 21.487395,14.2016792 21.4595742,14.6468125 L21.0586014,21.0623783 C21.0256617,21.5894132 20.5886121,22 20.0605488,22 L19.9394512,22 C19.4113879,22 18.9743383,21.5894132 18.9413986,21.0623783 L18.5404964,14.6480582 C18.5126841,14.2030613 18.782832,13.7934099 19.2028174,13.6437167 C19.4716291,13.5479056 19.7381838,13.5 20.0024814,13.5 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+                    <circle id="Oval-2" fill="#FFFFFF" cx="20" cy="25" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+export const KINTOBLOCKS = 'kintoblockmanager'
+export const DEPLOYMENTS = 'kintoappmanager'
+export const AUTH = 'auth'
+export const WORKSPACES = 'workspaces'
+export const DOCUMENTATION = 'documentation'
+export const LOGS = 'logs'

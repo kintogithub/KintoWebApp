@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-kintoblock-type-microservice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60" cy="60" r="60"></circle>
+        <path d="M61,20.5773503 L76.3205081,29.4226497 C76.9393102,29.7799153 77.3205081,30.4401694 77.3205081,31.1547005 L77.3205081,49.541626 L93.6748057,59.4165881 C94.2744935,59.7786883 94.6410162,60.4281562 94.6410162,61.128686 L94.6410162,78.8452995 C94.6410162,79.5598306 94.2598183,80.2200847 93.6410162,80.5773503 L61,99.4226497 C60.3811978,99.7799153 59.6188022,99.7799153 59,99.4226497 L26.3589838,80.5773503 C25.7401817,80.2200847 25.3589838,79.5598306 25.3589838,78.8452995 L25.3589838,41.1547005 C25.3589838,40.4401694 25.7401817,39.7799153 26.3589838,39.4226497 L59,20.5773503 C59.6188022,20.2200847 60.3811978,20.2200847 61,20.5773503 Z" id="path-3"></path>
+        <filter x="-15.9%" y="-8.4%" width="131.8%" height="126.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.462745098   0 0 0 0 0.57254902  0 0 0 0.143653759 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="KintoBlocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2---dashboard---kintoblocks---create-new-kintoblock---choose-type" transform="translate(-460.000000, -300.000000)">
+            <g id="content" transform="translate(320.000000, 0.000000)">
+                <g id="desktop/kintoblock-type" transform="translate(30.000000, 240.000000)">
+                    <g id="Group">
+                        <g id="icon-kintoblock-type-microservice" transform="translate(110.000000, 60.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#F5F9FF" xlink:href="#path-1"></use>
+                            <g id="Polygon" mask="url(#mask-2)" fill="black" fill-opacity="1">
+                                <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="icon/kintoblock/microservice/large" fill="" mask="url(#mask-2)">
+                                <g transform="translate(20.000000, 20.000000)" fill="none" id="illustration/kintoblock/microservice">
+                                    <g transform="translate(5.000000, 0.000000)">
+                                        <path d="M36,0.577350269 L51.3205081,9.42264973 C51.9393102,9.77991532 52.3205081,10.4401694 52.3205081,11.1547005 L52.3205081,29.541626 L68.6748057,39.4165881 C69.2744935,39.7786883 69.6410162,40.4281562 69.6410162,41.128686 L69.6410162,58.8452995 C69.6410162,59.5598306 69.2598183,60.2200847 68.6410162,60.5773503 L36,79.4226497 C35.3811978,79.7799153 34.6188022,79.7799153 34,79.4226497 L1.35898385,60.5773503 C0.740181695,60.2200847 0.358983849,59.5598306 0.358983849,58.8452995 L0.358983849,21.1547005 C0.358983849,20.4401694 0.740181695,19.7799153 1.35898385,19.4226497 L34,0.577350269 C34.6188022,0.220084679 35.3811978,0.220084679 36,0.577350269 Z" id="Polygon" fill="#ECE9FB"></path>
+                                        <path d="M52.0508712,10.1517831 C52.2245875,10.4515022 52.3205081,10.7962725 52.3205081,11.1547005 L52.3205081,29.5 L35,39 L17.6794919,29.5 L52.0508712,10.1517831 Z" id="Combined-Shape" fill="#D6D1F8"></path>
+                                        <path d="M17.6794919,70 L1.35898385,60.5773503 C0.740181695,60.2200847 0.358983849,59.5598306 0.358983849,58.8452995 L0.358983849,40 L17.6794919,49.5021973 L17.6794919,70 Z" id="Combined-Shape" fill="#9485EC"></path>
+                                        <path d="M35,79.6905989 C34.6547005,79.6905989 34.3094011,79.6012825 34,79.4226497 L17.6794919,70 L17.6794919,50 L35,60 L35,79.6905989 Z" id="Combined-Shape" fill="#A295EE"></path>
+                                        <path d="M0.358983849,21.1547005 C0.358983849,20.7951057 0.455529981,20.4492577 0.630319697,20.1488575 L17.6794919,29.5021973 L17.6794919,50 L0.358983849,40 L0.358983849,21.1547005 Z" id="Combined-Shape" fill="#AD8AE5"></path>
+                                        <polygon id="Combined-Shape" fill="#F5B9EA" points="35 39.0302734 35 60 17.6794919 50 17.6794919 29.5283203"></polygon>
+                                        <path d="M69.3840945,40.1480343 C69.5427596,40.4300556 69.6330677,40.7505613 69.6405154,41.0838515 L69.6405154,58.8452995 C69.6405154,59.5598306 69.2593176,60.2200847 68.6405154,60.5773503 L52.3200073,70 L52.3200073,49.9992981 L69.3840945,40.1480343 Z" id="Combined-Shape" fill="#D6D1F8"></path>
+                                        <path d="M36,79.4226497 C35.6905989,79.6012825 35.3452995,79.6905989 35,79.6905989 L35,60 L52.3205081,50 L52.3205081,70 L36,79.4226497 Z" id="Combined-Shape" fill="#C7BFF4"></path>
+                                        <polygon id="Combined-Shape" fill="#F9D5F2" points="52.3205081 29.5283203 52.3205081 50 35 60 35 39.0302734 52.3205081 29.5283203"></polygon>
+                                        <path d="M51.3205081,9.42264973 C51.6289321,9.60071845 51.8783297,9.85405665 52.050921,10.151869 L35,19.7573242 L17.6794919,10 L34,0.577350269 C34.6188022,0.220084679 35.3811978,0.220084679 36,0.577350269 L51.3205081,9.42264973 Z" id="Combined-Shape" fill="#ECE9FB"></path>
+                                        <path d="M0.630334881,20.1488314 C0.802859668,19.852334 1.05160895,19.6001127 1.35898385,19.4226497 L17.6794919,10 L35,19.75 L17.6794919,29.5 L0.630334881,20.1488314 Z" id="Combined-Shape" fill="#C6BEF4"></path>
+                                        <polygon id="Combined-Shape" fill="#FDF1FA" points="52.3205081 29.5 35 39 17.6794919 29.5 35 19.75"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

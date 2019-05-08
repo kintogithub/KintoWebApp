@@ -1,0 +1,63 @@
+.build-logs {
+  padding-bottom: $margin-base-2;
+  .top {
+    padding: $margin-base-4;
+    border-radius: $margin-base + 2 $margin-base + 2 0 0;
+    &.error {
+      background: #aa4545;
+      h3 {
+        color: $kinto-white;
+      }
+      .icon {
+        @include backgroundImage('/images/icon-status-failed.svg', $margin-base-4, $margin-base-4);
+        margin: 0;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: $margin-base-4 auto;
+        grid-column-gap: $margin-base-2;
+        &.heading {
+          align-items: center;
+          .right h3 {
+            margin: 0;
+          }
+        }
+        .left {
+          text-align: center;
+        }
+      }
+    }
+    &.success {
+      background-color: #118555;
+      .icon-and-text {
+        display: flex;
+        align-items: center;
+        .icon {
+          @include backgroundImage(
+            '/images/icon-status-success-large.svg',
+            $margin-base-4,
+            $margin-base-4
+          );
+          margin-right: $margin-base-2;
+        }
+        h3 {
+          color: $kinto-white;
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .code-window {
+    background: $kinto-grayscale-9;
+    box-shadow: 0 2px 4px 0 $kinto-box-shadow, 0 $margin-base $margin-base-4 0 $kinto-box-shadow;
+    border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+    position: relative;
+    padding: $margin-base-3 0;
+    .code {
+      color: $kinto-white;
+      padding: $margin-base $margin-base-4;
+      margin: 0;
+    }
+  }
+}

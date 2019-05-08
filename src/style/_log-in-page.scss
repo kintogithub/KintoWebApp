@@ -1,0 +1,214 @@
+.log-in-page,
+.sign-up-page,
+.forgot-password-page,
+.create-new-password-page {
+  background-image: linear-gradient(
+    -180deg,
+    rgba(159, 221, 242, 1) 10%,
+    rgba($kinto-white, 0) 30%
+  );
+  .content {
+    padding-top: 0;
+  }
+  h1 {
+    padding-top: 40px;
+  }
+  @include abovetablet {
+    background-image: url('/images/background.svg');
+    background-size: 100%;
+    height: calc(100vh - 60px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+.log-in-and-sign-up-wrapper {
+  margin: $margin-base-4 auto $margin-base-4;
+  @include abovetablet {
+    margin-top: $margin-base * 5;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 440px 440px;
+    grid-column-gap: $margin-base-4;
+    grid-template-rows: 1fr;
+    .log-in-form,
+    .sign-up-form,
+    .request-access-form {
+    }
+    form {
+      margin-bottom: 0;
+    }
+  }
+  .log-in-form,
+  .sign-up-form,
+  .request-access-form {
+    button {
+      &.default,
+      &.dark {
+        margin-bottom: $margin-base;
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+      @include abovetablet {
+        text-align: left;
+      }
+      color: $kinto-tinted-grayscale-8;
+    }
+    background-color: $kinto-white;
+    padding: $margin-base-4 $margin-base * 6 $margin-base * 4.4;
+    border-radius: $margin-base + 2;
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+      0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+    .title-with-lines {
+      margin-bottom: 0;
+      h2 {
+        text-transform: uppercase;
+        color: $kinto-grayscale-6;
+        font-size: $margin-base + 4;
+        margin-bottom: 0;
+      }
+      .line {
+        border: solid 1px $kinto-tinted-grayscale-1;
+      }
+    }
+    .checkbox-message {
+      text-transform: none;
+    }
+    a.forgot-password {
+      margin-top: $margin-base;
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+      font-size: $margin-base + 4;
+      @include abovetablet {
+        font-size: $margin-base + 2;
+      }
+    }
+    .byline {
+      font-size: $margin-base + 4;
+      h6 {
+        font-weight: normal;
+      }
+      a {
+        font-size: $margin-base + 4;
+      }
+      @include abovetablet {
+        font-size: $margin-base + 2;
+        a {
+          font-size: $margin-base + 2;
+        }
+      }
+    }
+  }
+}
+
+.sign-up-page {
+  .log-in-and-sign-up-wrapper {
+    .error-message {
+      margin-bottom: $margin-base;
+    }
+    .sign-up-form {
+      margin-bottom: $margin-base * 4;
+    }
+    @include desktop {
+      .sign-up-form {
+        margin-bottom: 0;
+      }
+    }
+    .log-in-form {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.front-page {
+  h1,
+  h3 {
+    text-align: center;
+    text-transform: none;
+  }
+  h3 {
+    font-weight: normal;
+  }
+  h1 {
+    margin-bottom: $margin-base * 3;
+  }
+
+  @include tablet {
+    .intro {
+      margin-bottom: $margin-base * 2;
+    }
+  }
+}
+
+.sign-up-confirmation,
+.forgot-password-confirmation {
+  .icon {
+    @include backgroundImage(
+      '/images/icon-email-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+    height: $margin-base * 8;
+    width: $margin-base * 8;
+    display: block;
+    margin-bottom: $margin-base-4;
+  }
+  background-color: $kinto-white;
+  max-width: 440px;
+  min-height: 390px;
+  padding: $margin-base * 6;
+  border-radius: $margin-base + 2;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+    0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+  position: relative;
+  z-index: 2;
+  .button {
+    margin-top: $margin-base-2;
+  }
+}
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($kinto-white, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  left: 0;
+}
+
+.request-access-form .inner {
+  .mail-image {
+    margin: 0 auto $margin-base-2 + 8;
+  }
+  &:not(.submitted) {
+    .mail-image {
+      @include backgroundImage(
+        '/images/illustration-email.svg',
+        $margin-base * 26,
+        $margin-base * 16
+      );
+    }
+  }
+  &.submitted {
+    .mail-image {
+      border-radius: 50%;
+      height: $margin-base * 16;
+      width: $margin-base * 16;
+      background: linear-gradient(0deg, #d9f8e9 0%, #58abf1 100%);
+      position: relative;
+    }
+    .mail-image:after {
+      content: url(/images/icon-status-success-large.svg);
+      position: absolute;
+      left: $margin-base-4;
+      top: $margin-base-4;
+    }
+  }
+}

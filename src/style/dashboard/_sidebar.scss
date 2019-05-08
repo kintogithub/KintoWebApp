@@ -1,0 +1,461 @@
+.sidebar {
+  z-index: 4;
+  left: -320px;
+  &.show {
+    left: 0px;
+  }
+  width: 320px;
+  padding: 0 $margin-base-3;
+  position: fixed;
+  height: 100vh;
+  background-color: $kinto-tinted-grayscale-2;
+  transition: all 0.1s ease-in-out;
+  &.portal-sidebar {
+    padding: 0 !important;
+  }
+  li {
+    &.sidebar-item {
+      padding-left: $margin-base-2;
+      a {
+        outline: 0;
+      }
+      .item-sub-add {
+        display: none;
+      }
+      &:hover,
+      &.selected {
+        .item-sub-add {
+          display: block;
+        }
+      }
+    }
+    &.sidebar-section {
+      margin-top: $margin-base * 5;
+    }
+    position: relative;
+    h4 {
+      height: $margin-base-4;
+      line-height: $margin-base-4;
+      margin: 0;
+      padding-left: $margin-base-3;
+      &:before {
+        content: '';
+        width: $margin-base-2;
+        height: $margin-base-2;
+        background-position: center;
+        top: 0;
+        left: $margin-base-2;
+        margin-top: $margin-base;
+        position: absolute;
+        display: inline-block;
+      }
+      &.home {
+        .progress-number {
+          min-width: 25px;
+          height: $margin-base-2;
+          display: inline-block;
+          right: $margin-base * 5;
+          position: absolute;
+          color: $kinto-white;
+          top: 8px;
+          margin: 0;
+          height: 24px;
+          padding: 0 $margin-base 2px;
+          line-height: $default-line-height;
+          background-color: $kinto-purple;
+          border-radius: $margin-base + 2;
+        }
+        .progress {
+          display: inline-block;
+          width: $margin-base-2;
+          height: $margin-base-2;
+          display: inline-block;
+          right: $margin-base-2;
+          position: absolute;
+          top: $margin-base;
+          &.progress-0 {
+            @include backgroundImage(
+              '/images/donut-small-0.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+          &.progress-25 {
+            @include backgroundImage(
+              '/images/donut-small-25.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+          &.progress-50 {
+            @include backgroundImage(
+              '/images/donut-small-50.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+          &.progress-75 {
+            @include backgroundImage(
+              '/images/donut-small-75.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+          &.progress-100 {
+            display: none;
+          }
+        }
+        &:before {
+          background-image: url('/images/icon-dashboard-home.svg');
+        }
+      }
+      &.analytics:before {
+        background-image: url('/images/icon-dashboard-analytics.svg');
+      }
+      &.kintoapps:before {
+        background-image: url('/images/icon-dashboard-applications.svg');
+      }
+      &.kintoblocks:before {
+        background-image: url('/images/icon-dashboard-kintoblocks.svg');
+      }
+      &.services:before {
+        background-image: url('/images/icon-dashboard-services.svg');
+      }
+
+      &.kintoblocks img,
+      &.kintoapps img,
+      &.services img {
+        position: absolute;
+        right: $margin-base-2;
+        border-radius: $margin-base-2;
+        top: $margin-base;
+      }
+    }
+    .selected {
+      background-image: url('/images/sidebar-highlight.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      h4 {
+        color: $kinto-white;
+      }
+    }
+  }
+
+  .workspaces-select {
+    select {
+      font-weight: bold;
+    }
+    h3 {
+      font-size: $margin-base + 4;
+      font-weight: normal;
+      margin-top: $margin-base * 5;
+      margin-bottom: 0;
+    }
+  }
+  .member-list-circles {
+    border-radius: 4px;
+  }
+}
+
+@include desktop {
+  .sidebar,
+  .sidebar.show {
+    display: block;
+    left: 0px;
+  }
+}
+
+.sidebar-card {
+  background-color: $kinto-white;
+  border-radius: $margin-base + 2;
+  overflow: hidden;
+  width: 260px;
+  margin-top: 0;
+  @extend .box-shadow-standard;
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
+  .line {
+    border-top: 2px solid $kinto-tinted-grayscale-1;
+    width: 100%;
+  }
+  h5 {
+    color: $kinto-grayscale-6;
+    font-size: $margin-base + 4;
+    line-height: $margin-base-2;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .caps {
+    text-transform: uppercase;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .date-and-time {
+    padding: 8px $margin-base 8px $margin-base-2;
+    display: flex;
+    justify-content: space-between;
+    p {
+      color: $kinto-grayscale-6;
+      font-size: $margin-base + 4;
+      font-weight: normal;
+      line-height: $margin-base-2;
+      margin-bottom: 0;
+    }
+  }
+  .page-markers {
+    padding: 28px $margin-base-2;
+    background-color: $kinto-tinted-grayscale-2;
+    display: grid;
+    grid-row-gap: $margin-base + 6;
+  }
+  .page-section-link {
+    margin-left: $margin-base-4;
+    color: rgba($kinto-grayscale-7, 0.4);
+    font-size: $margin-base + 6;
+    font-weight: bold;
+    line-height: $default-line-height;
+    position: relative;
+    &.active {
+      color: $kinto-grayscale-7;
+      font-size: $margin-base + 6;
+      font-weight: bold;
+      line-height: $default-line-height;
+      &:before {
+        content: url('/images/icon-reading-position.svg');
+        height: $margin-base + 4;
+        width: $margin-base + 8;
+        position: absolute;
+        left: -40px;
+        top: 2px;
+      }
+    }
+  }
+  .check-icon {
+    height: $margin-base-2;
+    width: $margin-base-2;
+    display: inline-block;
+    @include backgroundImage('/images/icon-status-down.svg');
+    &.success {
+      @include backgroundImage('/images/icon-status-success-large.svg');
+    }
+    &.failed {
+      @include backgroundImage('/images/icon-status-failed.svg');
+    }
+  }
+
+  &.active,
+  &:hover {
+    box-shadow: 0px 0px 0px 5px rgba($kinto-blue, 0.2),
+      0 2px 4px 0 $kinto-box-shadow,
+      0 $margin-base $margin-base-4 0 $kinto-box-shadow;
+  }
+  .heading {
+    border-top: solid $kinto-grayscale-7 $margin-base;
+    padding: $margin-base $margin-base $margin-base $margin-base-2;
+    display: flex;
+    justify-content: space-between;
+  }
+  &.kintoblock .heading {
+    border-top: none;
+  }
+  &.success {
+    .heading {
+      border-top: solid $kinto-green $margin-base;
+    }
+  }
+  &.failed {
+    .heading {
+      border-top: solid $kinto-coral $margin-base;
+    }
+  }
+  &.running {
+    .heading {
+      border-top: solid $kinto-orange $margin-base;
+    }
+  }
+  .drag-handle {
+    margin-top: $margin-base;
+    cursor: row-resize;
+  }
+}
+
+.button-promote {
+  visibility: hidden;
+  display: block;
+  @include backgroundImage(
+    '/images/button-promote-regular.svg',
+    140px,
+    $margin-base-4
+  );
+  margin: $margin-base-2 auto;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    @include backgroundImage('/images/button-promote-hover.svg');
+  }
+  &[disabled] {
+    @include backgroundImage('/images/button-promote-regular.svg');
+    cursor: default;
+    opacity: 0.4;
+  }
+}
+.build-information {
+  display: grid;
+  grid-template-columns: $margin-base auto;
+  align-items: center;
+  grid-column-gap: $margin-base;
+  .icon {
+    margin: 0;
+  }
+  .code {
+    font-weight: normal;
+    padding: 0;
+    height: 20px;
+    color: $kinto-grayscale-7;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    line-height: 20px;
+  }
+  h5 {
+    text-transform: uppercase;
+  }
+}
+
+.sidebar-list-inner li:first-child {
+  .sidebar-card-container {
+    padding-top: $margin-base-3;
+  }
+}
+
+.help-message .line {
+  border-bottom: solid 2px $kinto-grayscale-4;
+}
+
+.help-message {
+  border: 2px solid $kinto-grayscale-4;
+  border-radius: 12px;
+  margin-top: $margin-base-3;
+  width: 260px;
+  margin: $margin-base-3 auto;
+  .top {
+    padding: 60px 30px 47px;
+    .icons {
+      display: grid;
+      grid-template-columns: 40px 40px;
+      grid-column-gap: $margin-base-2;
+      justify-content: center;
+      margin-bottom: $margin-base-2;
+    }
+    .icons .icon {
+      height: 40px;
+      width: 40px;
+      margin: 0;
+    }
+  }
+  .bottom {
+    padding: $margin-base-4 $margin-base-3;
+  }
+  .bottom p {
+    color: $kinto-grayscale-7;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: $margin-base-2;
+  }
+  .bottom p span {
+    font-weight: bold;
+  }
+  .tag-example {
+    @include backgroundImage('/images/tags-tutorial.svg', 140px, 40px);
+    margin: $margin-base-2 auto;
+  }
+  .branch-example {
+    @include backgroundImage('/images/branches-tutorial.svg', 140px, 40px);
+    margin: 0 auto $margin-base-2;
+  }
+}
+
+.not-created {
+  height: 24px;
+  color: $kinto-tinted-grayscale-6;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.kintoblock-manage-sidebar {
+  padding-bottom: $margin-base * 8;
+  overflow: hidden;
+  .top-fixed {
+    background-color: $kinto-tinted-grayscale-2;
+    top: $margin-base * 6;
+    left: 0px;
+    padding: 0 $margin-base-3;
+    width: 320px;
+    box-shadow: 0 2px 4px $kinto-box-shadow,
+      0 $margin-base $margin-base-4 $kinto-box-shadow;
+    .return-link {
+      padding: $margin-base-3 0 $margin-base;
+      display: flex;
+      align-items: center;
+      color: $kinto-grayscale-9;
+      font-size: $margin-base + 6;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: $default-line-height;
+      img {
+        margin-right: $margin-base;
+      }
+    }
+    .line {
+      width: 100%;
+      border-top: 2px solid $kinto-tinted-grayscale-3;
+      margin-bottom: 0px;
+    }
+    .title {
+      display: grid;
+      font-weight: bold;
+      grid-template-columns: 1fr 1fr;
+      color: $kinto-grayscale-7;
+      justify-content: space-between;
+    }
+  }
+}
+
+.kintoblock-manage-sidebar {
+  .branch-tab,
+  .tag-tab {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 10px;
+    padding: $margin-base-2 5px;
+    .icon {
+      width: $margin-base-2;
+      height: $margin-base-2;
+      margin: 0;
+    }
+    h5 {
+      margin-bottom: 0;
+      opacity: 0.4;
+    }
+    &.active {
+      border-bottom: solid 4px $kinto-blue;
+      padding-bottom: $margin-base-2 - 4px;
+    }
+    &.active h5 {
+      opacity: 1;
+    }
+  }
+}

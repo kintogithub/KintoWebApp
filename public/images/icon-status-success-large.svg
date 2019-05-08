@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-status-success-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/status/success-large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-status-success-large">
+            <circle id="Combined-Shape" fill="#19BF7B" cx="40" cy="40" r="40"></circle>
+            <path d="M52.7230723,21.7061506 C53.9899303,19.8963534 56.4840522,19.4562143 58.2938494,20.7230723 C60.1036466,21.9899303 60.5437857,24.4840522 59.2769277,26.2938494 L38.2769277,56.2938494 C36.850612,58.3314432 33.930289,58.5871433 32.1715729,56.8284271 L20.1715729,44.8284271 C18.6094757,43.26633 18.6094757,40.73367 20.1715729,39.1715729 C21.73367,37.6094757 24.26633,37.6094757 25.8284271,39.1715729 L34.4571622,47.8003079 L52.7230723,21.7061506 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

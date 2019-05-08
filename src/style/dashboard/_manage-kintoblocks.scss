@@ -1,0 +1,905 @@
+.kintoblock-manage {
+  padding-bottom: $margin-base-4;
+  .page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $margin-base 0;
+    h2 {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      .type-icon {
+        display: inline-block;
+        height: $margin-base-4;
+        width: $margin-base-4;
+        margin-right: $margin-base;
+      }
+    }
+    .status {
+      margin: 0 0 0 $margin-base + 4;
+    }
+    .button {
+      display: inline-block;
+      width: 200px;
+      height: $margin-base-4;
+      line-height: $margin-base-4;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .form-container {
+    width: 100%;
+    display: inherit;
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: $margin-base-4;
+    justify-content: stretch;
+    align-content: stretch;
+    min-width: 520px;
+    margin-bottom: $margin-base-4;
+    h3 {
+      color: $kinto-grayscale-8;
+    }
+    h5 {
+      font-weight: normal;
+    }
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(2, auto [col-start]);
+    }
+    @media (min-width: 1440px) {
+      min-height: 500px;
+      margin-bottom: 0;
+    }
+    .build-states {
+      text-transform: uppercase;
+      position: absolute;
+      right: 0;
+    }
+    .form-wrapper {
+      min-width: 520px;
+      &:not(.basic-info, .commits) {
+        .form-body {
+          border-radius: $margin-base + 2;
+          @extend .box-shadow-standard;
+        }
+      }
+      &.versioning,
+      &.dependencies,
+      &.availibility {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        label,
+        input {
+          width: 100%;
+        }
+      }
+      &.versioning {
+        .form-body {
+          display: flex;
+          min-height: 160px;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .field-wrapper {
+          width: 49%;
+        }
+      }
+      &.dependencies {
+        .form-body {
+          .service,
+          .search {
+            margin-bottom: 0;
+          }
+          .service {
+            margin-top: $margin-base-3;
+          }
+        }
+      }
+      .hardware-requirements {
+        @media (min-width: 1440px) {
+          grid-column-start: 1;
+          grid-row-start: 3;
+        }
+      }
+      .expand {
+        border-radius: $margin-base + 2 $margin-base + 2 0 0;
+        background-color: $kinto-white;
+        padding: $margin-base + 8 $margin-base-4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s linear;
+        h4,
+        h6 {
+          margin: 0;
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          h6 {
+            margin-right: $margin-base;
+            font-weight: normal;
+          }
+        }
+
+        &.collapse {
+          border-radius: $margin-base + 2;
+          .right .icon {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      .hardware-requirements-wrapper {
+        box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+          0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+        border-radius: $margin-base + 2;
+      }
+      .form-body {
+        width: 100%;
+        min-height: 230px;
+        &.simple {
+          padding: $margin-base-4;
+        }
+        &.tagged {
+          min-height: 180px;
+          &.simple {
+            padding: $margin-base-3 $margin-base-4 $margin-base * 6;
+          }
+        }
+        background-color: $kinto-white;
+        .title {
+          margin-bottom: $margin-base-2;
+        }
+        .radio .field-wrapper {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          input {
+            width: $margin-base-2;
+            margin-right: $margin-base-2;
+            margin-bottom: 0;
+          }
+          label {
+            text-transform: none;
+          }
+        }
+        &.hardware {
+          border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+          box-shadow: none;
+        }
+        .line {
+          margin: 15px 0 25px;
+        }
+      }
+    }
+  }
+  .form-body.env .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr $margin-base-4;
+    grid-column-gap: $margin-base;
+  }
+
+  .form-body.custom-params {
+    .row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr $margin-base-4;
+      grid-column-gap: $margin-base;
+      align-items: center;
+      .switch-container {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .row.paste-help {
+      grid-template-columns: 1fr 1fr 2fr $margin-base-4;
+      padding-top: $margin-base-2;
+      h5 {
+        margin: 0;
+      }
+      h5 span {
+        color: $kinto-purple;
+        font-weight: bold;
+      }
+      .help {
+        align-items: flex-start;
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        display: grid;
+        grid-template-columns: $margin-base-2 1fr;
+        grid-column-gap: $margin-base;
+      }
+      img {
+        margin-top: $margin-base - 8;
+        height: $margin-base-2;
+      }
+    }
+    .top {
+      background-color: $kinto-white;
+      border-radius: 8px 8px 0 0;
+      padding: $margin-base + 6 $margin-base-4 $margin-base-4;
+      .row {
+        margin-bottom: 6px;
+      }
+    }
+    .bottom {
+      padding: $margin-base + 6 $margin-base-4 $margin-base-4;
+      border-radius: 0 0 8px 8px;
+      background-color: $kinto-tinted-grayscale-1;
+    }
+    .field-wrapper input {
+      margin-bottom: 0;
+    }
+    .toggle-content {
+      margin-top: $margin-base-2;
+    }
+  }
+
+  .icon-column {
+    padding-top: $margin-base-2;
+    button {
+      background-color: transparent;
+    }
+    button:focus {
+      border-radius: $margin-base + 2;
+      border: 2px solid $input-focus;
+    }
+  }
+
+  .full-row {
+    grid-column: 1 / 3;
+  }
+
+  .title-and-button {
+    width: 100%;
+    display: grid;
+    grid-gap: $margin-base-2;
+    grid-template-columns: auto $margin-base * 22;
+    align-items: center;
+    button {
+      width: $margin-base * 22;
+    }
+  }
+
+  .empty-message {
+    background: $kinto-tinted-grayscale-1;
+    color: $kinto-tinted-grayscale-6;
+    padding: 7px 0 9px 0;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .switch {
+    text-transform: none;
+  }
+
+  .basic-info {
+    .form-body {
+      padding: 0;
+      &.total-collapse {
+        min-height: 0;
+        .line.total-collapse {
+          margin: 0;
+        }
+      }
+    }
+    .section {
+      padding: $margin-base + 4 $margin-base-4 $margin-base-4 $margin-base-4;
+      &.padding {
+        padding-top: $margin-base-4;
+      }
+    }
+    .basic-info-wrapper {
+      @extend .box-shadow-standard;
+      border-radius: $margin-base + 2;
+      .form-body {
+        box-shadow: none;
+        border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+        .right {
+          display: grid;
+          grid-row-gap: $margin-base;
+          grid-template-columns: auto;
+        }
+        input {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .header {
+      background-color: $kinto-white;
+      border-radius: $margin-base + 2 $margin-base + 2 0 0;
+      padding: $margin-base + 8 $margin-base-4;
+      border-bottom: solid 2px $kinto-tinted-grayscale-2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: $margin-base * 6;
+      &.collapsed {
+        border-radius: $margin-base + 2;
+        border-bottom: none;
+      }
+      .left {
+        color: $kinto-grayscale-7;
+        font-size: $margin-base + 6;
+        font-weight: bold;
+        text-align: left;
+        line-height: $default-line-height;
+      }
+      .right {
+        color: $kinto-grayscale-6;
+        font-size: $margin-base + 2;
+        text-align: right;
+        letter-spacing: 0;
+        line-height: $margin-base + 6;
+        display: flex;
+        align-items: center;
+      }
+      .icon {
+        @include backgroundImage('/images/icon-gray-expand-collapse.svg');
+        transition: all 0.3s ease-in-out;
+        &.expanded {
+          transform: rotate(-180deg);
+        }
+      }
+      &.collapse-header {
+        border-radius: $margin-base + 2 $margin-base + 2 0 0;
+        padding: $margin-base + 8 $margin-base-4;
+        border-bottom: 0;
+        &.collapsed {
+          border-radius: $margin-base + 2;
+          .collapse-toggle .collapse-icon {
+            transform: rotate(0deg);
+          }
+        }
+        h4 {
+          margin: 0;
+        }
+        .collapse-toggle {
+          width: 190px;
+          height: $margin-base + 6;
+          color: $kinto-grayscale-6;
+          font-size: $margin-base + 2;
+          font-weight: normal;
+          text-align: right;
+          letter-spacing: 0;
+          line-height: $margin-base + 6;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .collapse-icon {
+            @include backgroundImage(
+                '/images/icon-gray-expand-collapse.svg',
+                $margin-base-2,
+                $margin-base-2
+              )
+              display: inline-block;
+            transform: rotate(-180deg);
+            transition: all 0.2s linear;
+            margin-left: $margin-base;
+          }
+        }
+      }
+      .language-and-protocol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $margin-base-2;
+      }
+    }
+
+    .form-body {
+      padding: $margin-base + 6 $margin-base-4 $margin-base-4;
+      margin-top: 0;
+      border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+      box-shadow: none;
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      grid-column-gap: $margin-base-4;
+    }
+
+    .main-kintoblock-icon {
+      width: 136px;
+      margin: 26px $margin-base + 2 0;
+    }
+
+    textarea,
+    select {
+      margin-bottom: 0;
+    }
+  }
+
+  .build-and-repo-wrapper {
+    @extend .box-shadow-standard;
+    border-radius: $margin-base + 2;
+    &.static-site {
+      .repo-info {
+        border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+      }
+    }
+    .form-advanced {
+      padding-bottom: 0;
+      &.curved {
+        padding-bottom: $margin-base-4;
+        border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+      }
+    }
+    .autodeploy-builds {
+      padding: $margin-base-4;
+      background-color: $kinto-white;
+      border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+    }
+  }
+
+  .commits {
+    .form-body.simple {
+      box-shadow: none;
+      &.top {
+        border-radius: $margin-base + 2 $margin-base + 2 0 0;
+        display: grid;
+        grid-row-gap: $margin-base;
+        .commit-list {
+          .label {
+            font-weight: bold;
+          }
+          .builds-heading {
+            background-color: $kinto-tinted-grayscale-7;
+            padding: $margin-base $margin-base-3 $margin-base $margin-base-2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr;
+            grid-column-gap: $margin-base-2;
+            border-radius: 4px 4px 0 0;
+            min-height: $margin-base-4;
+            li {
+              min-height: $margin-base-2;
+              &:last-child {
+                text-align: right;
+              }
+              .time-and-date {
+                min-width: 122px;
+              }
+              h5 {
+                color: $kinto-tinted-grayscale-5;
+                min-height: $margin-base-2;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+            }
+            .icon {
+              vertical-align: top;
+              margin-right: 5px;
+              margin-left: 0;
+            }
+          }
+          .build-row {
+            .top {
+              padding: 0;
+              border-radius: 0;
+              .builds-content {
+                border-left: solid 4px $kinto-tinted-grayscale-1;
+                min-height: $margin-base * 6;
+                padding: 8px 26px 8px $margin-base + 6;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr;
+                grid-column-gap: $margin-base-2;
+                background-color: $kinto-tinted-grayscale-1;
+                .button {
+                  min-width: inherit;
+                }
+                &.active {
+                  background-color: rgba($kinto-blue, 0.4);
+                  border-left: solid 4px transparent;
+                }
+                &.expanded {
+                  border-left: solid 4px $kinto-blue;
+                  background-color: rgba($kinto-blue, 0.3);
+                }
+                .button-icon.right .icon {
+                  margin: 9px $margin-base 0 0;
+                }
+                li {
+                  display: flex;
+                  min-height: $margin-base-2;
+                  align-items: center;
+                  .code {
+                    color: $kinto-tinted-grayscale-7;
+                    font-size: $margin-base + 4;
+                    font-weight: normal;
+                    text-align: left;
+                    letter-spacing: 0;
+                    line-height: $margin-base + 4;
+                  }
+                  .open-log {
+                    min-height: $margin-base-2;
+                    color: $kinto-blue;
+                    font-size: $margin-base + 2;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: $margin-base + 6;
+                    border: 1px solid rgba($kinto-grayscale-7, 0.2);
+                    border-radius: 4px 4px 4px 4px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 5px;
+                    &.retry-link {
+                      margin-top: 2px;
+                      width: 58px;
+                      cursor: pointer;
+                      &:hover {
+                        background: $kinto-blue;
+                        h6 {
+                          color: $kinto-white;
+                        }
+                      }
+                    }
+                    h6 {
+                      margin: 0 5px 0 0;
+                    }
+                  }
+                  .status-wrapper {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    .processing-time-information {
+                      display: flex;
+                      align-items: center;
+                      .processing-text {
+                        margin: 0 5px 0 0;
+                        color: rgba($kinto-tinted-grayscale-7, 1);
+                        font-size: $margin-base + 2;
+                        font-weight: normal;
+                        text-align: right;
+                        letter-spacing: 0;
+                        line-height: $margin-base + 6;
+                      }
+                    }
+                  }
+                  .status {
+                    font-size: $margin-base + 2;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    text-align: right;
+                    line-height: $margin-base + 6;
+                    color: rgba($kinto-tinted-grayscale-7, 1);
+                    .dot {
+                      height: $margin-base;
+                      width: $margin-base;
+                      border-radius: 5px;
+                      margin-left: 15px;
+                      &.queued {
+                        background-color: $kinto-purple;
+                      }
+                      &.building,
+                      &.running {
+                        background-color: $kinto-yellow;
+                      }
+                      &.failed {
+                        background-color: $kinto-coral;
+                      }
+                      &.success {
+                        background-color: $kinto-green;
+                      }
+                      &.not_processed {
+                        background-color: $kinto-tinted-grayscale-5;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .bottom {
+              border-radius: 0;
+              padding: $margin-base;
+              background-color: rgba($kinto-blue, 0.2);
+            }
+          }
+        }
+      }
+      &.bottom {
+        border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+        margin-top: 0;
+        padding-top: 15px;
+        min-height: 130px;
+      }
+    }
+    .label {
+      text-transform: uppercase;
+    }
+    .commit-details {
+      width: 100%;
+      background-color: $kinto-tinted-grayscale-1;
+      padding: 8px $margin-base + 6;
+      &.no-commit,
+      .no-commit {
+        color: $kinto-tinted-grayscale-6;
+        font-size: $margin-base + 4;
+        text-align: center;
+        padding-bottom: 9px;
+        display: inline-block;
+      }
+      &.active {
+        background-color: rgba($kinto-blue, 0.4);
+      }
+      &.first {
+        border-radius: 4px 4px 0 0;
+      }
+      &.last {
+        border-radius: 0 0 4px 4px;
+      }
+      .state-and-time {
+        display: flex;
+        justify-content: space-between;
+        color: $kinto-grayscale-7;
+        font-size: $margin-base + 4;
+        .build {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: $margin-base + 2;
+        }
+      }
+      .notes-and-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .notes {
+          color: rgba($kinto-grayscale-7, 0.4);
+          font-size: $margin-base + 4;
+        }
+        .log-link {
+          font-size: $margin-base + 2;
+          color: $kinto-tinted-grayscale-6;
+          letter-spacing: 0;
+          text-align: right;
+          line-height: $margin-base + 6;
+          font-weight: bold;
+          img {
+            margin-left: 15px;
+          }
+        }
+      }
+      &.main {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-column-gap: $margin-base;
+        border-radius: 4px;
+        background-color: $kinto-white;
+        padding: 0;
+        align-items: center;
+        .state-and-time {
+          background-color: $kinto-tinted-grayscale-1;
+          padding: 8px $margin-base-2;
+          height: $margin-base-4;
+        }
+        .main-with-icon {
+          display: flex;
+          align-items: center;
+          .icon.build {
+            margin: 0 $margin-base-2 0 0;
+          }
+        }
+      }
+      &.main.example {
+        grid-template-columns: auto;
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 2px solid $kinto-tinted-grayscale-2;
+  }
+
+  .description-field {
+    height: 100px;
+  }
+
+  .button-refresh-commits {
+    max-width: 200px;
+    margin-right: 0;
+  }
+
+  .repo-info {
+    background-color: $kinto-white;
+    padding: $margin-base + 4 $margin-base-4 $margin-base-4;
+    border-top: solid 2px $kinto-tinted-grayscale-2;
+    .view-example {
+      color: $kinto-tinted-grayscale-7;
+      font-size: $margin-base + 4;
+      font-weight: bold;
+      text-align: left;
+      letter-spacing: 0;
+      line-height: $default-line-height;
+    }
+  }
+
+  .repo-link {
+    display: flex;
+    .field-input-wrapper {
+      .repo-type {
+        height: $margin-base-2;
+        width: $margin-base-2;
+        display: inline-block;
+        position: absolute;
+        left: $margin-base;
+        top: $margin-base;
+        &.BITBUCKET {
+          @include backgroundImage('/images/repo-source-bitbucket.svg');
+        }
+        &.GITHUB {
+          @include backgroundImage('/images/repo-source-github.svg');
+        }
+      }
+      input {
+        padding-left: $margin-base-4;
+      }
+      flex-grow: 1;
+    }
+    a {
+      min-width: 120px;
+      max-width: 120px;
+      margin-left: $margin-base;
+    }
+  }
+  .kintoblock-service.service-fields {
+    margin-top: -20px;
+    margin-bottom: 0;
+  }
+}
+
+.rc-tooltip-inner {
+  font-weight: bold;
+}
+
+.commit-details-header {
+  display: grid;
+  grid-template-columns: 120px auto;
+  align-items: center;
+  background-color: $kinto-grayscale-8;
+  padding: $margin-base $margin-base-2;
+  border-radius: 4px 4px 0 0;
+  .commit-hash,
+  .message {
+    text-transform: uppercase;
+    color: $kinto-white;
+    font-size: $margin-base + 4;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.commit-details-code-wrapper {
+  padding: $margin-base-2 15px;
+  border-radius: 0 0 4px 4px;
+  background-color: $kinto-grayscale-9;
+  grid-row-gap: $margin-base-2;
+  height: 170px;
+  .commit-details-code {
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 5px;
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+      .sha {
+        color: $kinto-grayscale-6;
+      }
+    }
+    .left {
+      .icon.commit {
+        @include backgroundImage(
+          '/images/icon-type-commit.svg',
+          $margin-base,
+          $margin-base
+        );
+        margin-right: 15px;
+        margin-left: 0;
+      }
+    }
+    .right .code {
+      color: $kinto-white;
+      font-weight: normal;
+      word-break: break-word;
+    }
+  }
+}
+
+.build-progress {
+  background-color: $kinto-grayscale-9;
+  color: $kinto-grayscale-6;
+  border-radius: 4px;
+  margin-bottom: $margin-base;
+  padding: $margin-base-4 0 $margin-base-2 $margin-base-4;
+  display: flex;
+  line-height: $margin-base + 4;
+  font-size: $margin-base + 2;
+  .step-status {
+    margin-right: 15px;
+    display: flex;
+  }
+  .step-circle-container {
+    margin-right: 15px;
+  }
+  .line {
+    width: $margin-base * 6;
+    height: 4px;
+    border-radius: 3px;
+    border: none;
+    margin-top: $margin-base-2 !important;
+    margin-bottom: 0 !important;
+  }
+  .line-label {
+    margin-top: 7px;
+    text-align: center;
+  }
+  .step-circle {
+    width: $margin-base-4;
+    height: $margin-base-4;
+    margin: 0 15px 5px 15px;
+  }
+  .step-circle-label {
+    max-width: ($margin-base * 7);
+    text-align: center;
+  }
+  .running {
+    .step-circle {
+      animation: spin 3s linear infinite;
+      @include backgroundImage('/images/icon-status-running.svg');
+    }
+    .line {
+      @include backgroundImage('/images/icon-status-building.svg');
+    }
+  }
+  .failed {
+    .step-circle {
+      @include backgroundImage('/images/icon-status-failed.svg');
+    }
+    .line {
+      background: $kinto-coral;
+    }
+  }
+  .success {
+    .step-circle {
+      @include backgroundImage('/images/icon-status-success-large.svg');
+    }
+    .line {
+      background: $kinto-green;
+    }
+  }
+  .step-finish-circle {
+    &.success {
+      @include backgroundImage(
+          '/images/icon-status-build-success.svg',
+          75px,
+          75px
+        )
+        margin-top: -16px;
+    }
+    &.failed {
+      @include backgroundImage(
+          '/images/icon-status-build-failed.svg',
+          75px,
+          75px
+        )
+        margin-top: -16px;
+    }
+  }
+}
+
+.kb-basic-info-modal {
+  .icon-wrapper {
+    position: relative;
+  }
+  .icon.kb-type {
+    position: absolute;
+    top: 38px;
+    right: $margin-base-3;
+  }
+}

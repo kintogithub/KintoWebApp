@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-dashboard-home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#B9D5EC" offset="0%"></stop>
+            <stop stop-color="#98B4CD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z M9.28470161,14.7081186 C9.9224251,15.0763084 10.737879,14.8578082 11.1060688,14.2200847 C11.807592,13.0050109 14.1450259,6.72298177 13.9513683,6.62521478 C13.7577107,6.52744779 9.4981909,11.6716776 8.79666773,12.8867513 C8.4284779,13.5244748 8.64697811,14.3399287 9.28470161,14.7081186 Z" id="path-2"></path>
+        <path d="M12.6434926,13.686456 C14.5267664,14.2013329 16.1883702,15.2529416 17.4536884,16.6666667 C15.6226198,18.7124979 12.961666,20 10,20 C7.03833396,20 4.37738015,18.7124979 2.54631164,16.6666667 C3.8116298,15.2529416 5.47323361,14.2013329 7.35650745,13.686456 C7.52927026,14.9922986 8.64695449,16 10,16 C11.3530455,16 12.4707297,14.9922986 12.6434926,13.686456 L12.6434926,13.686456 Z" id="path-4"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop/sidebar/home" transform="translate(-50.000000, -290.000000)">
+            <g id="desktop/sidebar/analytics">
+                <g id="icon-dashboard-home" transform="translate(50.000000, 290.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#CBE3F9" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,370 @@
+.what-is-a-kintoblock {
+  background-color: rgba($kinto-tinted-grayscale-5, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: $margin-base-3;
+  margin-bottom: $margin-base * 4;
+  border-radius: $margin-base + 2;
+  .body-copy {
+    font-weight: normal;
+    a {
+      font-size: $margin-base + 4;
+      color: $kinto-grayscale-7;
+      &:hover {
+        color: $text-link-focus;
+      }
+    }
+  }
+  .icon {
+    @include backgroundImage(
+      '/images/icon-hint-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+    min-width: $margin-base * 8;
+    margin-left: $margin-base-2;
+  }
+}
+
+.kb-create-wrapper {
+  padding-bottom: $margin-base-4;
+  .title {
+    display: flex;
+    align-items: center;
+    h2 {
+      display: flex;
+      align-items: center;
+    }
+    .icon-type {
+      margin-right: 10px;
+    }
+    a {
+      display: inline-block;
+      .icon-edit {
+        display: inline-block;
+        height: $margin-base-2;
+        width: $margin-base-2;
+        margin-left: $margin-base;
+        margin-top: $margin-base;
+        @include backgroundImage('/images/icon-gray-edit.svg');
+      }
+    }
+  }
+}
+
+.kintoblock-create {
+  input,
+  select {
+    height: $margin-base-4;
+  }
+  width: 100%;
+  display: inherit;
+  padding-bottom: $margin-base-2;
+  display: grid;
+  grid-row-gap: $margin-base-4;
+  .form-wrapper {
+    min-width: 520px;
+    @media (min-width: 1440px) {
+      &.workspaces {
+        min-height: $margin-base * 5;
+        margin-bottom: 0px;
+      }
+    }
+    justify-self: stretch;
+    h5 {
+      font-weight: normal;
+      margin-bottom: 26px;
+    }
+    .form-body {
+      background-color: $kinto-white;
+      padding: 36px $margin-base-4;
+      border-radius: $margin-base + 2;
+      @extend .box-shadow-standard;
+      &.options-open {
+        border-radius: $margin-base + 2 $margin-base + 2 0 0;
+      }
+      &.repo-fields {
+        min-height: 0;
+      }
+      .memory,
+      .limits-requests {
+        .input-container {
+          width: 49%;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (min-width: 540px) {
+          flex-wrap: nowrap;
+        }
+        input {
+          width: 100%;
+          min-width: 210px;
+        }
+      }
+      textarea {
+        min-height: 100px;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    border-bottom: solid 1px $kinto-tinted-grayscale-2;
+    margin: $margin-base + 8 0;
+  }
+  .toggle-wrapper {
+    margin-bottom: $margin-base + 6;
+  }
+
+  .basic-info-inputs,
+  .repo-fields {
+    @extend .box-shadow-standard;
+    border-radius: $margin-base + 2;
+    .form-body {
+      box-shadow: none;
+    }
+    &.website {
+      border-radius: $margin-base + 2;
+      .form-body {
+        border-radius: $margin-base + 2;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .basic-info-inputs .service-project {
+    margin-bottom: $margin-base;
+  }
+}
+
+.hardware-data-form {
+  .memory,
+  .limits-requests {
+    .input-container {
+      width: 49%;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (min-width: 540px) {
+      flex-wrap: nowrap;
+    }
+    input {
+      width: 100%;
+      min-width: 210px;
+    }
+  }
+  .line {
+    width: 100%;
+    border-bottom: solid 1px $kinto-tinted-grayscale-2;
+    margin: $margin-base + 8 0;
+  }
+}
+
+.language {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-column-gap: $margin-base-2;
+}
+
+.prepopulate-repo-field-wrapper {
+  margin: $margin-base-4 0 $margin-base-2;
+  .toggle-content {
+    margin-top: 5px;
+  }
+}
+
+.connect-github {
+  .repository-selection {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-row-gap: $margin-base;
+    grid-template-columns: 1fr;
+    grid-column-gap: $margin-base-2;
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: $margin-base-2;
+      align-content: center;
+      overflow: visible;
+    }
+    .tutorial {
+      position: absolute;
+      left: -110px;
+      top: -26px;
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      .tutorial-step {
+        position: absolute;
+        color: $kinto-white;
+        font-weight: bold;
+        font-size: $margin-base + 6;
+      }
+    }
+  }
+}
+
+.link-repo-modal {
+  .kh-modal-body {
+    .information {
+      margin: $margin-base-3 0 $margin-base-2 0;
+      border: 2px solid $kinto-grayscale-2;
+      border-radius: $margin-base-2;
+      text-align: center;
+      position: relative;
+      height: $margin-base-4;
+      line-height: $margin-base-4;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon.exclamation {
+        @include backgroundImage(
+          '/images/icon-lapis-alert-message.svg',
+          $margin-base-2,
+          $margin-base-2
+        );
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .repo-cards {
+      display: grid;
+      grid-template-columns: 140px 140px 140px;
+      grid-column-gap: $margin-base;
+      .repo-source-card {
+        @extend .box-shadow-standard;
+        padding: $margin-base;
+        border-radius: 8px;
+        .button.button-success {
+          width: 100%;
+        }
+        &.disabled {
+          box-shadow: none;
+          background: linear-gradient(
+            0deg,
+            $kinto-white 0%,
+            $kinto-grayscale-2 100%
+          );
+          button.button,
+          .logo,
+          h3 {
+            opacity: 0.4;
+          }
+          button:hover {
+            cursor: default;
+          }
+        }
+        .logo {
+          height: $margin-base * 6;
+          width: $margin-base * 6;
+          margin: $margin-base-2 auto;
+          display: block;
+          &.github {
+            @include backgroundImage(
+              '/images/repo-source-github.svg',
+              $margin-base * 6,
+              $margin-base * 6
+            );
+          }
+          &.bitbucket {
+            @include backgroundImage(
+              '/images/repo-source-bitbucket.svg',
+              $margin-base * 6,
+              $margin-base * 6
+            );
+          }
+          &.gitlab {
+            @include backgroundImage(
+              '/images/repo-source-gitlab.svg',
+              $margin-base * 6,
+              $margin-base * 6
+            );
+          }
+        }
+        h3 {
+          text-align: center;
+          width: 120px;
+          height: 24px;
+          color: $kinto-grayscale-8;
+          letter-spacing: 0;
+          line-height: $default-line-height;
+        }
+        button {
+          max-width: 100%;
+          min-width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          @extend .dark;
+        }
+      }
+      .button {
+        min-width: 120px;
+        width: 100%;
+      }
+    }
+  }
+  .link-description {
+    margin: $margin-base;
+    font-size: $margin-base + 4;
+  }
+
+  .tutorial-notification {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: $margin-base-4;
+    background-color: $kinto-purple;
+    padding: 8px $margin-base-3;
+    .link-styled-button {
+      margin-right: 0;
+      width: $margin-base * 6;
+    }
+    h4 {
+      color: $kinto-white;
+    }
+  }
+}
+
+.create-kb-tag-modal {
+  .main-with-icon {
+    display: flex;
+    align-items: center;
+    .icon.build {
+      margin: 0 $margin-base 0 0;
+    }
+  }
+}
+
+.button-and-tooltip {
+  min-width: 200px;
+  &.no-tooltip .tutorial.top {
+    display: none;
+  }
+  &.with-tooltip {
+    position: relative;
+    .tutorial.top {
+      position: absolute;
+      display: flex;
+      top: -55px;
+      left: 188px;
+      .tutorial-step {
+        position: absolute;
+        top: 38%;
+        left: 40%;
+        color: $kinto-white;
+      }
+    }
+  }
+}
+
+.tag-and-deploy-modal .button-and-tooltip.with-tooltip .tutorial.top {
+  left: 81px;
+}

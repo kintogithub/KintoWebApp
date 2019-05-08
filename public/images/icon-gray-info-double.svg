@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-gray-info-double</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="20"></rect>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/secondary/large/infomation">
+            <g id="icon-gray-info-double">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#EDF3FD" xlink:href="#path-1"></use>
+                <path d="M18,17.3540649 L18,30 L22,30 L22,16 L18.2918091,16.8291931 C18.0664606,16.8812162 18,17.1112904 18,17.3540649 Z" id="Shape" fill="#083A45" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M17.1045599,12.5336462 L19.1326958,14.0076347 C19.3233752,14.1116809 19.5487237,14.146363 19.7394031,14.0596578 L21.5248561,13.3486751 C21.628863,13.3139931 21.698201,13.2272879 21.73287,13.1232416 L22.4955878,10.5914497 C22.5475913,10.4353804 22.4782533,10.279311 22.3395773,10.1926058 L20.2421035,8.92670983 C20.086093,8.85734567 19.9127481,8.82266359 19.7394031,8.85734567 L17.9886191,9.32555376 C17.8672777,9.36023584 17.7806052,9.44694104 17.7459362,9.55098729 L16.931215,12.1001202 C16.9138805,12.2735306 16.9658839,12.446941 17.1045599,12.5336462 Z" id="Shape" fill="#083A45" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

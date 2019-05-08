@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-generic-applications</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#B9D5EC" offset="0%"></stop>
+            <stop stop-color="#98B4CD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1x---dashboard---account---overview---simplified" transform="translate(-560.000000, -220.000000)" fill="url(#linearGradient-1)">
+            <g id="content">
+                <g id="content-box" transform="translate(350.000000, 180.000000)">
+                    <g id="Group-2">
+                        <g id="Group" transform="translate(200.000000, 40.000000)">
+                            <g id="Group-9" transform="translate(10.000000, 0.000000)">
+                                <g id="icon/generic/application/gradient">
+                                    <path d="M58.84375,4 C69.25,4 76,10.75 76,21.15625 L76,58.84375 C76,69.25 69.25,76 58.84375,76 L21.15625,76 C10.75,76 4,69.25 4,58.84375 L4,21.15625 C4,10.75 10.75,4 21.15625,4 L58.84375,4 Z" id="Mask"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

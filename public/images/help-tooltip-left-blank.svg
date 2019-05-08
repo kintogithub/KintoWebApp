@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>help-tooltip-left-blank</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M54,50.0000243 L86.2918515,50.0002201 C88.5644651,50.0002338 90.6420222,51.2842397 91.6583712,53.3169244 L100.000024,70.0001213 L91.6583754,86.6835121 C90.6420256,88.7162229 88.5644434,90.0002425 86.2918062,90.0002425 L54,90.0002425 C51.790861,90.0002425 50,88.2093815 50,86.0002425 L49.9999757,54 C49.9999757,51.790861 51.7908367,50 53.9999757,50 C53.9999838,50 53.9999919,50 54,50 Z" id="path-1"></path>
+        <filter x="-138.0%" y="-142.5%" width="376.0%" height="445.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.462745098   0 0 0 0 0.57254902  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.462745098   0 0 0 0 0.57254902  0 0 0 0.40455163 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help-tooltip-left-blank">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#7A68E8" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

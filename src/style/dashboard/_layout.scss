@@ -1,0 +1,49 @@
+.app {
+  .layout-inner {
+    margin: 0;
+    padding: $margin-base-4 $margin-base $margin-base $margin-base;
+    background-color: $kinto-tinted-grayscale-1;
+    min-height: calc(100vh - 160px);
+    @include desktop {
+      margin: 0 auto auto 320px;
+      padding: 0px $margin-base-3;
+      .dashboard-content {
+        max-width: $dashboard-content-width;
+        margin: 0 auto;
+      }
+    }
+  }
+  &.notify {
+    .layout-inner {
+      padding: 0 $margin-base-3 0 $margin-base-3;
+    }
+    .sidebar {
+      padding: 0px $margin-base-3;
+    }
+    .layout-and-breadcrumb {
+      padding-top: $margin-base-3;
+    }
+  }
+}
+
+.dashboard-inner {
+  margin: 0;
+  padding: 0 $margin-base;
+  @include desktop {
+    margin: 0 auto;
+    padding: 0 $margin-base-3;
+    .dashboard-content {
+      max-width: $dashboard-content-width;
+      margin: 0 auto;
+    }
+  }
+}
+
+.layout-and-breadcrumb {
+  margin: $margin-base-3 0 0 0;
+  background-color: $kinto-tinted-grayscale-1;
+  @include desktop {
+    margin-top: $margin-base * 6;
+    padding-top: 1px;
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>donut-small-20</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="240.287873%" id="linearGradient-1">
+            <stop stop-color="#3ECFF0" offset="0%"></stop>
+            <stop stop-color="#FBE250" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="donut-small-20">
+            <circle id="Oval-Copy-4" stroke="#556F7C" stroke-width="4" cx="10" cy="10" r="8"></circle>
+            <path d="M15.717361,8.17485881 C14.9450822,5.75358752 12.6773272,4 10,4 L10,0 C14.4622121,0 18.2418036,2.92264587 19.528935,6.95809801 L15.717361,8.17485881 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

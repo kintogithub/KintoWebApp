@@ -1,0 +1,168 @@
+.icon {
+  border: none;
+  display: inline-block;
+  width: $margin-base-2;
+  height: $margin-base-2;
+  margin-left: $margin-base;
+  &.disabled,
+  &[disabled] {
+    opacity: 0.4;
+    &:hover {
+      cursor: default;
+    }
+  }
+  &:focus {
+    height: 24px;
+    width: 24px;
+  }
+  &.hint {
+    @include backgroundImage('/images/icon-hint-large.svg');
+  }
+  &.remove {
+    @include backgroundImage('/images/icon-red-delete.svg');
+  }
+  &.add {
+    @include backgroundImage('/images/icon-blue-new.svg');
+  }
+  &.edit {
+    @include backgroundImage('/images/icon-gray-edit.svg');
+  }
+  &.input-search-inactive {
+    @include backgroundImage('/images/icon-searchfield-search.svg');
+  }
+  &.input-search {
+    @include backgroundImage('/images/icon-searchfield-search-active.svg');
+  }
+  &.gear-button {
+    background: url('/images/icon-config-button.svg');
+    width: $margin-base-4;
+    height: $margin-base-4;
+  }
+  &.gear-circle {
+    background: url('/images/icon-config.svg');
+    width: $margin-base-4;
+    height: $margin-base-4;
+  }
+  &.feedback {
+    background: url('/images/icon-feedback.svg');
+    width: $margin-base-4;
+    height: $margin-base-4;
+  }
+  &.github {
+    @include backgroundImage('/images/repo-source-github.svg');
+  }
+  &.bitbucket {
+    @include backgroundImage('/images/repo-source-bitbucket.svg');
+  }
+  &.commit-icon {
+    @include backgroundImage(
+      '/images/icon-type-commit.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.commit-icon-dark {
+    @include backgroundImage(
+      '/images/icon-type-commit-dark.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.tag-icon {
+    @include backgroundImage(
+      '/images/icon-type-tag.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.branch-icon {
+    @include backgroundImage(
+      '/images/icon-type-branch.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.branch {
+    @include backgroundImage('/images/icon-type-branch.svg');
+  }
+  &.tag {
+    @include backgroundImage('/images/icon-type-tag.svg');
+  }
+  &.tag-icon-dark {
+    @include backgroundImage(
+      '/images/icon-type-tag-dark.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.build {
+    @include backgroundImage(
+      '/images/icon-type-build.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.build-dark {
+    @include backgroundImage(
+      '/images/icon-type-build-dark.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.lapis-alert {
+    @include backgroundImage(
+      '/images/icon-lapis-alert-message.svg',
+      $margin-base,
+      $margin-base
+    );
+  }
+  &.gitlab {
+    @include backgroundImage('/images/repo-source-gitlab.svg');
+  }
+  &.success {
+    @include backgroundImage('/images/icon-status-success-small.svg');
+  }
+  &.med-icon {
+    width: $margin-base-2;
+    height: $margin-base-2;
+  }
+  &.drag-handle {
+    @include backgroundImage('/images/icon-drag-handle.svg');
+  }
+  &.microservice {
+    @include backgroundImage(
+      '/images/icon-kintoblock-type-microservice-small.svg',
+      $margin-base-4,
+      $margin-base-4
+    );
+  }
+  &.task {
+    @include backgroundImage(
+      '/images/icon-kintoblock-type-task-small.svg',
+      $margin-base-4,
+      $margin-base-4
+    );
+  }
+  &.service {
+    @include backgroundImage(
+      '/images/icon-kintoblock-type-custom-small.svg',
+      40px,
+      40px
+    );
+  }
+  &.website {
+    @include backgroundImage(
+      '/images/icon-kintoblock-type-website-small.svg',
+      $margin-base-4,
+      $margin-base-4
+    );
+  }
+  &.delete {
+    @include backgroundImage('/images/icon-status-failed.svg');
+  }
+}
+
+[disabled] > .icon,
+.disabled > .icon {
+  opacity: 0.4;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-reading-position</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.0000097,9.70147693e-05 L11.6787272,9.70147693e-05 C13.1141464,9.70147693e-05 14.4395138,0.76923252 15.1516883,2.01552125 L18,7 L15.1516842,11.984555 C14.4395129,13.2308554 13.1141389,14 11.6787112,14 L2.0000097,14 C0.895440202,14 9.70149994e-06,13.1045695 9.70149994e-06,12 L9.70149994e-06,2.00009701 C9.70149994e-06,0.895527515 0.895440202,9.70147693e-05 2.0000097,9.70147693e-05 Z" id="path-1"></path>
+    </defs>
+    <g id="Deployments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="19---dashboard---applications" transform="translate(-50.000000, -420.000000)">
+            <g id="desktop/sidebar/analytics">
+                <g id="Group-2" transform="translate(30.000000, 280.000000)">
+                    <g id="Group-6" transform="translate(10.000000, 130.000000)">
+                        <g id="Rectangle-+-Oval-Mask" transform="translate(11.000000, 13.000000)">
+                            <g id="Group-3">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#1EC4E9" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

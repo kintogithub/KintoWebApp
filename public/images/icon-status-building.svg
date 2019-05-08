@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="4px" viewBox="0 0 60 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <g id="KintoBlocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="0,10" stroke-linecap="round" stroke-linejoin="round">
+        <g id="29---dashboard---kintoblocks---progress" transform="translate(-830.000000, -698.000000)" fill-rule="nonzero" stroke="#427692" stroke-width="4">
+            <g id="progress-copy-7" transform="translate(240.000000, 640.000000)">
+                <g id="Group" transform="translate(590.000000, 58.000000)">
+                    <path d="M5,2 L61,2" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

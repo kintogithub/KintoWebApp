@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-search-my-applications</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/search/my-applications">
+            <path d="M24.1875,13 L15.8125,13 C14.0522847,13 13,14.0522847 13,15.8125 L13,24.1875 C13,25.9477153 14.0522847,27 15.8125,27 L24.1875,27 C25.9477153,27 27,25.9477153 27,24.1875 L27,15.8125 C27,14.0522847 25.9477153,13 24.1875,13 Z" id="App-Icon-Shape" stroke="#083A45" stroke-width="2"></path>
+            <path d="M14,26 L26,14 Z" id="Rectangle-5" stroke="#083A45" stroke-width="2"></path>
+            <path d="M20,20 L26,26 C26.7357519,26 27.1036279,24 27.1036279,20 C27.1036279,16 26.7357519,14 26,14 L20,20 Z" id="Rectangle-7" fill="#083A45" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

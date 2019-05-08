@@ -1,0 +1,339 @@
+.kintoblock-service {
+  .main-service-icon {
+    background-color: $kinto-grayscale-1;
+  }
+  .service-card {
+    background-color: $kinto-white;
+    .corner {
+      @extend .coming;
+      &.check {
+        background-color: $kinto-tinted-grayscale-1;
+      }
+    }
+    .main-content {
+      h4 {
+        color: $kinto-grayscale-7;
+      }
+    }
+    .fake-button {
+      .button {
+        @extend .secondary;
+      }
+      &.disabled {
+        .button {
+          @extend .disabled;
+        }
+      }
+    }
+    .bottom {
+      background-color: $kinto-grayscale-1;
+      &.enabled {
+        background-color: rgba(94, 210, 162, 0.2);
+        color: $kinto-green-dark;
+      }
+    }
+  }
+  &.service-fields {
+    margin-bottom: $margin-base-4;
+  }
+}
+.analytics-services {
+  .main-service-icon {
+    background-color: $kinto-white;
+  }
+  .service-card {
+    background-color: $kinto-tinted-grayscale-8;
+    .corner {
+      @extend .coming;
+      &.check {
+        background-color: $kinto-tinted-grayscale-9;
+        .icon {
+          @include backgroundImage('/images/icon-blue-new.svg', 75px, $margin-base-2);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .main-content {
+      h4 {
+        color: $kinto-grayscale-5;
+      }
+    }
+    .fake-button {
+      .button {
+        @extend .dark;
+      }
+    }
+    .bottom {
+      background-color: $kinto-grayscale-9;
+      &.enabled {
+        background-color: rgba(94, 210, 162, 0.4);
+        color: $kinto-white;
+      }
+    }
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: $margin-base-2;
+  .service-card {
+    @extend .box-shadow-standard;
+    border-radius: $margin-base + 2;
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+    .coming {
+      h6 {
+        font-size: $margin-base + 2;
+        margin: 0;
+        color: $kinto-white;
+      }
+    }
+    .corner {
+      @extend .coming;
+      background-color: $kinto-blue-muted;
+      padding-top: $margin-base-3;
+      padding-bottom: $margin-base-2;
+      top: -18px;
+      left: -55px;
+      &.plus {
+        .icon {
+          @include backgroundImage('/images/icon-blue-new.svg', 75px, $margin-base-2);
+          transform: rotate(45deg);
+        }
+      }
+      &.check {
+        .icon {
+          @include backgroundImage(
+            '/images/icon-status-success-small.svg',
+            75px,
+            $margin-base-2
+          );
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .open {
+      position: absolute;
+      right: $margin-base;
+      top: $margin-base;
+      width: $margin-base * 8;
+      z-index: 3;
+      .button.secondary {
+        min-width: $margin-base * 8;
+      }
+    }
+    .main-content {
+      padding: 0 $margin-base-4;
+      h4,
+      h5 {
+        text-align: center;
+      }
+      h5 {
+        color: $kinto-grayscale-6;
+        font-weight: normal;
+        line-height: $margin-base-2;
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-bottom: 2px;
+      }
+    }
+    .fake-button {
+      padding: 0 38px 38px 38px;
+      position: absolute;
+      margin: 0 auto;
+      bottom: $margin-base-4;
+      width: 100%;
+      left: -2px;
+    }
+    .bottom {
+      position: absolute;
+      margin-bottom: 0;
+      bottom: 0;
+      width: 100%;
+      height: $margin-base-4;
+      padding: 8px 4px 4px 4px;
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    &.selected {
+      border: solid 4px $kinto-blue;
+      .face {
+        overflow: hidden;
+        padding: 0;
+        .corner {
+          padding-top: $margin-base-3;
+          padding-bottom: $margin-base-2;
+          top: -22px;
+          left: -59px;
+        }
+      }
+      .bottom {
+        padding: 8px 0 0 0;
+        height: 36px;
+      }
+      .fake-button {
+        padding: 0 34px 34px 34px;
+        bottom: $margin-base-4;
+      }
+      .open {
+        right: 6px;
+        top: 6px;
+      }
+    }
+    &.toggle-field {
+      height: 300px;
+      .fake-button {
+        bottom: 0;
+      }
+    }
+    .face {
+      height: 300px;
+      overflow: hidden;
+      padding: 4px 4px 0 4px;
+    }
+  }
+}
+.extended-information {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  @extend .box-shadow-standard;
+  border-radius: $margin-base + 2;
+  margin-top: $margin-base-2;
+  min-height: 450px;
+  background-color: $kinto-white;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: -9px;
+    right: 16.9%;
+    border-left: $margin-base solid transparent;
+    border-right: $margin-base solid transparent;
+    transition: all 0.3s ease-in-out;
+    border-bottom: $margin-base solid $kinto-white;
+  }
+  &.MONGODB:after,
+  &.KIBANA:after {
+    left: 15.4%;
+  }
+  &.MESSAGEPASSING:after,
+  &.PROMETHEUS:after {
+    left: 49.3%;
+  }
+  &.SHAREDMEMORY:after,
+  &.ZIPKIN:after {
+    border-bottom: $margin-base solid $kinto-tinted-grayscale-1;
+    right: 15.4%;
+  }
+  h5:not(.bottom),
+  li {
+    font-weight: normal;
+    color: $kinto-grayscale-6;
+  }
+  .information-area {
+    padding: $margin-base-4;
+    display: grid;
+    grid-template-columns: $margin-base * 8 1fr;
+    grid-column-gap: $margin-base-4;
+    .main-service-icon {
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .information-text ul li h5 a {
+      font-size: $margin-base + 4;
+    }
+  }
+  .action-area {
+    background-color: $kinto-grayscale-1;
+    padding: $margin-base-4;
+    border-radius: 0 $margin-base + 2 $margin-base + 2 0;
+    .button {
+      margin-bottom: $margin-base-2;
+    }
+  }
+}
+.main-service-icon {
+  height: $margin-base * 8;
+  width: $margin-base * 8;
+  margin: $margin-base-4 auto $margin-base + 4;
+  border-radius: $margin-base-4;
+  &.MONGODB {
+    @include backgroundImage(
+      '/images/icon-services-kintoblocks-mongodb-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+  }
+  &.MESSAGEPASSING {
+    @include backgroundImage(
+      '/images/icon-services-kintoblocks-message-passing-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+  }
+  &.SHAREDMEMORY {
+    @include backgroundImage(
+      '/images/icon-services-kintoblocks-shared-memory-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+  }
+  &.KIBANA {
+    @include backgroundImage(
+      '/images/icon-services-analytics-kibana-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+  }
+  &.PROMETHEUS {
+    @include backgroundImage(
+      '/images/icon-services-analytics-prometheus-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+  }
+  &.ZIPKIN {
+    @include backgroundImage(
+      '/images/icon-services-analytics-jaeger-large.svg',
+      $margin-base * 8,
+      $margin-base * 8
+    );
+  }
+}
+
+.service-list {
+  padding-bottom: $margin-base-4;
+  .line {
+    border-bottom: solid 2px $kinto-tinted-grayscale-2;
+    margin: $margin-base-4 0;
+  }
+}
+
+.toggle-services {
+  display: flex;
+  justify-content: center;
+  .toggle {
+    min-width: 264px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: $kinto-tinted-grayscale-1;
+    border-radius: 4px;
+    .switch {
+      margin-top: 0;
+      .toggle-message {
+        margin-top: 6px;
+      }
+    }
+    h6 {
+      color: $kinto-tinted-grayscale-7;
+    }
+  }
+}

@@ -1,0 +1,279 @@
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.kh-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: $kinto-white;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  border-radius: $margin-base + 2;
+  outline: none;
+  width: 480px;
+  &.onboarding {
+    width: 740px;
+    h3 {
+      font-weight: bold;
+      text-align: center;
+      margin-top: $margin-base-3;
+      color: $kinto-grayscale-8;
+    }
+    h5 {
+      font-weight: normal;
+      text-align: center;
+    }
+    .image {
+      margin-bottom: $margin-base-3;
+      min-height: 300px;
+      img {
+        width: 100%;
+      }
+    }
+    .button {
+      width: 214px;
+    }
+    a:not(.tooltip-wrap) {
+      margin: 0;
+    }
+    .tooltip-wrap {
+      margin-left: $margin-base;
+      .tooltip {
+        margin: 0;
+      }
+    }
+    .kh-modal-actions {
+      justify-content: flex-end;
+    }
+  }
+  &.deletion-modal {
+    .kh-modal-body {
+      padding: $margin-base-2 $margin-base-3 $margin-base-3 $margin-base-3;
+      h4 {
+        font-weight: normal;
+      }
+      h4 span {
+        font-weight: bold;
+      }
+    }
+    input {
+      margin-top: $margin-base-2;
+    }
+    .kh-modal-actions {
+      margin-top: $margin-base-3;
+    }
+  }
+  &.deployment-notes {
+    .kh-modal-body {
+      padding: $margin-base-3 $margin-base-3;
+      .full-width-field {
+        background: #f5f9ff;
+        border-radius: 4px;
+        padding: $margin-base-2;
+        h5 {
+          color: #a2b0bc;
+          font-size: $margin-base + 2;
+          font-weight: normal;
+          line-height: $margin-base + 6;
+        }
+      }
+    }
+    .kh-modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        width: 200px;
+        height: $margin-base-4;
+        background: linear-gradient(-180deg, #3a5662 0%, #354f59 100%);
+        box-shadow: inset 0 -1px 1px 0 rgba(0, 0, 0, 0),
+          0 2px 2px 0 rgba(56, 83, 94, 0);
+        border-radius: 4px 4px 4px 4px;
+      }
+    }
+  }
+  &.revoke-access {
+    .full-width-field {
+      height: 110px;
+    }
+  }
+  box-shadow: 0 2px 4px 0 rgba($kinto-grayscale-7, 0.2),
+    0 $margin-base $margin-base-4 0 rgba($kinto-grayscale-7, 0.2);
+  &.environment .kh-modal-body {
+    padding-top: $margin-base-2;
+  }
+  form {
+    margin-bottom: 0;
+  }
+}
+
+.kh-overlay {
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: $kinto-grey-transparent;
+}
+
+.kh-modal-title,
+.kh-modal-title h4 {
+  background: $kinto-tinted-grayscale-8;
+  line-height: $default-line-height;
+  font-size: $margin-base + 6;
+  color: $kinto-white;
+  padding: $margin-base + 8 $margin-base-3;
+  font-weight: bold;
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.kh-modal-body {
+  padding: $margin-base $margin-base-3 $margin-base-3 $margin-base-3;
+  min-height: 120px;
+  .full-width-field {
+    margin-bottom: $margin-base;
+  }
+  .add-new-environment {
+    margin-top: $margin-base-4;
+    .kh-modal-actions {
+      margin-top: $margin-base-4;
+    }
+  }
+}
+
+.kh-modal-actions {
+  display: flex;
+  margin-top: $margin-base-2;
+  button.button {
+    margin: 0 $margin-base;
+    height: $margin-base-4;
+    line-height: $margin-base-4;
+    font-size: $margin-base + 4;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.link-repo-modal {
+  width: 480px;
+  .kh-modal-body {
+    padding: 0 $margin-base-2 0 $margin-base-2;
+  }
+  .kh-modal-footer {
+    background-color: #f6f8fc;
+    padding: $margin-base-3;
+    button.button {
+      margin: 0 $margin-base;
+      height: $margin-base-4;
+      line-height: $margin-base-4;
+      font-size: $margin-base + 4;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.tag-and-deploy-modal {
+  .tutorial-notification {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: $margin-base-4;
+    background-color: $kinto-purple;
+    padding: 8px $margin-base-3;
+    .link-styled-button {
+      margin-right: 0;
+      width: $margin-base * 6;
+    }
+    h4 {
+      color: $kinto-white;
+    }
+  }
+  .kh-modal-actions {
+    display: flex;
+  }
+}
+
+.verify-email-popup {
+  h4 {
+    font-weight: normal;
+  }
+  .links-to-mail {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: $margin-base-2;
+    margin-top: $margin-base-2;
+    a {
+      height: $margin-base * 6;
+      width: 200px;
+      display: inline-block;
+      span {
+        display: inline-block;
+        &.google {
+          @include backgroundImage(
+            '/images/email-gmail.svg',
+            200px,
+            $margin-base * 6
+          );
+        }
+        &.icloud {
+          @include backgroundImage(
+            '/images/email-icloud.svg',
+            200px,
+            $margin-base * 6
+          );
+        }
+        &.yahoo {
+          @include backgroundImage(
+            '/images/email-yahoo.svg',
+            200px,
+            $margin-base * 6
+          );
+        }
+        &.outlook {
+          @include backgroundImage(
+            '/images/email-outlook.svg',
+            200px,
+            $margin-base * 6
+          );
+        }
+      }
+    }
+  }
+  .kh-modal-actions {
+    padding-top: $margin-base-2;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      max-width: 200px;
+    }
+  }
+  .kh-modal-body {
+    padding: $margin-base-3;
+  }
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

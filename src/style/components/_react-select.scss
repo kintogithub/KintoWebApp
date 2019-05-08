@@ -1,0 +1,346 @@
+.react-select {
+  width: 100%;
+  position: relative;
+  .tutorial {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: -110px;
+    top: -51px;
+    .tutorial-step {
+      position: absolute;
+      color: $kinto-white;
+      font-weight: bold;
+      font-size: $margin-base + 6;
+    }
+    img {
+      height: 100%;
+      margin-bottom: 0;
+    }
+  }
+  .react-select__value-container {
+    height: $margin-base-4;
+    display: block;
+  }
+  .react-select__control {
+    background: $kinto-white;
+    height: $margin-base-4;
+    border: 2px solid $input;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid $input;
+    }
+  }
+  &.error {
+    .react-select__control {
+      border: 2px solid $input-error;
+      margin-bottom: 15px;
+    }
+  }
+  .react-select__control--is-focused {
+    border-color: $input-focus;
+    box-shadow: none;
+    &:hover {
+      border-color: $input-focus;
+    }
+  }
+  .react-select__single-value,
+  .react-select__option {
+    color: $kinto-tinted-grayscale-7;
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: $margin-base;
+  }
+
+  .react-select__placeholder {
+    color: $input-placeholder;
+    padding-left: $margin-base;
+    font-size: $margin-base + 4;
+    .select-icons {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin: 0 $margin-base 0 0;
+      }
+    }
+  }
+
+  .react-select__control--is-disabled {
+    background: #f5f9ff;
+    border-radius: 4px 4px 4px 4px;
+    border: none;
+  }
+
+  .react-select__option--is-disabled {
+    color: rgba($kinto-tinted-grayscale-8, 0.4);
+    font-size: $margin-base + 6;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0;
+    cursor: default;
+    position: relative;
+    .coming-soon-select {
+      position: absolute;
+      right: $margin-base-4;
+    }
+  }
+
+  .react-select__option--is-selected {
+    background-color: rgba($kinto-blue, 0.8);
+    color: $kinto-white;
+    &.react-select__option--is-focused {
+      background-color: rgba($kinto-blue, 0.8);
+    }
+  }
+
+  .react-select__option--is-focused,
+  .react-select__option:active {
+    background-color: rgba($kinto-blue, 0.2);
+  }
+
+  .react-select__menu {
+    margin-top: $margin-base;
+    z-index: 10;
+  }
+}
+
+.react-select__input input {
+  height: initial;
+  margin-bottom: 0;
+}
+
+// Kintoblock select related
+
+.dependency-arrow-search {
+  @extend .input-search-inactive;
+  margin-right: 5px;
+}
+
+.react-select__control--is-focused .dependency-arrow-search {
+  @extend .input-search;
+}
+
+.block-select {
+  width: 50%;
+  .react-select__option {
+    padding-left: $margin-base-2;
+  }
+  .react-select__menu {
+    width: 980px;
+  }
+  .react-select__group {
+    border-bottom: 2px solid $kinto-tinted-grayscale-2;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .dependency-arrow-search {
+    @extend .add;
+  }
+  .react-select__control--is-focused .dependency-arrow-search {
+    @extend .input-search;
+  }
+  .main-icon {
+    margin-top: 4px;
+  }
+}
+
+.block-group-heading {
+  display: flex;
+  padding-left: 8px;
+  margin: 5px 0 15px 0;
+  img {
+    display: block;
+    width: $margin-base-4;
+  }
+  h4 {
+    margin-left: $margin-base-2;
+    padding-top: $margin-base;
+  }
+}
+.select-block-option {
+  display: flex;
+}
+
+.select-block-info {
+  width: calc(100% - 60px);
+  margin-left: $margin-base-2;
+  .name {
+    color: $kinto-tinted-grayscale-7;
+    font-size: $margin-base + 4;
+    margin-bottom: 0;
+  }
+  .description {
+    color: $kinto-tinted-grayscale-7;
+    font-size: $margin-base + 2;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+// RepositoryFields
+
+.repository-fields {
+  .react-select__single-value {
+    font-size: $margin-base + 4;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    &.BITBUCKET {
+      &:before {
+        content: '';
+        @include backgroundImage(
+          '/images/repo-source-bitbucket.svg',
+          $margin-base-2,
+          $margin-base-2
+        );
+        display: inline-block;
+        top: 0;
+        left: 0;
+        margin-right: $margin-base;
+      }
+    }
+    &.GITHUB {
+      &:before {
+        content: '';
+        @include backgroundImage(
+          '/images/repo-source-github.svg',
+          $margin-base-2,
+          $margin-base-2
+        );
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: $margin-base;
+      }
+    }
+    &.GITLAB {
+      &:before {
+        content: '';
+        @include backgroundImage(
+          '/images/repo-source-gitlab.svg',
+          $margin-base-2,
+          $margin-base-2
+        );
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: $margin-base;
+      }
+    }
+  }
+
+  .react-select__input,
+  .react-select-2-input {
+    display: none;
+    height: 0;
+  }
+  .react-select__option--is-disabled {
+    .icon-and-label {
+      opacity: 0.4;
+    }
+  }
+
+  .react-select__menu {
+    .react-select__menu-list {
+      @extend .box-shadow-standard;
+      .react-select__group {
+        &:first-child {
+          border-bottom: solid 2px rgba(6, 39, 46, 0.04);
+        }
+        .react-select__group-heading {
+          display: none;
+        }
+      }
+    }
+    .select-repo-info {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 0;
+      .icon-and-label {
+        display: flex;
+        .icon {
+          margin: 0 $margin-base 0 0;
+          display: inline-block;
+          height: $margin-base;
+          width: $margin-base;
+          &.BITBUCKET {
+            @include backgroundImage(
+              '/images/repo-source-bitbucket.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+          &.GITHUB {
+            @include backgroundImage(
+              '/images/repo-source-github.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+          &.GITLAB {
+            @include backgroundImage(
+              '/images/repo-source-gitlab.svg',
+              $margin-base-2,
+              $margin-base-2
+            );
+          }
+        }
+        .name {
+          color: $kinto-tinted-grayscale-8;
+          font-size: $margin-base + 4;
+          font-weight: bold;
+          text-align: left;
+          text-transform: capitalize;
+          margin: 0;
+        }
+      }
+      .is-linked {
+        width: 100px;
+        height: $margin-base + 6;
+        color: #a2b0bc;
+        font-size: $margin-base + 2;
+        text-align: right;
+        line-height: $margin-base + 6;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .react-select__placeholder {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .icon {
+      display: inline-block;
+      height: $margin-base-2;
+      width: $margin-base-2;
+      margin-right: $margin-base;
+    }
+    .custom-placeholder {
+      display: inline-block;
+      width: 146px;
+      height: 24px;
+      color: $kinto-tinted-grayscale-8;
+      font-size: $margin-base + 4;
+      font-weight: bold;
+      text-align: left;
+      letter-spacing: 0;
+      line-height: $default-line-height;
+    }
+  }
+}

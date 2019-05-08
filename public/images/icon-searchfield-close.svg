@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-searchfield-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav/narrow/dashboard/search" transform="translate(-265.000000, -15.000000)" fill="#C3D1DD">
+            <g id="textfield/small/unlabeled/empty/regular">
+                <g transform="translate(60.000000, 10.000000)">
+                    <g id="icon-searchfield-close" transform="translate(205.000000, 5.000000)">
+                        <path d="M13.5857864,15 L7.92893219,20.6568542 L7.92893219,20.6568542 C7.5384079,21.0473785 7.5384079,21.6805435 7.92893219,22.0710678 L7.92893219,22.0710678 L7.92893219,22.0710678 C8.31945648,22.4615921 8.95262146,22.4615921 9.34314575,22.0710678 L15,16.4142136 L20.6568542,22.0710678 C21.0473785,22.4615921 21.6805435,22.4615921 22.0710678,22.0710678 C22.4615921,21.6805435 22.4615921,21.0473785 22.0710678,20.6568542 L16.4142136,15 L22.0710678,9.34314575 C22.4615921,8.95262146 22.4615921,8.31945648 22.0710678,7.92893219 C21.6805435,7.5384079 21.0473785,7.5384079 20.6568542,7.92893219 L15,13.5857864 L9.34314575,7.92893219 L9.34314575,7.92893219 C8.95262146,7.5384079 8.31945648,7.5384079 7.92893219,7.92893219 L7.92893219,7.92893219 L7.92893219,7.92893219 C7.5384079,8.31945648 7.5384079,8.95262146 7.92893219,9.34314575 L13.5857864,15 Z" id="menu-button"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

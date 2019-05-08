@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1060px" height="120px" viewBox="0 0 1060 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>account-kinto-stripe</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1x---dashboard---account---overview---simplified" transform="translate(-350.000000, -360.000000)">
+            <g id="content">
+                <g id="content-box" transform="translate(350.000000, 180.000000)">
+                    <g id="Group-2">
+                        <g id="account-kinto-stripe" transform="translate(0.000000, 180.000000)">
+                            <polygon id="Mask" fill="#53D9EB" points="0 40 1060 40 1060 120 0 120"></polygon>
+                            <polygon id="Rectangle-2-Copy-2" fill="#3CD0B4" points="900 40 1060 40 1060 120 880 120"></polygon>
+                            <polygon id="Rectangle-2-Copy" fill="#FFEB2E" points="1060 40 1060 120 1030 120 1050 40"></polygon>
+                            <polygon id="Rectangle-2-Copy-7" fill="#193237" points="0 0 1060 0 1060 40 0 40"></polygon>
+                            <polygon id="Rectangle-2-Copy-6" fill="#112225" points="910 0 1060 0 1060 40 900 40"></polygon>
+                            <polygon id="Rectangle-2-Copy-8" fill="#665709" points="1060 0 1060 40 1050 40"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

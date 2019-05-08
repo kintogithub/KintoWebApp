@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pricing-tier-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#40D9FF" offset="0%"></stop>
+            <stop stop-color="#A696FF" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="30" cy="30" r="30"></circle>
+        <circle id="path-3" cx="30" cy="36" r="20"></circle>
+        <circle id="path-4" cx="14" cy="14" r="14"></circle>
+        <filter x="-17.9%" y="-17.9%" width="135.7%" height="135.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="10" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.960784314   0 0 0 0 0.976470588   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-6" cx="14" cy="24" rx="5" ry="3"></ellipse>
+        <filter x="-20.0%" y="-33.3%" width="140.0%" height="166.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="4" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.858823529   0 0 0 0 0.910080989   0 0 0 0 0.984313725  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-8" cx="30" cy="36" r="20"></circle>
+    </defs>
+    <g id="Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---dashboard---account---billing---1-workspace---free-tooltips-copy-2" transform="translate(-390.000000, -320.000000)">
+            <g id="content">
+                <g id="Group-Copy" transform="translate(350.000000, 240.000000)">
+                    <g id="icon/pricing/tier-4" transform="translate(40.000000, 80.000000)">
+                        <g id="Oval-6-Copy" opacity="0.600000024" fill-rule="nonzero">
+                            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                            <use fill-opacity="0.603833" fill="#000000" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="Oval-6" fill-rule="nonzero">
+                            <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                            <use fill-opacity="0.603833" fill="#000000" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Group" stroke-width="1" fill-rule="evenodd" transform="translate(16.000000, 10.000000)">
+                            <g id="Oval-6-Copy-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            </g>
+                            <g id="Oval" fill-rule="nonzero">
+                                <use fill="#EDF3FD" xlink:href="#path-6"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            </g>
+                            <ellipse id="Oval" fill="#B9D5EC" fill-rule="nonzero" cx="14" cy="24" rx="2" ry="1"></ellipse>
+                            <path d="M1,15 C5,13 9.33333333,12 14,12 C18.6666667,12 23,13 27,15" id="Path-6" stroke="#EDF3FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+                        </g>
+                        <mask id="mask-9" fill="white">
+                            <use xlink:href="#path-8"></use>
+                        </mask>
+                        <g id="Oval-6" fill-rule="nonzero"></g>
+                        <path d="M30,34 L30,34 C32.2509204,34 34.116347,35.7452057 34.266076,37.9911406 L35.6008859,58.0132891 C35.8071049,61.1065729 33.4666763,63.7813485 30.3733924,63.9875674 C30.2491007,63.9958535 30.1245676,64 30,64 L30,64 C26.8998498,64 24.3866814,61.4868317 24.3866814,58.3866814 C24.3866814,58.2621138 24.3908279,58.1375808 24.3991141,58.0132891 L25.733924,37.9911406 C25.883653,35.7452057 27.7490796,34 30,34 Z" id="Rectangle" fill="#00F282" fill-rule="nonzero" opacity="0.104678199" mask="url(#mask-9)"></path>
+                        <path d="M30,34 L30,34 C31.115932,34 32.0315537,34.8835048 32.0713831,35.9987257 L32.926022,59.9286169 C32.9654458,61.0324827 32.1025451,61.9593019 30.9986794,61.9987257 C30.9748945,61.9995752 30.9510964,62 30.9272963,62 L29.0727037,62 C27.9681342,62 27.0727037,61.1045695 27.0727037,60 C27.0727037,59.9762 27.0731285,59.9524018 27.073978,59.9286169 L27.9286169,35.9987257 C27.9684463,34.8835048 28.884068,34 30,34 Z" id="Rectangle" fill="#00F282" fill-rule="nonzero" opacity="0.200241815" mask="url(#mask-9)"></path>
+                        <path d="M30,34 L30,34 C30.5522847,34 31,34.4477153 31,35 L31,60 C31,60.5522847 30.5522847,61 30,61 L30,61 C29.4477153,61 29,60.5522847 29,60 L29,35 C29,34.4477153 29.4477153,34 30,34 Z" id="Rectangle" fill="#00F282" fill-rule="nonzero" mask="url(#mask-9)"></path>
+                        <circle id="Oval" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" mask="url(#mask-9)" cx="33.5" cy="52.5" r="1"></circle>
+                        <circle id="Oval-Copy" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" opacity="0.400000006" mask="url(#mask-9)" cx="24.5" cy="44.5" r="1"></circle>
+                        <circle id="Oval-Copy-2" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" mask="url(#mask-9)" cx="27.5" cy="48.5" r="1"></circle>
+                        <circle id="Oval-Copy-3" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" opacity="0.400000006" mask="url(#mask-9)" cx="34.5" cy="46.5" r="1"></circle>
+                        <circle id="Oval-Copy-4" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" opacity="0.400000006" mask="url(#mask-9)" cx="21.5" cy="50.5" r="1"></circle>
+                        <circle id="Oval-Copy-5" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" opacity="0.400000006" mask="url(#mask-9)" cx="37.5" cy="49.5" r="1"></circle>
+                        <circle id="Oval-Copy-6" stroke-opacity="0.200350996" stroke="#FFF817" stroke-width="1" fill="#FFFC8A" fill-rule="nonzero" mask="url(#mask-9)" cx="26.5" cy="53.5" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

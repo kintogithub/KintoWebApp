@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>repo-source-bitbucket</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="108.63338%" y1="13.818022%" x2="46.9265964%" y2="78.7761408%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="KintoBlocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---dashboard---kintoblocks---create-new-kintoblock---website" transform="translate(-900.000000, -1020.000000)">
+            <g id="content" transform="translate(320.000000, 0.000000)">
+                <g id="basic-info" transform="translate(30.000000, 580.000000)">
+                    <g id="dropdown-menu-options-copy" transform="translate(540.000000, 350.000000)">
+                        <g id="repo-source-bitbucket" transform="translate(10.000000, 90.000000)">
+                            <polygon id="Shape" points="8.03125 12.8452632 12.109375 12.8452632 13.09375 7.03789474 6.946875 7.03789474"></polygon>
+                            <path d="M0.9375,1.08210526 C0.752863919,1.07969884 0.576624721,1.15991975 0.456058481,1.30124877 C0.335492241,1.44257778 0.282940414,1.63054812 0.3125,1.81473684 L2.965625,18.0905263 C3.03385941,18.5016512 3.38436451,18.803915 3.796875,18.8073684 L16.525,18.8073684 C16.8346205,18.8113954 17.1004823,18.5857207 17.15,18.2768421 L19.803125,1.81789474 C19.8326846,1.63370602 19.7801328,1.44573568 19.6595665,1.30440666 C19.5390003,1.16307765 19.3627611,1.08285674 19.178125,1.08526316 L0.9375,1.08210526 Z M12.109375,12.8452632 L8.046875,12.8452632 L6.946875,7.03789474 L13.09375,7.03789474 L12.109375,12.8452632 Z" id="Shape" fill="#2684FF" fill-rule="nonzero"></path>
+                            <path d="M18.959375,7.03789474 L13.09375,7.03789474 L12.109375,12.8452632 L8.046875,12.8452632 L3.25,18.5989474 C3.40203974,18.7318008 3.59588363,18.8056772 3.796875,18.8073684 L16.528125,18.8073684 C16.8377455,18.8113954 17.1036073,18.5857207 17.153125,18.2768421 L18.959375,7.03789474 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

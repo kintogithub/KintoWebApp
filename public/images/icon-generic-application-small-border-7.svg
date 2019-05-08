@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-generic-application-small-border-7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7EA6FF" offset="0%"></stop>
+            <stop stop-color="#5364E8" offset="100%"></stop>
+        </linearGradient>
+        <path d="M34.421875,7 C39.625,7 43,10.375 43,15.578125 L43,34.421875 C43,39.625 39.625,43 34.421875,43 L15.578125,43 C10.375,43 7,39.625 7,34.421875 L7,15.578125 C7,10.375 10.375,7 15.578125,7 L34.421875,7 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="small-application-copy-6">
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            <path stroke="#F6F8FC" stroke-width="4" d="M34.421875,5 C40.7295695,5 45,9.2704305 45,15.578125 L45,34.421875 C45,40.7295695 40.7295695,45 34.421875,45 L15.578125,45 C9.2704305,45 5,40.7295695 5,34.421875 L5,15.578125 C5,9.2704305 9.2704305,5 15.578125,5 L34.421875,5 Z"></path>
+        </g>
+    </g>
+</svg>

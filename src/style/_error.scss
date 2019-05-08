@@ -1,0 +1,65 @@
+.error-page {
+  position: absolute;
+  background: $kinto-tinted-grayscale-1;
+  height: 100%;
+  width: 100%;
+  .navigation-logo {
+    @include backgroundImage(
+      '/images/logo-full-color-horizontal.svg',
+      200px,
+      $margin-base-3
+    );
+    margin: $margin-base * 5 auto 160px auto;
+    display: block;
+  }
+  .error-container {
+    margin: 0 auto;
+    width: 460px;
+  }
+  .error-section {
+    background: $kinto-white;
+    border-radius: $margin-base + 2;
+    @extend .box-shadow-standard;
+    padding: $margin-base * 6;
+  }
+  h2 {
+    color: $kinto-tinted-grayscale-9;
+    margin-top: $margin-base-4;
+  }
+  .note,
+  .note a {
+    font-size: $margin-base + 2;
+    color: $kinto-grayscale-6;
+  }
+  .note a {
+    font-weight: bold;
+  }
+}
+
+.workspace-error {
+  .background-image {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
+  .error-message-window {
+    background-color: $kinto-white;
+    border-radius: $margin-base + 2;
+    padding: $margin-base * 6;
+    width: 460px;
+    margin: 0 auto;
+    @extend .box-shadow-standard;
+    margin-top: 160px;
+    h2 {
+      text-align: left;
+    }
+    .button.secondary.margin {
+      margin-bottom: $margin-base-2;
+    }
+    .warning {
+      height: $margin-base * 8;
+      width: $margin-base * 8;
+      @include backgroundImage('/images/icon-mustard-alert-large.svg');
+    }
+  }
+}

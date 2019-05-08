@@ -1,0 +1,284 @@
+.ka-config-dependencies {
+  @extend .box-shadow-standard;
+  background: $kinto-white;
+  border-radius: $margin-base + 2 $margin-base + 2 0 0;
+  height: calc(100vh - 140px);
+  margin-top: $margin-base-3;
+  overflow: hidden;
+  position: relative;
+
+  .left-side {
+    width: 33%;
+    border-right: 1px solid $kinto-tinted-grayscale-2;
+    .search.white {
+      background: #f5f9ff;
+    }
+  }
+  .right-side {
+    width: 67%;
+    background-color: #f5f9ff;
+    .search.white {
+      background: #edf3fd;
+    }
+  }
+  form {
+    margin-bottom: 0;
+  }
+}
+
+.ka-config-header {
+  border-bottom: 1px solid $kinto-tinted-grayscale-2;
+  display: flex;
+}
+
+.ka-config-body {
+  display: flex;
+  height: calc(100vh - 205px);
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    flex-grow: 1;
+    margin: 0 $margin-base-3;
+    text-align: center;
+    a {
+      color: $kinto-grayscale-7;
+      display: block;
+      opacity: 0.4;
+      padding: $margin-base-2 0;
+      width: 100%;
+      &:hover,
+      &.active {
+        border-bottom: 4px solid $kinto-blue;
+        opacity: 1;
+        padding-bottom: $margin-base + 6;
+      }
+    }
+  }
+}
+
+.ka-config-scroll-container {
+  height: calc(100vh - 265px);
+  overflow: hidden;
+  position: relative;
+}
+
+.ka-config-blocks-list {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  > ul {
+    margin: 0 $margin-base-3;
+  }
+
+  .item {
+    color: $kinto-tinted-grayscale-7;
+    display: flex;
+    opacity: 0.4;
+    margin-bottom: $margin-base-2;
+    &:hover,
+    &.active {
+      color: $kinto-tinted-grayscale-7;
+      opacity: 1;
+    }
+  }
+
+  .version {
+    font-size: $margin-base + 2;
+  }
+
+  .parent {
+    margin-top: $margin-base-2;
+    border-bottom: 2px solid $kinto-tinted-grayscale-2;
+
+    > .item {
+      padding-left: $margin-base-2;
+    }
+
+    ul .item {
+      padding-left: $margin-base-3;
+      .text {
+        margin-left: $margin-base;
+      }
+    }
+  }
+
+  .main-icon {
+    align-items: center;
+    display: flex;
+    height: 58px;
+    justify-content: center;
+    margin-right: $margin-base-2;
+    position: relative;
+    width: 58px;
+    &.smaller {
+      height: $margin-base-4;
+      width: $margin-base-4;
+      img {
+        height: $margin-base-4;
+        position: absolute;
+        width: $margin-base-4;
+      }
+      .smaller-letter {
+        color: $kinto-white;
+        font-weight: bold;
+        font-size: $margin-base-2;
+        letter-spacing: 0;
+        line-height: $default-line-height;
+        position: absolute;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    img {
+      width: 58px;
+      height: 58px;
+      position: absolute;
+    }
+    .large-letter {
+      color: $kinto-white;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  ul ul .main-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .name {
+    color: $kinto-grayscale-7;
+    font-size: $margin-base + 6;
+    font-weight: bold;
+  }
+}
+
+.ka-config-hardware {
+  height: calc(100vh - 265px);
+  overflow: hidden;
+  position: relative;
+}
+
+.ka-config-params {
+  height: calc(100vh - 325px);
+  overflow: hidden;
+  position: relative;
+  .form-body {
+    border-radius: 4px;
+  }
+}
+
+.ka-config-item {
+  background-color: $kinto-white;
+  border: 1px solid #dbe8fb;
+  border-radius: 4px;
+  margin: $margin-base-4 $margin-base-3 0 $margin-base-3;
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: $margin-base-3 $margin-base-3 $margin-base-2;
+    .left {
+      align-items: center;
+      display: grid;
+      grid-template-columns: $margin-base * 5 auto;
+      grid-column-gap: 15px;
+      justify-content: flex-start;
+    }
+    img {
+      width: $margin-base * 5;
+    }
+    button.secondary {
+      width: 195px;
+    }
+  }
+  .bottom {
+    padding: $margin-base-3;
+    .form-body {
+      padding: 0;
+    }
+  }
+
+  .line {
+    border-bottom: solid 1px #dbe8fb;
+    width: 100%;
+  }
+  .form-body {
+    background: $kinto-white;
+    padding: $margin-base + 6 $margin-base-3 26px $margin-base-3;
+  }
+  h3 {
+    color: $kinto-grayscale-8;
+    font-size: $margin-base-2;
+    font-weight: bold;
+  }
+}
+
+.ka-config-hardware-item {
+  .line {
+    border-bottom: solid 1px $kinto-tinted-grayscale-2;
+    margin: $margin-base + 8 0;
+    width: 100%;
+  }
+  .rc-slider {
+    padding-bottom: 45px;
+  }
+}
+
+.ka-config-params-item {
+  .form-body {
+    padding: 36px $margin-base-3 $margin-base-4 $margin-base-3;
+  }
+
+  .msg-empty {
+    color: $kinto-tinted-grayscale-6;
+    text-align: center;
+  }
+  .param-row {
+    display: flex;
+    &.hide {
+      display: none;
+    }
+    .field-wrapper {
+      display: flex;
+      width: 100%;
+      label {
+        color: $kinto-tinted-grayscale-7;
+        width: 100%;
+        text-transform: none;
+      }
+      > div {
+        width: 50%;
+      }
+    }
+
+    .input-text-overlay-wrapper input {
+      padding-right: $margin-base * 8;
+    }
+
+    .label-characters {
+      align-items: center;
+      background: $kinto-grayscale-1;
+      box-shadow: inset 0 2px 2px 0 rgba($kinto-grayscale-9, 0.1);
+      border-radius: 4px 4px 4px 4px;
+      display: flex;
+      height: $margin-base-4;
+      margin-right: $margin-base-2;
+      padding-left: $margin-base-2;
+      width: 300px;
+    }
+  }
+}

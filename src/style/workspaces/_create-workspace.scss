@@ -1,0 +1,303 @@
+.create-workspace {
+  .what-is-a-workspace {
+    @extend .what-is-a-kintoblock;
+  }
+}
+
+.edit-workspace {
+  padding-bottom: $margin-base-4;
+  .organization-list {
+    list-style: none;
+    padding-left: 0;
+    li {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: $margin-base-2;
+      margin-bottom: $margin-base-2;
+    }
+    .text {
+      overflow: hidden;
+      font-size: $margin-base + 4;
+      color: $kinto-tinted-grayscale-7;
+      background: $kinto-tinted-grayscale-1;
+      line-height: $margin-base-4;
+      padding: 0 15px;
+    }
+    img {
+      display: block;
+      float: left;
+      width: $margin-base-4;
+      height: $margin-base-4;
+      border-radius: $margin-base-2;
+      margin-right: $margin-base-2;
+    }
+    .icon {
+      margin-top: $margin-base;
+      float: right;
+    }
+  }
+  .text-norepo {
+    overflow: hidden;
+    font-size: $margin-base + 4;
+    color: $kinto-tinted-grayscale-6;
+    background: $kinto-tinted-grayscale-1;
+    line-height: $margin-base-4;
+    padding: 0 15px;
+    text-align: center;
+  }
+}
+
+.workspace-form {
+  @extend .kintoapp-form-container;
+  .add {
+    @include backgroundImage(
+      '/images/icon-blue-new.svg',
+      $margin-base-2,
+      $margin-base-2
+    );
+    margin-left: $margin-base;
+  }
+  .remove {
+    @include backgroundImage(
+      '/images/icon-red-delete.svg',
+      $margin-base-2,
+      $margin-base-2
+    );
+    margin-left: $margin-base;
+    &.void {
+      @include backgroundImage(
+        '/images/icon-red-delete.svg',
+        $margin-base-2,
+        $margin-base-2
+      );
+      margin-left: $margin-base;
+      opacity: 0.4;
+    }
+  }
+  .disabled {
+    width: 100%;
+  }
+  .avatar {
+    height: $margin-base-4;
+    width: $margin-base-4;
+    background-color: $kinto-tinted-grayscale-2;
+    &.image-1 {
+      @include backgroundImage(
+        '/images/team-raven-yu.png',
+        $margin-base-4,
+        $margin-base-4
+      );
+    }
+    &.image-2 {
+      @include backgroundImage(
+        '/images/team-nadeem-khedr.png',
+        $margin-base-4,
+        $margin-base-4
+      );
+    }
+    &.image-3 {
+      @include backgroundImage(
+        '/images/team-joseph-cooper.png',
+        $margin-base-4,
+        $margin-base-4
+      );
+    }
+    &.image-4 {
+      @include backgroundImage(
+        '/images/team-guillaume-dury.png',
+        $margin-base-4,
+        $margin-base-4
+      );
+    }
+    &.image-5 {
+      @include backgroundImage(
+        '/images/team-laura-ambrose.png',
+        $margin-base-4,
+        $margin-base-4
+      );
+    }
+    &.image-6 {
+      @include backgroundImage(
+        '/images/team-francois-courtin.png',
+        $margin-base-4,
+        $margin-base-4
+      );
+    }
+    border-radius: $margin-base-2;
+    position: relative;
+
+    .admin-star {
+      background-color: $kinto-yellow;
+      border-radius: $margin-base;
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      @include backgroundImage(
+        '/images/icon-status-admin.svg',
+        $margin-base-2,
+        $margin-base-2
+      );
+    }
+    .owner {
+      background-color: $kinto-yellow;
+      border-radius: $margin-base;
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      @include backgroundImage(
+        '/images/icon-status-owner.svg',
+        $margin-base-2,
+        $margin-base-2
+      );
+    }
+  }
+  .members-added {
+    display: inline-grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: $margin-base * 5 1fr 1fr $margin-base-4;
+    grid-column-gap: $margin-base;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    .field-wrapper {
+      &:first-child {
+        margin-right: $margin-base-2;
+      }
+      input,
+      select {
+        margin-bottom: 0;
+      }
+      .label-characters {
+        display: none;
+      }
+    }
+    .email-and-invite-status {
+      position: relative;
+      .invite-state {
+        position: absolute;
+        top: $margin-base;
+        right: $margin-base;
+        height: $margin-base-2;
+        border-radius: 4px;
+        background-color: $kinto-grayscale-6;
+        border: none;
+        height: $margin-base-2;
+        color: $kinto-white;
+        font-size: $margin-base + 2;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: $margin-base-2;
+        max-width: $margin-base * 8;
+        padding: 0 8px;
+        &.btn {
+          cursor: pointer;
+          width: ($margin-base * 7);
+          .pending {
+            display: block;
+          }
+          .resend {
+            display: none;
+          }
+          &:hover {
+            background: $kinto-blue;
+            width: $margin-base * 6;
+            .resend {
+              display: block;
+              width: $margin-base * 6;
+            }
+            .pending {
+              display: none;
+            }
+          }
+        }
+        .resend,
+        .pending {
+          transition: width 0.2s ease-in-out;
+          position: absolute;
+          top: 0;
+          width: ($margin-base * 7);
+          left: 0;
+        }
+      }
+    }
+  }
+  .auto-share-switch {
+    margin-top: 25px;
+    .switch {
+    }
+    .toggle-message {
+      color: $kinto-tinted-grayscale-7;
+      font-size: $margin-base + 4;
+      text-transform: none;
+    }
+  }
+}
+
+.form-body.members-list {
+  padding: 0 0 $margin-base-4 0;
+  background-color: transparent;
+  .top {
+    background-color: $kinto-white;
+    border-radius: 8px 8px 0 0;
+    padding: $margin-base * 6 $margin-base-4 $margin-base-2;
+    input {
+      margin-bottom: 0;
+      padding-right: $margin-base * 6;
+    }
+  }
+  .bottom {
+    padding: $margin-base * 5 $margin-base-4 $margin-base $margin-base-4;
+    display: inline-grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: $margin-base * 5 1fr 1fr $margin-base-4;
+    grid-column-gap: $margin-base;
+    background-color: $kinto-tinted-grayscale-1;
+    width: 100%;
+    border-radius: 8px;
+    input {
+      width: 100% !important;
+    }
+    input,
+    select {
+      margin-bottom: 0;
+    }
+    .field-wrapper {
+      &:first-child {
+        margin-right: $margin-base-2;
+      }
+      input,
+      select {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .error-email {
+    grid-column: 2/3;
+  }
+}
+
+.avatar-placeholder {
+  height: $margin-base-4;
+  width: $margin-base-4;
+  background-color: $kinto-tinted-grayscale-2;
+  border-radius: $margin-base-2;
+}
+
+.github-form {
+  margin-bottom: $margin-base-4;
+  h5 {
+    font-weight: normal;
+  }
+}
+
+.repos-connect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  .button.button-sucess {
+    width: 100%;
+  }
+}

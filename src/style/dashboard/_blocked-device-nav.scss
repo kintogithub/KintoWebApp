@@ -1,0 +1,40 @@
+.view-on-mobile {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(159, 221, 242, 1) 10%,
+    rgba($kinto-white, 0) 30%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .mobile-navigation-logo {
+    @include backgroundImage(
+      '../images/logo-full-color-horizontal.svg',
+      200px,
+      $margin-base-3
+    );
+    width: 200px;
+    height: $margin-base-3;
+  }
+  .message {
+    width: 90%;
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+      0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: $margin-base-3;
+    border-radius: $margin-base + 2;
+    background-color: $kinto-white;
+    h2 {
+      margin: $margin-base-3 0;
+      text-align: left;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+}

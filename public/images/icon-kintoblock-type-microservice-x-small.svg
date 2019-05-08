@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/kintoblock/microservice/x small</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.48947459,0.274748332 L12.9433195,2.21343557 C13.2586378,2.39042772 13.4538449,2.72385694 13.4538449,3.08545313 L13.4538449,7.38540649 L17.4139452,9.71015119 C17.7198162,9.88971027 17.9076899,10.217854 17.9076899,10.5725348 L17.9076899,14.4145469 C17.9076899,14.7761431 17.7124827,15.1095723 17.3971645,15.2865644 L9.48947459,19.7252517 C9.18546716,19.8958949 8.81453284,19.8958949 8.51052541,19.7252517 L0.602835546,15.2865644 C0.287517315,15.1095723 0.0923101325,14.7761431 0.0923101325,14.4145469 L0.0923101325,5.58545313 C0.0923101325,5.22385694 0.287517315,4.89042772 0.602835546,4.71343557 L8.51052541,0.274748332 C8.81453284,0.104105082 9.18546716,0.104105082 9.48947459,0.274748332 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/kintoblock/microservice/x-small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration/kintoblock/microservice" transform="translate(1.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Polygon" fill="#D6D1F8" xlink:href="#path-1"></use>
+            <polygon id="Polygon-Copy-4" fill="#B4AAF1" mask="url(#mask-2)" points="13.4538449 2.5 13.4538449 7.375 9 9.75 4.54615507 7.375"></polygon>
+            <path d="M4.54691437,12.5 L9,15 L9,20 L0.34945299,15.1443376 C0.190332436,15.0550212 0.0923101325,14.8899577 0.0923101325,14.7113249 L0.0923101325,5 L4.54615507,7.37554932 L4.54691437,12.5 Z" id="Combined-Shape" fill="#9486EC" mask="url(#mask-2)"></path>
+            <polygon id="Polygon-Copy-6" fill="#F5B9EA" mask="url(#mask-2)" points="9 9.75756836 9 15 4.54615507 12.5 4.54615507 7.38208008"></polygon>
+            <path d="M13.4538449,12.4997523 L17.9075611,10 L17.9075611,14.7113249 C17.9075611,14.8899577 17.8095388,15.0550212 17.6504182,15.1443376 L13.4538449,17.4999277 L9,20 L9,15 L13.4538449,12.4997523 Z" id="Combined-Shape" fill="#B4AAF1" mask="url(#mask-2)"></path>
+            <polygon id="Polygon-Copy-6" fill="#F8D4F2" mask="url(#mask-2)" transform="translate(11.226922, 11.191040) scale(-1, 1) translate(-11.226922, -11.191040) " points="13.4538449 9.75756836 13.4538449 15 9 12.5 9 7.38208008"></polygon>
+            <polygon id="Polygon-Copy-5" fill="#FDF1FA" mask="url(#mask-2)" points="13.4538449 7.375 9 9.75 4.54615507 7.375 9 4.9375"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-new-blue-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-new-blue-large">
+            <g id="icon/blue/large-new">
+                <circle id="Oval-10" fill="#53D9EB" cx="20" cy="20" r="20"></circle>
+                <path d="M19,19 L11,19 L11,19 C10.4477153,19 10,19.4477153 10,20 C10,20.5522847 10.4477153,21 11,21 L19,21 L19,29 C19,29.5522847 19.4477153,30 20,30 C20.5522847,30 21,29.5522847 21,29 L21,21 L29,21 C29.5522847,21 30,20.5522847 30,20 C30,19.4477153 29.5522847,19 29,19 L21,19 L21,11 C21,10.4477153 20.5522847,10 20,10 C19.4477153,10 19,10.4477153 19,11 L19,11 L19,19 Z" id="Combined-Shape" fill="#083A45"></path>
+            </g>
+        </g>
+    </g>
+</svg>

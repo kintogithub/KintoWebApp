@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-generic-kintoblock-empty-gradient</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#B9D5EC" offset="0%"></stop>
+            <stop stop-color="#98B4CD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M22,1.15470054 L35.3205081,8.84529946 L35.3205081,8.84529946 C36.5581124,9.55983064 37.3205081,10.8803387 37.3205081,12.3094011 L37.3205081,27.6905989 L37.3205081,27.6905989 C37.3205081,29.1196613 36.5581124,30.4401694 35.3205081,31.1547005 L22,38.8452995 L22,38.8452995 C20.7623957,39.5598306 19.2376043,39.5598306 18,38.8452995 L4.67949192,31.1547005 L4.67949192,31.1547005 C3.44188762,30.4401694 2.67949192,29.1196613 2.67949192,27.6905989 L2.67949192,12.3094011 L2.67949192,12.3094011 C2.67949192,10.8803387 3.44188762,9.55983064 4.67949192,8.84529946 L18,1.15470054 L18,1.15470054 C19.2376043,0.440169359 20.7623957,0.440169359 22,1.15470054 Z" id="Mask" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-services-kintoblocks-message-passing-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/services/kintoblocks/message-passing/large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-services-kintoblocks-message-passing-large">
+            <circle id="Oval-4" fill="#F6F8FC" cx="40" cy="40" r="40"></circle>
+            <path d="M50,49.6625977 C53.1425781,53.300293 56.5528971,55.4288737 60.230957,56.0483398 C63.9090169,56.667806 66.3982747,56.5958252 67.6987305,55.8323975 C65.5290527,54.8341064 63.9630534,52.6052246 63.0007324,49.145752 C62.0384115,45.6862793 60.5936279,41.8231201 58.6663818,37.5562744 L50,49.6625977 Z" id="Path-2" fill="#7ACB53"></path>
+            <rect id="Rectangle-8" fill="#7ACB53" x="16" y="24" width="48" height="32" rx="16"></rect>
+            <circle id="Oval-3" fill="#FFFFFF" opacity="0.5" cx="24" cy="40" r="2"></circle>
+            <rect id="Rectangle-7" fill="#FFFFFF" opacity="0.800000012" x="30" y="38" width="6" height="4" rx="2"></rect>
+            <rect id="Rectangle-6" fill="#FFFFFF" x="38" y="38" width="18" height="4" rx="2"></rect>
+            <polyline id="Path-3" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="48 34 55 40 48 46"></polyline>
+        </g>
+    </g>
+</svg>

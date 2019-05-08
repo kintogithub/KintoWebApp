@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-gray-edit-double-glyph</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="20"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-gray-edit-double-glyph">
+            <g id="icon/secondary/large/edit/glyph">
+                <g id="base">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <rect stroke="#EDF3FD" stroke-width="2" x="1" y="1" width="38" height="38" rx="19"></rect>
+                    <rect id="Rectangle-10" fill="#98B4CD" mask="url(#mask-2)" x="-2" y="30" width="16" height="2" rx="1"></rect>
+                </g>
+                <path d="M19,10 L21,10 L21,10 C21.5522847,10 22,10.4477153 22,11 L22,27.527864 L22,27.527864 C22,27.8383542 21.9277098,28.1445804 21.7888544,28.4222912 L20,32 L18.2111456,28.4222912 L18.2111456,28.4222912 C18.0722902,28.1445804 18,27.8383542 18,27.527864 L18,11 L18,11 C18,10.4477153 18.4477153,10 19,10 L19,10 Z M18,13 L18,14 L22,14 L22,13 L18,13 Z" id="pen" fill="#083A45" transform="translate(20.000000, 21.000000) rotate(30.000000) translate(-20.000000, -21.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

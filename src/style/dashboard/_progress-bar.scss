@@ -1,0 +1,42 @@
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: $margin-base-2;
+  background: #f6f8fc;
+  border-radius: 50%;
+  h3,
+  h6 {
+    margin: 0;
+    font-weight: bold;
+  }
+  h6 {
+    font-weight: normal;
+  }
+}
+
+.CircularProgressbar {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  padding: $margin-base;
+}
+
+.running {
+  .CircularProgressbar-path {
+    animation: inProgress 0.4s ease-in-out infinite alternate;
+  }
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: url('#gradientId');
+}
+
+@keyframes inProgress {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

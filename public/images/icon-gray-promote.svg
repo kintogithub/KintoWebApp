@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-gray-promote</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Deployments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="19---dashboard---applications" transform="translate(-100.000000, -740.000000)">
+            <g id="desktop/sidebar/analytics">
+                <g id="promote" transform="translate(90.000000, 730.000000)">
+                    <g id="icon-gray-promote" transform="translate(10.000000, 10.000000)">
+                        <rect id="base-copy-5" stroke="#B9D5EC" stroke-width="2" x="1" y="1" width="18" height="18" rx="9"></rect>
+                        <path d="M12,11.0722176 L12,14 L8,14 L8,11.0722176 L6,11.0722176 L9.17426981,6.42543208 C9.48579446,5.96939389 10.1080271,5.85224252 10.5640653,6.16376717 C10.6668061,6.23395053 10.7555468,6.32269127 10.8257302,6.42543208 L14,11.0722176 L12,11.0722176 Z" id="Combined-Shape-Copy" fill="#98B4CD"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

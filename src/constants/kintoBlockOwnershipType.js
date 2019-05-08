@@ -1,0 +1,2 @@
+export const OWNED_BLOCK = 'OWNEDBLOCK'
+export const NOT_OWNED_BLOCK = 'NOTOWNEDBLOCK'

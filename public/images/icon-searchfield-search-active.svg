@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/textfield/search/active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/textfield/search/active">
+            <g id="icon-search" transform="translate(5.000000, 5.000000)">
+                <circle id="Oval-5" stroke="#1EC4E9" stroke-width="2" cx="8" cy="8" r="7"></circle>
+                <path d="M15.9675144,11.7708153 L15.9675144,11.7708153 C16.5197992,11.7708153 16.9675144,12.2185305 16.9675144,12.7708153 L16.9675144,19.1642136 C16.9675144,19.7164983 16.5197992,20.1642136 15.9675144,20.1642136 L15.9675144,20.1642136 C15.4152297,20.1642136 14.9675144,19.7164983 14.9675144,19.1642136 L14.9675144,12.7708153 C14.9675144,12.2185305 15.4152297,11.7708153 15.9675144,11.7708153 Z" id="Rectangle-2" fill="#1EC4E9" transform="translate(15.967514, 15.967514) rotate(-45.000000) translate(-15.967514, -15.967514) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

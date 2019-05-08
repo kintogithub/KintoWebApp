@@ -1,0 +1,23 @@
+.title-with-lines {
+  margin-bottom: $margin-base*4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include abovetablet {
+    .line {
+      display: block;
+      border: solid 1px $kinto-tinted-grayscale-6;
+      border-radius: 2px;
+      width: 33.3%;
+      height: 0;
+    }
+  }
+  h2{
+    color: $kinto-tinted-grayscale-6;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: capitalize;
+    margin-left: $margin-base*2;
+    margin-right: $margin-base*2;
+  }
+}

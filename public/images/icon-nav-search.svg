@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-nav-search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav/narrow/dashboard/regular" transform="translate(-180.000000, -15.000000)">
+            <g id="icon-nav-search">
+                <g transform="translate(180.000000, 15.000000)">
+                    <circle id="Oval-5" stroke="#0C4B5D" stroke-width="2" cx="13" cy="13" r="7"></circle>
+                    <path d="M20.9675144,16.7708153 L20.9675144,16.7708153 L20.9675144,16.7708153 C21.5197992,16.7708153 21.9675144,17.2185305 21.9675144,17.7708153 L21.9675144,24.1642136 L21.9675144,24.1642136 C21.9675144,24.7164983 21.5197992,25.1642136 20.9675144,25.1642136 L20.9675144,25.1642136 L20.9675144,25.1642136 C20.4152297,25.1642136 19.9675144,24.7164983 19.9675144,24.1642136 L19.9675144,17.7708153 L19.9675144,17.7708153 C19.9675144,17.2185305 20.4152297,16.7708153 20.9675144,16.7708153 Z" id="Rectangle-2" fill="#0C4B5D" transform="translate(20.967514, 20.967514) rotate(-45.000000) translate(-20.967514, -20.967514) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

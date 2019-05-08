@@ -1,0 +1,138 @@
+.my-kintoapps {
+  @extend .my-kintoblocks;
+  .kintoapp-list {
+    @extend .kintoblock-list;
+    .kintoapp {
+      @extend .kintoblock;
+      &.create {
+        .icons {
+          background-color: $kinto-grayscale-1;
+          position: absolute;
+          bottom: 0;
+          height: $margin-base * 8;
+          width: 100%;
+          border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+          .applications {
+            top: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .add-new {
+          .inner {
+            @include backgroundImage(
+              '/images/icon-new-blue-large.svg',
+              $margin-base-4,
+              $margin-base-4
+            );
+            position: absolute;
+            bottom: $margin-base-2;
+            right: $margin-base-2;
+            z-index: 1;
+          }
+          .pulsate {
+            animation: pulsate 1s linear infinite alternate;
+            width: $margin-base * 5;
+            height: $margin-base * 5;
+            border-radius: 25px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+          }
+        }
+        border-top: solid $margin-base $kinto-tinted-grayscale-6;
+        .text {
+          margin-bottom: $margin-base * 6;
+          padding: $margin-base-2;
+          border-right: none;
+          h3 {
+            font-weight: bold;
+          }
+          img {
+            width: $margin-base * 8;
+            height: $margin-base * 8;
+            margin-bottom: $margin-base;
+          }
+        }
+        .icons .applications {
+          .application {
+            margin-left: $margin-base-2;
+            background-image: url('/images/icon-generic-application-small-border.svg');
+            background-size: contain;
+          }
+          .kintoblock-dep {
+            margin-left: 0;
+            background-image: url('/images/icon-generic-kintoblock-small-border.svg');
+            background-size: contain;
+          }
+        }
+        .application,
+        .kintoblock-dep {
+          position: absolute;
+          bottom: 15px;
+          left: $margin-base-2;
+        }
+      }
+      &.purple {
+        border-top: solid $margin-base $kinto-purple-light;
+      }
+      &.lapis {
+        border-top: solid $margin-base $kinto-lapis-light;
+      }
+      &.blue {
+        border-top: solid $margin-base $kinto-blue-light;
+      }
+      &.coral {
+        border-top: solid $margin-base $kinto-coral-light;
+      }
+      &.orange {
+        border-top: solid $margin-base $kinto-orange-light;
+      }
+      &.yellow {
+        border-top: solid $margin-base $kinto-yellow-light;
+      }
+      &.green {
+        border-top: solid $margin-base $kinto-green-light;
+      }
+      &.turquoise {
+        border-top: solid $margin-base $kinto-turquoise-light;
+      }
+      &.gray {
+        border-top: solid $margin-base $kinto-tinted-grayscale-6;
+      }
+      .env-item,
+      h3,
+      &hover .env-item {
+        color: $kinto-grayscale-7;
+      }
+    }
+
+    .draft-icon.simple {
+      position: initial;
+    }
+    .env-item {
+      display: flex;
+      font-size: $margin-base + 2;
+      height: $margin-base + 6;
+      line-height: $margin-base + 6;
+      margin-bottom: $margin-base;
+      text-align: center;
+    }
+    .env-item-ver {
+      width: $margin-base-4;
+      margin-top: 2px;
+      margin-right: $margin-base;
+      font-weight: normal;
+    }
+    .env-item-tag {
+      width: 35px;
+      padding: 2px;
+      text-transform: uppercase;
+      div {
+        background: $kinto-grayscale-1;
+        overflow: hidden;
+      }
+    }
+  }
+}

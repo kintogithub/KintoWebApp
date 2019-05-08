@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-generic-application</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M54.84375,1.22727915e-15 C65.25,1.22727915e-15 72,6.75 72,17.15625 L72,54.84375 C72,65.25 65.25,72 54.84375,72 L17.15625,72 C6.75,72 0,65.25 0,54.84375 L0,17.15625 C0,6.75 6.75,1.22727915e-15 17.15625,1.22727915e-15 L54.84375,1.22727915e-15 Z" id="path-1"></path>
+        <path d="M67.3242187,4.67578125 C70.3125,7.6640625 72,11.953125 72,17.15625 L72,54.84375 C72,65.25 65.25,72 54.84375,72 L17.15625,72 C11.953125,72 7.6640625,70.3125 4.67578125,67.3242188 L67.3242187,4.67578125 L67.3242187,4.67578125 Z" id="path-3"></path>
+        <path d="M67.3242187,67.3242187 C70.3125,64.3359375 72,60.046875 72,54.84375 L72,17.15625 C72,11.953125 70.3125,7.6640625 67.3242187,4.67578125 L36,36 L67.3242187,67.3242187 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-generic-application" transform="translate(4.000000, 4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#DBE8FB" xlink:href="#path-1"></use>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#EDF3FD" xlink:href="#path-3"></use>
+            <mask id="mask-6" fill="white">
+                <use xlink:href="#path-5"></use>
+            </mask>
+            <use id="Combined-Shape-Copy-4" fill="#F5F9FF" xlink:href="#path-5"></use>
+        </g>
+    </g>
+</svg>

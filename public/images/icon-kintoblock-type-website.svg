@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-kintoblock-type-website</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60" cy="60" r="60"></circle>
+        <rect id="path-3" x="20" y="27" width="80" height="66" rx="2"></rect>
+        <filter x="-13.8%" y="-10.6%" width="127.5%" height="133.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.462745098   0 0 0 0 0.57254902  0 0 0 0.143653759 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="80" height="66" rx="2"></rect>
+    </defs>
+    <g id="KintoBlocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2---dashboard---kintoblocks---create-new-kintoblock---choose-type" transform="translate(-820.000000, -300.000000)">
+            <g id="content" transform="translate(320.000000, 0.000000)">
+                <g id="desktop/kintoblock-type" transform="translate(30.000000, 240.000000)">
+                    <g id="Group-2" transform="translate(360.000000, 0.000000)">
+                        <g id="icon-kintoblock-type-website" transform="translate(110.000000, 60.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Oval-Copy" fill="#F5F9FF" xlink:href="#path-1"></use>
+                            <g id="Rectangle" mask="url(#mask-2)" fill="black" fill-opacity="1">
+                                <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="icon/kintoblock/website/large" fill="" mask="url(#mask-2)">
+                                <g transform="translate(20.000000, 20.000000)" fill="none" id="illustration/kintoblock/website">
+                                    <g transform="translate(0.000000, 7.000000)">
+                                        <mask id="mask-6" fill="white">
+                                            <use xlink:href="#path-5"></use>
+                                        </mask>
+                                        <use id="Mask" fill="#EDF3FD" xlink:href="#path-5"></use>
+                                        <rect id="Rectangle-6" fill="#B3E04A" mask="url(#mask-6)" x="4" y="22" width="34" height="26"></rect>
+                                        <rect id="Rectangle-6-Copy-3" fill="#7ACB53" opacity="0.197154018" mask="url(#mask-6)" x="4" y="52" width="54" height="2"></rect>
+                                        <rect id="Rectangle-6-Copy-4" fill="#7ACB53" opacity="0.197154018" mask="url(#mask-6)" x="4" y="56" width="54" height="2"></rect>
+                                        <rect id="Rectangle-6-Copy-5" fill="#7ACB53" opacity="0.197154018" mask="url(#mask-6)" x="4" y="60" width="72" height="2"></rect>
+                                        <rect id="Rectangle-6-Copy" fill="#A2DA86" mask="url(#mask-6)" x="42" y="22" width="34" height="26"></rect>
+                                        <polygon id="Combined-Shape" fill="#558D39" mask="url(#mask-6)" points="67.8784412 50 70.1467285 55.34375 67.5265492 56.5032292 65.2206194 51.0707989 62 54 62 40 72 50"></polygon>
+                                        <rect id="Rectangle-2" fill="#7ACB53" mask="url(#mask-6)" x="0" y="0" width="80" height="16"></rect>
+                                        <rect id="Rectangle" fill="#558D39" mask="url(#mask-6)" x="28" y="4" width="48" height="8" rx="4"></rect>
+                                        <rect id="Rectangle-Copy" fill="#DEF92F" mask="url(#mask-6)" x="4" y="4" width="8" height="8" rx="4"></rect>
+                                        <path d="M9.35355339,9.64644661 C9.54881554,9.84170876 9.54881554,10.1582912 9.35355339,10.3535534 C9.15829124,10.5488155 8.84170876,10.5488155 8.64644661,10.3535534 L6.64644661,8.35355339 C6.45118446,8.15829124 6.45118446,7.84170876 6.64644661,7.64644661 L8.64644661,5.64644661 C8.84170876,5.45118446 9.15829124,5.45118446 9.35355339,5.64644661 C9.54881554,5.84170876 9.54881554,6.15829124 9.35355339,6.35355339 L7.70710678,8 L9.35355339,9.64644661 Z" id="Path-2" fill="#558D39" fill-rule="nonzero" mask="url(#mask-6)"></path>
+                                        <rect id="Rectangle-Copy-2" fill="#DEF92F" mask="url(#mask-6)" x="16" y="4" width="8" height="8" rx="4"></rect>
+                                        <path d="M18.6464466,6.35355339 C18.4511845,6.15829124 18.4511845,5.84170876 18.6464466,5.64644661 C18.8417088,5.45118446 19.1582912,5.45118446 19.3535534,5.64644661 L21.3535534,7.64644661 C21.5488155,7.84170876 21.5488155,8.15829124 21.3535534,8.35355339 L19.3535534,10.3535534 C19.1582912,10.5488155 18.8417088,10.5488155 18.6464466,10.3535534 C18.4511845,10.1582912 18.4511845,9.84170876 18.6464466,9.64644661 L20.2928932,8 L18.6464466,6.35355339 Z" id="Path-2-Copy-3" fill="#558D39" fill-rule="nonzero" mask="url(#mask-6)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

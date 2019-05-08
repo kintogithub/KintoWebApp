@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-combine-glyph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-combine-glyph">
+            <g id="icon/secondary/large/combine/glyph" transform="translate(20.000000, 20.000000) scale(-1, 1) translate(-20.000000, -20.000000) ">
+                <circle id="Oval-9" stroke="#EDF3FD" stroke-width="2" cx="20" cy="20" r="19"></circle>
+                <circle id="Combined-Shape" fill="#98B4CD" cx="11" cy="20" r="2"></circle>
+                <path d="M16,24 L18.8284271,26.8284271 L18.8284271,26.8284271 C19.5785726,27.5785726 20.5959883,28 21.6568542,28 L28,28" id="Path-3-Copy-3" stroke="#083A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path-3-Copy-2" stroke="#083A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="20 23 15 23 15 28"></polyline>
+                <path d="M16,16 L18.8284271,13.1715729 L18.8284271,13.1715729 C19.5785726,12.4214274 20.5959883,12 21.6568542,12 L28,12" id="Path-3-Copy-5" stroke="#083A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path-3-Copy-4" stroke="#083A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="20 17 15 17 15 12"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

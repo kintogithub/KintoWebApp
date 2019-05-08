@@ -1,0 +1,93 @@
+.advanced-collapse-options {
+  border-top: $margin-base solid $kinto-tinted-grayscale-2;
+  min-height: 0;
+  margin-bottom: $margin-base-2;
+  .one-field-per-row {
+    display: grid;
+    grid-row-gap: $margin-base;
+  }
+  .header {
+    padding: $margin-base + 8 $margin-base-4;
+    height: $margin-base * 6;
+    background: $kinto-tinted-grayscale-1;
+    display: grid;
+    grid-template-columns: auto 90px;
+    justify-content: space-between;
+    align-items: center;
+    h4 {
+      color: $kinto-grayscale-7;
+      font-size: $margin-base + 6;
+      font-weight: bold;
+      text-align: left;
+      letter-spacing: 0;
+      line-height: $default-line-height;
+      margin-bottom: 0;
+    }
+  }
+  .form-advanced {
+    background-color: $kinto-white;
+    padding: $margin-base + 6 $margin-base-4 $margin-base-4;
+    display: grid;
+    grid-row-gap: $margin-base;
+    input {
+      margin-bottom: 0;
+    }
+  }
+  .toggle-advanced-options {
+    color: $kinto-grayscale-6;
+    font-size: $margin-base + 2;
+    font-weight: normal;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: $margin-base + 2;
+  }
+  .toggle-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $kinto-grayscale-6;
+    font-size: $margin-base + 2;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: $margin-base + 6;
+    .advance-icon {
+      height: $margin-base-2;
+      width: $margin-base-2;
+      transition: all 0.3s ease-in-out;
+      margin-left: $margin-base;
+      @include backgroundImage(
+        '/images/icon-gray-expand-collapse.svg',
+        $margin-base-2,
+        $margin-base-2
+      );
+      &.expanded {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &.closed {
+    .header {
+      border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+    }
+  }
+  .form-body {
+    margin-top: 0;
+    border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+    &.advanced {
+      min-height: 0;
+    }
+  }
+}
+
+.basic-info-inputs {
+  .advanced-collapse-options {
+    margin-bottom: 0;
+  }
+}
+
+.kintoblock-manage {
+  .advanced-collapse-options {
+    margin-bottom: 0;
+  }
+}

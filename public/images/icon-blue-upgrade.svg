@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-blue-upgrade</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---dashboard---account---billing---1-workspace---free-tooltips-copy-2" transform="translate(-1370.000000, -1274.000000)">
+            <g id="content">
+                <g id="icon/primary/small/upgrade" transform="translate(1370.000000, 1274.000000)">
+                    <g id="icon/blue/new">
+                        <rect id="base" fill="#53D9EB" x="0" y="0" width="20" height="20" rx="10"></rect>
+                        <path d="M10.8804711,4.63516061 L15.3441288,12.9248106 C15.6059669,13.4110814 15.4240283,14.0175434 14.9377575,14.2793815 C14.633901,14.4429966 14.2671553,14.4383745 13.9675187,14.2671536 L10,12 L6.03248125,14.2671536 C5.5529638,14.5411635 4.94210914,14.3745668 4.66809917,13.8950494 C4.49687829,13.5954128 4.49225618,13.2286671 4.65587121,12.9248106 L9.1195289,4.63516061 C9.381367,4.14888985 9.98782906,3.96695124 10.4740998,4.22878934 C10.6464008,4.32156678 10.7876937,4.46285966 10.8804711,4.63516061 Z" id="Rectangle-Copy-4" fill="#083A45"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mustard-alert-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Dashboard---Workspaces-(Temp)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9e---dashboard---workspaces---incorrect-email" transform="translate(-560.000000, -300.000000)" fill="#FFDB18">
+            <g id="hero">
+                <g id="email-submitted" transform="translate(500.000000, 240.000000)">
+                    <g id="Group" transform="translate(60.000000, 60.000000)">
+                        <path d="M40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 Z M36.8112796,14.5748633 L36.8112796,14.5748633 C35.1313461,15.1736313 34.0507591,16.8122285 34.1620077,18.5922069 L34.1620129,18.5922066 L35.7655946,44.2495131 C35.8973533,46.3576528 37.6455518,48 39.7578049,48 L40.2421951,48 C42.3544482,48 44.1026467,46.3576528 44.2344054,44.2495131 L45.838296,18.5872635 C45.9495774,16.806762 44.8683285,15.1677959 43.1876883,14.5694502 L43.1876893,14.5694475 C42.1213756,14.1898158 41.0621211,14 40.0099257,14 C38.9527385,14 37.8865232,14.1916211 36.8112796,14.5748633 Z M40,66 C43.3137085,66 46,63.3137085 46,60 C46,56.6862915 43.3137085,54 40,54 C36.6862915,54 34,56.6862915 34,60 C34,63.3137085 36.6862915,66 40,66 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

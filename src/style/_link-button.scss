@@ -1,0 +1,62 @@
+a.link-button{
+  box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7,0.10), 0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7,0.10);
+  border-radius: $margin-base + 2;
+  height: 120px;
+  margin-bottom: $margin-base*3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.kinto-purple {
+    background: $kinto-purple-light;
+  }
+  &.kinto-blue {
+    background: $kinto-lapis-light;
+  }
+  &.kinto-green {
+    background: $kinto-turquoise-light;
+  }
+  .text{
+    text-align: center;
+  }
+  .link-button-inner {
+    .icon {
+      display: none;
+    }
+    h4 {
+      color: $kinto-white;
+      font-weight: normal;
+      &.larger.bold{
+        font-size: $margin-base-2;
+        font-weight: bold;
+      }
+    }
+  }
+  @include abovetablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $margin-base-4;
+    padding-right: $margin-base-2;
+    h4:nth-child(1) {
+      margin-bottom: 2px;
+      font-size: $margin-base-2;
+    }
+    h4:nth-child(2) {
+      margin-bottom: 0;
+    }
+    .icon-wrapper {
+      display: block;
+      .faqs {
+        @include backgroundImage('../images/icon-frequently-asked-questions.svg', $margin-base * 8, $margin-base * 8);
+      }
+      .slack {
+        @include backgroundImage('../images/icon-slack-community.svg', $margin-base * 8, $margin-base * 8);
+      }
+      .press {
+        @include backgroundImage('../images/icon-press-kit.svg', $margin-base * 8, $margin-base * 8);
+      }
+    }
+  }
+}

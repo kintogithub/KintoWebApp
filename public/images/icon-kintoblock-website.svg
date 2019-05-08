@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/kintoblock/website</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="16.5" rx="1"></rect>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/kintoblock/website">
+            <g id="illustration/kintoblock/website" transform="translate(0.000000, 1.750000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#D7D1F8" xlink:href="#path-1"></use>
+                <path d="M1,0 L19,0 C19.5522847,-1.01453063e-16 20,0.44771525 20,1 L20,4 L0,4 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle-2" fill="#9486EC" mask="url(#mask-2)"></path>
+                <rect id="Rectangle" fill="#C6BEF4" mask="url(#mask-2)" x="7" y="1" width="12" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy" fill="#F5B9EA" mask="url(#mask-2)" x="1" y="1" width="2" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-2" fill="#F5B9EA" mask="url(#mask-2)" x="4" y="1" width="2" height="2" rx="1"></rect>
+                <polygon id="Combined-Shape" fill="#9486EC" points="15.9392206 11.8475361 17.0733643 14.4379382 15.7632746 15 14.6103097 12.3666098 13 13.7865506 13 7 18 11.8475361"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

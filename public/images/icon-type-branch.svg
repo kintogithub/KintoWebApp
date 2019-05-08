@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-type-branch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/type/branch">
+            <g id="icon-type-branch">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape-Copy" fill="#CFDBFA" xlink:href="#path-1"></use>
+                <path d="M12,0.200036231 L12,7.85926497 C12,8.52797134 12.3342023,9.152434 12.8905996,9.52336555 L19.264036,13.7723231 C18.7517183,15.0291886 17.9910531,16.1584091 17.0429947,17.0990306 L10.6717988,12.8515667 C9.00260681,11.7387721 8,9.86538409 8,7.85926497 L8,0.200036231 C8.64621988,0.0688605188 9.31506832,0 10,0 C10.6849317,0 11.3537801,0.0688605188 12,0.200036231 Z" id="Combined-Shape" fill="#6A91F0" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M2.95700533,17.0990306 C2.00894686,16.1584091 1.24828174,15.0291886 0.735964011,13.7723231 L7.10940039,9.52336555 C7.66579773,9.152434 8,8.52797134 8,7.85926497 L8,0.200036231 C8.64621988,0.0688605188 9.31506832,2.49800181e-16 10,2.49800181e-16 C10.6849317,2.49800181e-16 11.3537801,0.0688605188 12,0.200036231 L12,7.85926497 C12,9.86538409 10.9973932,11.7387721 9.32820118,12.8515667 L2.95700533,17.0990306 Z" id="Combined-Shape" fill="#365AA6" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

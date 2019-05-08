@@ -1,0 +1,425 @@
+.what-is-a-kintoapp {
+  @extend .what-is-a-kintoblock;
+}
+a.disabled {
+  color: $kinto-tinted-grayscale-6;
+  cursor: default;
+  &:hover {
+    color: $kinto-tinted-grayscale-6 !important;
+  }
+}
+
+.kintoapp-create {
+  padding-bottom: $margin-base * 6;
+}
+
+.kintoapp-create.form-container,
+.kintoapp-form-container {
+  h3 {
+    font-weight: bold;
+  }
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: $margin-base-4;
+  justify-content: stretch;
+  align-content: stretch;
+  @media (min-width: 1440px) {
+    grid-template-columns: auto [col-start];
+  }
+  .basic-info .form-body {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    .field-wrapper {
+      input {
+        min-width: 480px;
+        width: 100%;
+      }
+    }
+  }
+  .form-wrapper {
+    // margin-bottom: $margin-base-4;
+    &.workspaces {
+      margin-bottom: 0;
+    }
+    .title {
+      color: $kinto-tinted-grayscale-8;
+    }
+    h5 {
+      font-weight: normal;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    &.clients {
+      .form-body {
+        .top {
+          .line {
+            border-bottom: solid 2px $kinto-tinted-grayscale-2;
+            margin: $margin-base 0 $margin-base + 6;
+          }
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          .button {
+            width: 49%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .form-body {
+    @extend .form-block;
+  }
+
+  .combine-buttons {
+    margin: $margin-base-4 0 $margin-base-2;
+    display: flex;
+    justify-content: space-between;
+    button {
+      width: 49%;
+      position: relative;
+      margin: 0;
+      img {
+        height: $margin-base-4;
+        width: $margin-base-4;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.blocks-and-services {
+  .blocks-or-services {
+    padding: $margin-base 0;
+    background-color: $kinto-tinted-grayscale-1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    .block {
+      max-width: 100%;
+      border-radius: 4px;
+      .delete-block {
+        @include backgroundImage('/images/icon-red-delete.svg', $margin-base-2, $margin-base-2);
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
+      position: relative;
+      margin: $margin-base $margin-base-2;
+      background-color: $kinto-white;
+      box-shadow: 0 2px 4px 0 rgba($kinto-grayscale-7, 0.1),
+        0 $margin-base $margin-base-4 0 rgba($kinto-grayscale-7, 0.1);
+      border-radius: 4px;
+      min-height: 140px;
+      .icon-text-and-version {
+        display: grid;
+        grid-column-gap: $margin-base-2;
+        align-items: center;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        grid-template-columns: $margin-base * 8 1fr 240px;
+        justify-items: stretch;
+        padding: $margin-base-2;
+        border-radius: 4px;
+        &.has-dependencies {
+          border-radius: 4px 4px 0 0;
+        }
+        &.microservice {
+          border-right: solid $margin-base $kinto-purple;
+        }
+        &.task {
+          border-right: solid $margin-base $kinto-coral;
+        }
+        &.website {
+          border-right: solid $margin-base $kinto-green;
+        }
+        .left {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .name {
+            font-size: $margin-base + 6;
+            font-weight: bold;
+          }
+          .description {
+            font-weight: normal;
+            color: $kinto-tinted-grayscale-7;
+            line-height: $margin-base + 6;
+            font-size: $margin-base + 2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 650px;
+            margin-bottom: $margin-base;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-end;
+          width: 100%;
+          height: 100%;
+          justify-self: end;
+          .dropdown {
+            width: 100%;
+          }
+          .version {
+            min-width: 240px;
+          }
+          .icon.gear-circle {
+            margin-left: 0;
+            margin-top: $margin-base;
+          }
+        }
+      }
+      .expand {
+        background-color: $kinto-tinted-grayscale-1;
+        min-height: $margin-base * 8;
+        width: 100%;
+        padding-left: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 0 0 4px 4px;
+        &.open {
+          border-radius: 0;
+        }
+        .expand-close-indicator {
+          display: flex;
+          align-items: center;
+          margin-right: $margin-base-2;
+          margin-left: auto;
+          h6 {
+            margin: 0;
+          }
+          .expand-close {
+            @include backgroundImage(
+                '/images/icon-gray-expand-collapse.svg',
+                $margin-base-2,
+                $margin-base-2
+              )
+              margin-left: $margin-base;
+            transition: all 0.2s ease-in-out;
+            &.expanded {
+              transform: rotate(-180deg);
+            }
+          }
+        }
+        .icons {
+          display: flex;
+          width: 160px;
+          height: $margin-base * 5;
+          position: relative;
+          .number {
+            background-color: $kinto-white;
+            border-radius: $margin-base-2;
+            height: $margin-base-4;
+            width: $margin-base-4;
+            line-height: $margin-base-4;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: normal;
+            font-size: $margin-base + 2;
+            margin-left: 120px;
+          }
+          .icon {
+            height: $margin-base * 5;
+            width: $margin-base * 5;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              height: $margin-base * 5;
+              width: $margin-base * 5;
+              position: absolute;
+            }
+            .large-letter-dependency {
+              position: relative;
+              font-weight: bold;
+              font-size: $margin-base-2;
+              color: $kinto-white;
+              letter-spacing: 0;
+              text-align: center;
+              line-height: $default-line-height;
+              text-transform: uppercase;
+              margin: 0;
+            }
+            &:nth-child(1) {
+              left: 0px;
+              z-index: 3;
+            }
+            &:nth-child(2) {
+              left: 25px;
+              z-index: 2;
+            }
+            &:nth-child(3) {
+              z-index: 1;
+              left: $margin-base * 5;
+            }
+            &:nth-child(4) {
+              left: 65px;
+            }
+          }
+        }
+      }
+      .extra-information {
+        padding-left: 120px;
+        .row:last-child {
+          border-bottom: none;
+        }
+        .row {
+          padding: $margin-base-2 $margin-base-2 $margin-base-2 0;
+          border-bottom: solid 2px $kinto-tinted-grayscale-2;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            display: flex;
+          }
+          .icon {
+            height: $margin-base * 5;
+            width: $margin-base * 5;
+            margin-right: $margin-base + 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              height: $margin-base * 5;
+              width: $margin-base * 5;
+              position: absolute;
+            }
+            .large-letter-dependency {
+              position: relative;
+              font-weight: bold;
+              font-size: $margin-base-2;
+              color: $kinto-white;
+              letter-spacing: 0;
+              text-align: center;
+              line-height: $default-line-height;
+              text-transform: uppercase;
+              margin: 3px 0 0 2px;
+            }
+          }
+          .text {
+            display: inline-block;
+            h3 {
+              margin-bottom: 6px;
+              font-weight: bold;
+              font-size: $margin-base + 6;
+            }
+            h6 {
+              margin: 0;
+              font-weight: normal;
+              color: $kinto-tinted-grayscale-7;
+              line-height: $margin-base + 6;
+              font-size: $margin-base + 2;
+              max-width: 800px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .type-icon {
+            display: inline-block;
+            height: $margin-base-4;
+            width: $margin-base-4;
+            &.microservice {
+              @include backgroundImage(
+                '/images/icon-kintoblock-type-microservice-small.svg'
+              );
+            }
+            &.task {
+              @include backgroundImage(
+                '/images/icon-kintoblock-type-task-small.svg'
+              );
+            }
+            &.website {
+              @include backgroundImage(
+                '/images/icon-kintoblock-type-website-small.svg'
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  .no-blocks-or-services {
+    background-color: $kinto-tinted-grayscale-1;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: $margin-base-2 0 $margin-base-3;
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+      .kinto-block {
+        @include backgroundImage(
+            '/images/icon-generic-kintoblock.svg',
+            $margin-base * 8,
+            $margin-base * 8
+          )
+          margin: $margin-base;
+      }
+      .service {
+        @include backgroundImage('/images/icon-generic-service.svg', $margin-base * 8, $margin-base * 8)
+          margin: $margin-base;
+      }
+    }
+    .text {
+      color: $kinto-tinted-grayscale-6;
+      font-size: $margin-base + 4;
+      text-align: center;
+    }
+  }
+
+  .dependency-management {
+    .field-input-wrapper {
+      position: relative;
+      display: flex;
+      .tutorial {
+        position: absolute;
+        top: -50px;
+        left: -110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tutorial-step {
+          position: absolute;
+          color: $kinto-white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.form-block {
+  background-color: $kinto-white;
+  padding: 36px $margin-base-4;
+  border-radius: $margin-base + 2;
+  box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+    0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+  &.autodeploy {
+    padding: 0;
+  }
+  &.dependency-management {
+    border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+  }
+}

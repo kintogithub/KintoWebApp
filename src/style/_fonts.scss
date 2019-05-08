@@ -1,0 +1,114 @@
+// ---------- TYPEFACE ---------- //
+$base-font: 'Nunito', sans-serif;
+$code-font: 'Anonymous Pro', monospace;
+$default-line-height: 24px;
+
+h1,
+.h1 {
+  font-size: 28px;
+  line-height: 46px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: $kinto-tinted-grayscale-9;
+  @include abovetablet {
+    font-size: 42px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Raleway', sans-serif;
+  color: $kinto-tinted-grayscale-10;
+  font-weight: 600;
+  @include abovetablet {
+    font-size: 28px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $margin-base-2;
+  line-height: $default-line-height;
+  color: $kinto-tinted-grayscale-7;
+  font-weight: normal;
+}
+
+p,
+h3,
+h4,
+h5,
+h6,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Nunito', sans-serif;
+  margin: 0 0 $margin-base 0;
+}
+
+p,
+h4,
+.h4 {
+  font-size: $margin-base + 8;
+  color: $kinto-grayscale-7;
+  line-height: $default-line-height;
+  font-family: $base-font;
+  @include abovetablet {
+    font-size: $margin-base + 6;
+  }
+}
+
+h5,
+.h5 {
+  font-size: $margin-base + 6;
+  color: $kinto-grayscale-7;
+  line-height: $default-line-height;
+  @include abovetablet {
+    font-size: $margin-base + 4;
+  }
+}
+
+h6,
+.h6 {
+  font-size: $margin-base + 4;
+  color: $kinto-grayscale-6;
+  line-height: $default-line-height;
+  @include abovetablet {
+    font-size: $margin-base + 2;
+  }
+}
+
+a {
+  font-family: $base-font;
+  font-weight: bold;
+  font-size: $margin-base + 6;
+  color: $text-link;
+  letter-spacing: 0;
+  line-height: $default-line-height;
+  &:hover {
+    color: $text-link-focus;
+  }
+  // &:visited{
+  //   color: $text-link-clicked;
+  // }
+}
+
+.fonts {
+  .section {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+.semi-bold {
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}

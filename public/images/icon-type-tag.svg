@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-type-tag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/type/tag">
+            <g id="icon-type-tag">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape-Copy" fill="#B9ECE2" xlink:href="#path-1"></use>
+                <path d="M8,19.7999638 L8,0.200036231 C8.64621988,0.0688605188 9.31506832,-4.4408921e-16 10,-4.4408921e-16 C10.6849317,-4.4408921e-16 11.3537801,0.0688605188 12,0.200036231 L12,19.7999638 C11.3537801,19.9311395 10.6849317,20 10,20 C9.31506832,20 8.64621988,19.9311395 8,19.7999638 Z" id="Combined-Shape" fill="#30C5A7" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <rect id="Rectangle" fill="#00836A" mask="url(#mask-2)" transform="translate(9.999748, 9.999748) rotate(45.000000) translate(-9.999748, -9.999748) " x="6.49974766" y="6.49974766" width="7" height="7" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

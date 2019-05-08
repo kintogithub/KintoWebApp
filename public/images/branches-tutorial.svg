@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="40px" viewBox="0 0 140 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>branches-tutorial</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="20" y="0" width="100" height="40" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="40" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="WIP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1---dashboard---kintoblocks---edit-branch---no-branch" transform="translate(-90.000000, -500.000000)">
+            <g id="desktop/sidebar/analytics">
+                <g id="Group-5" transform="translate(30.000000, 270.000000)">
+                    <g id="branches-tutorial" transform="translate(60.000000, 230.000000)">
+                        <use id="base" stroke="#4E82EE" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="4,4" xlink:href="#path-1"></use>
+                        <path d="M24,0 L60,0 L60,40 L24,40 C21.790861,40 20,38.209139 20,36 L20,4 C20,1.790861 21.790861,4.05812251e-16 24,0 Z" id="Rectangle-3" fill="#4E82EE" fill-rule="nonzero"></path>
+                        <path d="M39,19 L39,16 C39,15.4477153 39.4477153,15 40,15 C40.5522847,15 41,15.4477153 41,16 L41,19 L44,19 C44.5522847,19 45,19.4477153 45,20 C45,20.5522847 44.5522847,21 44,21 L41,21 L41,24 C41,24.5522847 40.5522847,25 40,25 C39.4477153,25 39,24.5522847 39,24 L39,21 L36,21 C35.4477153,21 35,20.5522847 35,20 C35,19.4477153 35.4477153,19 36,19 L39,19 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                        <circle id="Oval" stroke-opacity="0.402562281" stroke="#FFFFFF" stroke-width="2" cx="40" cy="20" r="11"></circle>
+                        <path d="M131.581232,18.1757047 L134.150485,21.3872712 C134.32299,21.6029021 134.288029,21.9175483 134.072398,22.0900531 C133.983741,22.1609783 133.873586,22.1996187 133.76005,22.1996187 L127.840675,22.1996187 C127.564533,22.1996187 127.340675,21.9757611 127.340675,21.6996187 C127.340675,21.5860829 127.379316,21.4759277 127.450241,21.3872712 L130.019494,18.1757047 C130.364504,17.7444428 130.993796,17.6745214 131.425058,18.0195309 C131.482723,18.0656627 131.5351,18.11804 131.581232,18.1757047 Z" id="Rectangle-4-Copy-2" fill="#B9D5EC" fill-rule="nonzero" transform="translate(130.800372, 19.999991) rotate(-90.000000) translate(-130.800372, -19.999991) "></path>
+                        <path d="M131,20 L140,20" id="Path-2" stroke="#B9D5EC" stroke-width="2" fill-rule="nonzero"></path>
+                        <path d="M9.98048749,18.1757047 L12.5497407,21.3872712 C12.7222454,21.6029021 12.6872847,21.9175483 12.4716538,22.0900531 C12.3829973,22.1609783 12.272842,22.1996187 12.1593063,22.1996187 L6.2399311,22.1996187 C5.96378872,22.1996187 5.7399311,21.9757611 5.7399311,21.6996187 C5.7399311,21.5860829 5.77857148,21.4759277 5.8494967,21.3872712 L8.41874987,18.1757047 C8.76375941,17.7444428 9.39305179,17.6745214 9.82431372,18.0195309 C9.88197843,18.0656627 9.93435572,18.11804 9.98048749,18.1757047 Z" id="Rectangle-4-Copy-3" fill="#B9D5EC" fill-rule="nonzero" transform="translate(9.199628, 19.999991) scale(-1, 1) rotate(-90.000000) translate(-9.199628, -19.999991) "></path>
+                        <path d="M0,20 L9,20" id="Path-2-Copy" stroke="#B9D5EC" stroke-width="2" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

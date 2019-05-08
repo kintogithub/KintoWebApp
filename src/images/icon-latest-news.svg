@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-latest-news</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="About-Us" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440---about-us" transform="translate(-360.000000, -2950.000000)" fill="#FFFFFF">
+            <g id="resources" transform="translate(250.000000, 2840.000000)">
+                <g id="cards" transform="translate(0.000000, 70.000000)">
+                    <path d="M150,120 C127.90861,120 110,102.09139 110,80 C110,57.90861 127.90861,40 150,40 C172.09139,40 190,57.90861 190,80 C190,102.09139 172.09139,120 150,120 Z M126,100 L134,100 C134,80.117749 150.117749,64 170,64 L170,56 C145.699471,56 126,75.699471 126,100 Z M142,100 L150,100 C150,88.954305 158.954305,80 170,80 L170,72 C154.536027,72 142,84.536027 142,100 Z M158,100 L168,100 C169.104569,100 170,99.1045695 170,98 L170,88 C163.372583,88 158,93.372583 158,100 Z" id="icon-latest-news"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

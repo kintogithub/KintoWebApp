@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>repo-source-gitlab</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="KintoBlocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---dashboard---kintoblocks---create-new-kintoblock---website" transform="translate(-900.000000, -1060.000000)" fill-rule="nonzero">
+            <g id="content" transform="translate(320.000000, 0.000000)">
+                <g id="basic-info" transform="translate(30.000000, 580.000000)">
+                    <g id="dropdown-menu-options-copy" transform="translate(540.000000, 350.000000)">
+                        <g id="repo-source-gitlab" transform="translate(20.000000, 135.000000) scale(1, -1) translate(-20.000000, -135.000000) translate(10.000000, 120.000000)">
+                            <g id="g44" transform="translate(-0.000000, 1.117904)" fill="#FC6D26">
+                                <path d="M19.9626347,7.59032466 L18.8435211,10.9553975 L16.6255981,17.6247601 C16.5115155,17.9678747 16.0146311,17.9678747 15.9004943,17.6247601 L13.6825172,10.9553975 L6.31750553,10.9553975 L4.09947424,17.6247601 C3.98539169,17.9678747 3.48850721,17.9678747 3.37437051,17.6247601 L1.15644752,10.9553975 L0.0373880684,7.59032466 C-0.0647285432,7.2833942 0.0471340863,6.94715673 0.314337415,6.75745443 L9.99998429,-0.11790393 L19.6856853,6.75745443 C19.9528887,6.94715673 20.0646971,7.2833942 19.9626347,7.59032466" id="path46"></path>
+                            </g>
+                            <g id="g48" transform="translate(6.000000, 1.000000)" fill="#E24329">
+                                <polygon id="path50" points="3.50000001 0 3.50000001 0 7 11 -1.5156626e-13 11"></polygon>
+                            </g>
+                            <g id="g56" transform="translate(1.000000, 0.995633)" fill="#FC6D26">
+                                <polygon id="path58" points="9 0.00436681223 5.25231429 11.0043668 9.30436284e-13 11.0043668"></polygon>
+                            </g>
+                            <g id="g64" transform="translate(-0.000000, 0.995633)" fill="#FCA326">
+                                <path d="M1.15647638,11.0043668 L0.0373644496,7.6615536 C-0.0646978653,7.35665351 0.0471104534,7.02264017 0.314367529,6.83424531 L10,0.00436681223 L1.15647638,11.0043668 Z" id="path66"></path>
+                            </g>
+                            <g id="g72" transform="translate(1.000000, 12.122271)" fill="#E24329">
+                                <path d="M0,-0.122270742 L5,-0.122270742 L2.85121539,6.61763147 C2.74063932,6.96442852 2.25925576,6.96442852 2.14873215,6.61763147 L0,-0.122270742 Z" id="path74"></path>
+                            </g>
+                            <g id="g76" transform="translate(10.000000, 0.995633)" fill="#FC6D26">
+                                <polygon id="path78" points="0 0.00436681223 3.74768569 11.0043668 9 11.0043668"></polygon>
+                            </g>
+                            <g id="g80" transform="translate(10.000000, 0.995633)" fill="#FCA326">
+                                <path d="M8.84352362,11.0043668 L9.96263555,7.6615536 C10.0646979,7.35665351 9.95288955,7.02264017 9.68563248,6.83424531 L5.51086954e-13,0.00436681223 L8.84352362,11.0043668 Z" id="path82"></path>
+                            </g>
+                            <g id="g84" transform="translate(14.000000, 12.122271)" fill="#E24329">
+                                <path d="M5,-0.122270742 L-1.47770685e-13,-0.122270742 L2.1487846,6.61763147 C2.25936067,6.96442852 2.74074423,6.96442852 2.85126784,6.61763147 L5,-0.122270742 Z" id="path86"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+.console-logs-page {
+  .page-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    .text {
+      align-items: center;
+      display: flex;
+      h2 {
+        display: inline-block;
+      }
+    }
+  }
+  .commit-details-code {
+    margin-bottom: $margin-base-2;
+  }
+
+  .commit-details-header {
+    border-radius: 0;
+  }
+
+  .react-select {
+    width: 230px;
+  }
+
+  .console-logs-head {
+    padding: $margin-base + 6 $margin-base-4 $margin-base-4 $margin-base-4;
+    background-color: $kinto-grayscale-9;
+    display: flex;
+    .react-select {
+      margin-right: $margin-base-2;
+    }
+  }
+
+  .commit-details-code-wrapper {
+    height: calc(100vh - 358px);
+    position: relative;
+  }
+  .toggle-content {
+    margin: 23px $margin-base-2 0 $margin-base-2;
+    width: 215px;
+  }
+  .filter {
+    width: 230px;
+    margin: $margin-base-2 0 0 0 ;
+  }
+}

@@ -1,0 +1,718 @@
+.dropdown {
+  font-size: $margin-base + 4;
+  position: relative;
+  ul {
+    list-style: none;
+  }
+  &.add-to-deployment {
+    position: fixed;
+  }
+}
+
+.bottom .dropdown.wide {
+  font-size: $margin-base + 4;
+  position: absolute;
+  right: 0;
+  top: -35px;
+}
+
+.dropdown-button {
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown {
+  &.wide {
+    .dropdown-content {
+      min-width: 240px;
+      margin-left: -120px;
+      button {
+        padding: $margin-base $margin-base-3;
+      }
+    }
+  }
+}
+
+.dropdown-content {
+  background: $kinto-tinted-grayscale-8;
+  display: none;
+  position: absolute;
+  padding-top: $margin-base;
+  padding-bottom: $margin-base;
+  left: 50%;
+  top: 55px;
+  margin-left: -100px;
+  z-index: 1;
+  min-width: 200px;
+  border-radius: 4px;
+
+  &.short {
+    top: $margin-base-3;
+  }
+
+  &.isShown {
+    display: block;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    border-color: transparent transparent $kinto-tinted-grayscale-8 transparent;
+    border-style: solid;
+    border-width: $margin-base;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  &.add-to-deployment {
+    &:before {
+      display: none;
+    }
+    &:after {
+      content: '';
+      display: block;
+      border-color: $kinto-tinted-grayscale-8 transparent transparent
+        transparent;
+      border-style: solid;
+      border-width: $margin-base;
+      position: absolute;
+      left: 50%;
+      margin-left: -10px;
+      bottom: -20px;
+    }
+    margin-left: 0;
+    bottom: ($margin-base * 7);
+    right: $margin-base;
+    top: inherit;
+    width: 340px;
+    left: inherit;
+    right: $margin-base;
+
+    &.isShown {
+      position: fixed;
+    }
+
+    .dropdown-content-filter {
+      padding-bottom: 0px;
+    }
+
+    .dropdown-content-items {
+      height: 400px;
+      padding: 0 $margin-base-2;
+
+      h2.deployment-section {
+        color: #ffffff;
+        font-size: $margin-base + 4;
+        font-weight: bold;
+        line-height: $margin-base-2;
+      }
+
+      .dropdown-scroll-container {
+        padding: $margin-base 0;
+        h4 {
+          color: $kinto-white;
+        }
+      }
+
+      a.sub-tree {
+        display: flex;
+        padding: $margin-base $margin-base;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .tree-icon {
+          @include backgroundImage('/images/dark-children.svg', $margin-base-2, $margin-base-2);
+        }
+        h3 {
+          color: #ffffff;
+          font-size: $margin-base + 4;
+          font-weight: normal;
+          line-height: $margin-base-2;
+          margin-left: $margin-base;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .dropdown-action-button {
+      border-top: 1px solid $kinto-tinted-grayscale-7;
+      padding: $margin-base $margin-base 0;
+      .create-shortcut {
+        display: flex;
+        button {
+          max-width: 90px;
+          min-width: 90px;
+          margin-left: $margin-base;
+          padding: 0 5px;
+        }
+        input {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.environment-card {
+  .dropdown-content {
+    min-width: 171px;
+    &:before {
+      left: 64%;
+    }
+  }
+}
+
+.dropdown-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  cursor: pointer;
+  .tab {
+    padding: 0 $margin-base-2 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: $margin-base-4;
+    border-bottom: solid 1px $kinto-tinted-grayscale-7;
+    &.active {
+      padding-bottom: $margin-base-2;
+      border-bottom: solid 4px $kinto-blue;
+      h3 {
+        color: $kinto-white;
+      }
+    }
+    h3 {
+      font-size: $margin-base + 6;
+      margin: 0;
+      font-weight: bold;
+      color: rgba($kinto-white, 0.4);
+      text-transform: uppercase;
+    }
+    .icon {
+      &.branch {
+        @include backgroundImage(
+            '/images/icon-type-branch-dark.svg',
+            $margin-base-2,
+            $margin-base-2
+          )
+          position: relative;
+        left: -10px;
+      }
+      &.tag {
+        @include backgroundImage('/images/icon-type-tag-dark.svg', $margin-base-2, $margin-base-2)
+          position: relative;
+        right: -25px;
+      }
+    }
+  }
+}
+.form-dropdown .dropdown-tabs .icon {
+  &.branch {
+    @include backgroundImage('/images/icon-type-branch.svg');
+  }
+  &.tag {
+    @include backgroundImage('/images/icon-type-tag.svg');
+  }
+}
+
+.breadcrumb-with-icon {
+  .icon {
+    &.branch {
+      @include backgroundImage('/images/icon-type-branch.svg', $margin-base-2, $margin-base-2);
+    }
+    &.tag {
+      @include backgroundImage('/images/icon-type-tag.svg', $margin-base-2, $margin-base-2);
+    }
+  }
+}
+
+.menu-hidden .breadcrumb-with-icon {
+  display: none;
+}
+
+.dropdown-left .dropdown-content {
+  right: 0;
+  left: initial;
+  &:before {
+    left: initial;
+    right: $margin-base-2;
+  }
+}
+
+.dropdown-content {
+  z-index: 7;
+  box-shadow: 0 2px 4px 0 $kinto-box-shadow, 0 $margin-base $margin-base-4 0 $kinto-box-shadow;
+}
+
+.dropdown-content-items {
+  .line {
+    width: 100%;
+    border: solid 1px $kinto-tinted-grayscale-7;
+    margin-top: 5px;
+    height: 1px;
+    &.dropdown {
+      margin: 15px $margin-base-3;
+      width: 180px;
+    }
+    &.with-padding {
+      margin: $margin-base $margin-base-3;
+      width: 180px;
+    }
+  }
+
+  h4.title {
+    color: $kinto-white;
+    text-align: center;
+    cursor: default;
+  }
+
+  a,
+  button,
+  .dropdown-scroll-container > a {
+    font-size: $margin-base + 4;
+    font-weight: bold;
+    width: 100%;
+    border: 0;
+    background: $kinto-tinted-grayscale-8;
+    color: $kinto-white;
+    padding: $margin-base $margin-base-3;
+    text-decoration: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &.double-line {
+      flex-direction: column;
+      align-items: flex-start;
+      h5 {
+        text-align: left;
+        margin-left: 0;
+      }
+    }
+
+    &.title {
+      flex-direction: column;
+      padding: 5px 0;
+    }
+
+    h4,
+    h5 {
+      color: $kinto-white;
+      text-align: center;
+      margin: 0;
+      margin-left: $margin-base-2;
+    }
+
+    .dependency {
+      min-width: $margin-base-4;
+      min-height: $margin-base-4;
+      &.application {
+        background-size: contain;
+        display: inline-block;
+
+        @include backgroundImage(
+          '/images/icon-generic-application-small-border-2.svg',
+          $margin-base-4,
+          $margin-base-4
+        );
+      }
+
+      &.kintoblock-dep {
+        background-size: contain;
+
+        @include backgroundImage(
+          '/images/icon-generic-kintoblock-small-border-1.svg',
+          $margin-base-4,
+          $margin-base-4
+        );
+      }
+
+      &.service {
+        background-size: contain;
+
+        @include backgroundImage(
+          '/images/icon-generic-service-small-border-2.svg',
+          $margin-base-4,
+          $margin-base-4
+        );
+      }
+    }
+
+    &:hover {
+      background: $kinto-blue-hover;
+    }
+  }
+}
+
+.dropdown-content-filter {
+  padding: 0 $margin-base-2 $margin-base-2 $margin-base-2;
+  border-bottom: 1px solid $kinto-tinted-grayscale-7;
+  &.tags-and-branches {
+    border-bottom: none;
+    padding: $margin-base $margin-base-2 0px $margin-base-2;
+    background-color: $kinto-tinted-grayscale-9;
+  }
+}
+
+.dropdown-content-action {
+  padding: $margin-base-2;
+  border-top: 1px solid $kinto-tinted-grayscale-7;
+  font-size: $margin-base + 4;
+
+  button {
+    width: 100%;
+  }
+}
+
+.dependency-management .dropdown-filter .dropdown-content.tag-branch {
+  margin-left: -93px;
+}
+
+.dropdown-filter {
+  &.ka-version-switcher .dropdown-content {
+    top: $margin-base-3;
+  }
+  .dropdown-content {
+    padding-top: $margin-base-2;
+    width: 340px;
+    margin-left: -170px;
+    box-shadow: 0 2px 4px 0 $kinto-box-shadow, 0 $margin-base $margin-base-4 0 $kinto-box-shadow;
+    &.tag-branch {
+      margin-left: -120px;
+      top: $margin-base-3;
+      &.form-dropdown {
+        top: $margin-base-4;
+        z-index: 10;
+      }
+    }
+  }
+
+  .dropdown-content-items {
+    height: 200px;
+  }
+}
+
+.dropdown-content .tag-item {
+  .tag-item-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .type-icon {
+      display: inline-block;
+      height: $margin-base-2;
+      width: $margin-base-2;
+      margin-right: 5px;
+      &.microservice {
+        @include backgroundImage(
+          '/images/icon-kintoblock-type-microservice-x-small.svg'
+        );
+      }
+      &.task {
+        @include backgroundImage(
+          '/images/icon-kintoblock-type-task-x-small.svg'
+        );
+      }
+      &.website {
+        @include backgroundImage(
+          '/images/icon-kintoblock-type-website-x-small.svg'
+        );
+      }
+    }
+  }
+
+  .text-highlight {
+    font-size: $margin-base + 2;
+    &.live {
+      background: $kinto-green;
+      border-radius: 4px;
+    }
+  }
+
+  &.active {
+    background: rgba($kinto-blue, 0.2);
+    border-left: 6px solid $kinto-blue;
+    align-items: flex-start;
+
+    .tag-item-text,
+    .date,
+    .notes {
+      margin-left: -6px;
+    }
+
+    .notes {
+      width: 306px;
+    }
+    &:hover {
+      background: rgba($kinto-blue, 0.2);
+    }
+  }
+  &:hover {
+    background: rgba($kinto-blue, 0.1);
+  }
+}
+
+.dropdown-content-items-scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.margin-right.dropdown {
+  margin-right: $margin-base + 4;
+}
+
+.kinto-app-tag {
+  width: 100%;
+  position: relative;
+  .tag-name-and-environments {
+    display: flex;
+    justify-content: space-between;
+    .environments {
+      display: flex;
+      .extra,
+      .main {
+        background-color: $kinto-grayscale-1;
+        border-radius: 4px;
+        color: $kinto-grayscale-7;
+        padding: 1px 5px;
+      }
+      .extra {
+        margin-left: 5px;
+      }
+    }
+  }
+  .date,
+  .notes {
+    h5 {
+      max-width: 300px;
+      text-align: left;
+      margin-left: 0;
+      color: rgba($kinto-white, 0.4);
+      font-weight: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.kinto-app-tag.draft {
+  postion: relative;
+  text-transform: capitalize;
+}
+
+.draft .tag-item-text {
+  color: $kinto-white;
+  font-weight: bold;
+}
+
+.faded {
+  opacity: 0.4;
+}
+
+.no-tags {
+  color: rgba($kinto-white, 0.4);
+  width: 100%;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  top: 90px;
+}
+
+.dropdown-filter-input {
+  @include placeholder($input);
+  &.tag-and-branch-dropdown {
+    @include placeholder($kinto-tinted-grayscale-7);
+  }
+}
+
+.tag-and-branch-input-wrapper {
+  display: flex;
+  .type-icon {
+    margin-left: 22px;
+    display: inline-block;
+    height: $margin-base-4;
+    width: $margin-base-4;
+    &.microservice {
+      @include backgroundImage(
+        '/images/icon-kintoblock-type-microservice-small.svg'
+      );
+    }
+    &.task {
+      @include backgroundImage('/images/icon-kintoblock-type-task-small.svg');
+    }
+    &.website {
+      @include backgroundImage(
+        '/images/icon-kintoblock-type-website-small.svg'
+      );
+    }
+  }
+}
+
+.tag-and-branch-input {
+  position: relative;
+  display: flex;
+  .icon {
+    transition: all 0.2s ease-in-out;
+    @include backgroundImage('/images/icon-searchfield-search.svg', $margin-base-3, $margin-base-3);
+    &.search {
+      @include backgroundImage(
+        '/images/icon-searchfield-search-active.svg',
+        $margin-base-3,
+        $margin-base-3
+      );
+    }
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+}
+
+.kintoapp {
+  .bottom {
+    .dropdown-content {
+      left: 0%;
+      .line {
+        margin: 9px $margin-base-3;
+      }
+    }
+  }
+}
+
+#endpointInfoSwitcher .dropdown-content {
+  top: $margin-base-3;
+}
+
+.dropdown-content.tag-branch {
+  .dropdown-content-items-scroll {
+    .dropdown-scroll-container {
+      .tag-button {
+        align-items: stretch;
+      }
+    }
+  }
+}
+
+.my-kintoblocks > .kintoblock-list {
+  .icons {
+    .right {
+      .dropdown.dropdown-filter {
+        right: 90px;
+        top: 35px;
+      }
+    }
+  }
+}
+
+// just more prio to get the rule working
+.tag-list .tag-button {
+  padding: $margin-base $margin-base-2;
+}
+
+.tag-button {
+  flex-direction: column;
+
+  &.active,
+  &.active:hover {
+    padding-left: $margin-base + 4;
+    background: #226f88;
+  }
+  &:hover {
+    background: rgba(#226f88, 0.4);
+  }
+
+  .tag-and-commit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .date,
+  .notes {
+    color: rgba($kinto-white, 0.4);
+    width: 100%;
+    font-weight: normal;
+  }
+  &.tag-item-text {
+    background-color: rgba($kinto-blue, 0.2);
+  }
+
+  .tag-commit,
+  .tag-commit span {
+    font-family: $code-font;
+    color: rgba($kinto-white, 0.6);
+  }
+  .tag-date {
+    color: rgba($kinto-white, 0.4);
+    opacity: 0.4;
+    margin-left: 5px;
+  }
+  .note {
+    color: rgba($kinto-white, 0.4);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .group-together {
+    display: flex;
+    line-height: $margin-base-2;
+  }
+
+  .icon {
+    padding: 0;
+    background-color: inherit;
+    display: inline-block;
+    margin: 0 $margin-base 0 0;
+  }
+}
+
+.form-dropdown {
+  .tag-name,
+  .tag-date,
+  .tag-commit span,
+  .no-tags {
+    color: $kinto-tinted-grayscale-7;
+  }
+  left: -70px;
+  top: $margin-base-4;
+  background-color: $kinto-white;
+  &:before {
+    display: none;
+  }
+  .dropdown-tabs {
+    margin-bottom: $margin-base-2;
+    .tab {
+      border-bottom: solid 2px $kinto-tinted-grayscale-2;
+      .icon {
+        opacity: 0.5;
+      }
+      h3 {
+        color: rgba($kinto-grayscale-7, 0.4);
+      }
+      &.active {
+        border-bottom: solid 4px $kinto-blue;
+        .icon {
+          opacity: 1;
+        }
+        h3 {
+          color: $kinto-grayscale-7;
+        }
+      }
+    }
+  }
+  .temporary-message {
+    margin: $margin-base-2;
+    color: $kinto-coral;
+    text-align: center;
+  }
+  .tag-item {
+    background: $kinto-white;
+    .tag-item-text {
+      color: $kinto-tinted-grayscale-7;
+    }
+    .date,
+    .note {
+      color: rgba($kinto-tinted-grayscale-7, 0.4);
+    }
+  }
+}

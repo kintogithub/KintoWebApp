@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-email-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website---Log-In-or-Sign-Up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="12---password-reset-email-submitted" transform="translate(-560.000000, -300.000000)" fill="#4E82EE">
+            <g id="hero">
+                <g id="email-submitted" transform="translate(500.000000, 240.000000)">
+                    <g id="Group" transform="translate(60.000000, 60.000000)">
+                        <path d="M65,29.7101735 L65,25 C65,23.8954305 64.1045695,23 63,23 L17,23 C15.8954305,23 15,23.8954305 15,25 L15,29.7101735 L40,41.779139 L65,29.7101735 Z M65,34.1518955 L40,46.220861 L15,34.1518955 L15,55 C15,56.1045695 15.8954305,57 17,57 L63,57 C64.1045695,57 65,56.1045695 65,55 L65,34.1518955 Z M40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 Z" id="icon-email-large"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

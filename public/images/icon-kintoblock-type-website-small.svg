@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/kintoblock/website/small</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,0 L32,0 C33.1045695,-2.02906125e-16 34,0.8954305 34,2 L34,26 C34,27.1045695 33.1045695,28 32,28 L2,28 C0.8954305,28 1.3527075e-16,27.1045695 0,26 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/kintoblock/website/small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.000000, 6.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#B3E04A" xlink:href="#path-1"></use>
+            <path d="M2,0 L32,0 C33.1045695,-2.02906125e-16 34,0.8954305 34,2 L34,8 L0,8 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="Rectangle-2" fill="#7ACB53" mask="url(#mask-2)"></path>
+            <path d="M16,2 L30,2 C31.1045695,2 32,2.8954305 32,4 C32,5.1045695 31.1045695,6 30,6 L16,6 C14.8954305,6 14,5.1045695 14,4 C14,2.8954305 14.8954305,2 16,2 Z" id="Rectangle" fill="#558D39" mask="url(#mask-2)"></path>
+            <path d="M4,2 C5.1045695,2 6,2.8954305 6,4 C6,5.1045695 5.1045695,6 4,6 C2.8954305,6 2,5.1045695 2,4 C2,2.8954305 2.8954305,2 4,2 Z" id="Rectangle-Copy" fill="#DEF92F" mask="url(#mask-2)"></path>
+            <path d="M10,2 C11.1045695,2 12,2.8954305 12,4 C12,5.1045695 11.1045695,6 10,6 C8.8954305,6 8,5.1045695 8,4 C8,2.8954305 8.8954305,2 10,2 Z" id="Rectangle-Copy-2" fill="#DEF92F" mask="url(#mask-2)"></path>
+            <polygon id="Combined-Shape" fill="#558D39" points="25.8784412 25.1950723 28.1467285 30.3758765 25.5265492 31.5 23.2206194 26.2332196 20 29.0731012 20 15.5 30 25.1950723"></polygon>
+        </g>
+    </g>
+</svg>

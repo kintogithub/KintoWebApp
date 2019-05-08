@@ -1,0 +1,2 @@
+export const DEPLOYMENT = 'DEPLOYMENT'
+export const ENVIRONMENT = 'ENVIRONMENT'

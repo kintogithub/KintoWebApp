@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-nav-docs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="320" height="60"></rect>
+        <filter x="-3.1%" y="-13.3%" width="106.2%" height="135.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.25869511   0 0 0 0 0.461476445   0 0 0 0 0.570764243  0 0 0 0.0982223732 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.25869511   0 0 0 0 0.461476445   0 0 0 0 0.570764243  0 0 0 0.101251132 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav/narrow/market/regular" transform="translate(-150.000000, -20.000000)">
+            <g id="nav/narrow/dashboard/regular">
+                <g id="base">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="icon/status/hints" transform="translate(150.000000, 20.000000)">
+                    <path d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z" fill="#A295EE" opacity="0.199558424"></path>
+                    <path d="M10,16.5 C9.17157288,16.5 8.5,15.8284271 8.5,15 C8.5,14.1715729 9.17157288,13.5 10,13.5 C10.8284271,13.5 11.5,14.1715729 11.5,15 C11.5,15.8284271 10.8284271,16.5 10,16.5 Z M9,11.5 C9,11.3293864 9,11.1587728 9,10.9881592 C9,10.4353799 9,10.1064453 9.11,9.85321045 C9.28832593,9.44268007 9.592664,9.08533488 10.126,8.776 C10.546875,8.52789307 12.3321533,7.90621973 12.3321533,6.85021973 C12.3321533,5.79421973 11.4417783,5.03912354 10.126,5.08850098 C9.24881445,5.12141927 8.52828662,5.61661784 7.9644165,6.57409668 L6.54980469,5.87451172 C6.68847205,5.5438434 7.39725781,3.5 10.126,3.5 C12.8547422,3.5 14.0831299,4.92962272 14.0831299,6.85021973 C14.0831299,8.5806377 12.4438752,9.53930664 11.9660034,9.75909424 C11.4881316,9.97888184 11.1695256,10.2344314 11.0751953,10.4369507 C11,10.5983887 11,10.848961 11,11.4520874 C11,11.4680583 11,11.4840291 11,11.5 C11,12.0522847 10.5522847,12.5 10,12.5 C9.44771525,12.5 9,12.0522847 9,11.5 Z" id="Combined-Shape" fill="#7A68E8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

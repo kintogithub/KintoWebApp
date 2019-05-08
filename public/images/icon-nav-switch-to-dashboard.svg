@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="40px" viewBox="0 0 80 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-nav-switch-to-dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#2FADF6" offset="0%"></stop>
+            <stop stop-color="#4E82EE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav/half/market/regular" transform="translate(-120.000000, -10.000000)">
+            <g id="nav/half/dashboard/regular">
+                <g id="icon-nav-switch-to-dashboard" transform="translate(120.000000, 10.000000)">
+                    <rect id="button" stroke="#EDF3FD" x="0.5" y="0.5" width="79" height="39" rx="4"></rect>
+                    <g id="icon-nav-dashboard" opacity="0.400000006" transform="translate(40.000000, 5.000000)">
+                        <circle id="Mask" fill="url(#linearGradient-1)" cx="15" cy="15" r="15"></circle>
+                        <path d="M3.81946746,25 C6.56607023,28.0687468 10.5575009,30 15,30 C19.4424991,30 23.4339298,28.0687468 26.1805325,25 C24.2825553,22.8794125 21.7901496,21.3019993 18.9652388,20.529684 C18.7060946,22.4884479 17.0295683,24 15,24 C12.9704317,24 11.2939054,22.4884479 11.0347612,20.529684 L11.0347612,20.529684 C8.20985042,21.3019993 5.71744469,22.8794125 3.81946746,25 Z" id="Combined-Shape" fill="#4DD0B7"></path>
+                        <path d="M15,2 C15.5522847,2 16,2.44771525 16,3 L16,7 C16,7.55228475 15.5522847,8 15,8 C14.4477153,8 14,7.55228475 14,7 L14,3 C14,2.44771525 14.4477153,2 15,2 Z M3.74166975,21.5 C3.46552738,21.0217074 3.62940253,20.410117 4.10769515,20.1339746 L4.71891109,19.7810889 C5.19720371,19.5049465 5.80879412,19.6688217 6.08493649,20.1471143 C6.36107887,20.6254069 6.19720371,21.2369973 5.71891109,21.5131397 L5.10769515,21.8660254 C4.62940253,22.1421678 4.01781213,21.9782926 3.74166975,21.5 Z M2,15 C2,14.4477153 2.44771525,14 3,14 L4,14 C4.55228475,14 5,14.4477153 5,15 C5,15.5522847 4.55228475,16 4,16 L3,16 C2.44771525,16 2,15.5522847 2,15 Z M3.74166975,8.5 C4.01781213,8.02170738 4.62940253,7.85783222 5.10769515,8.1339746 L6.90192379,9.16987298 C7.38021641,9.44601536 7.54409157,10.0576058 7.26794919,10.5358984 C6.99180682,11.014191 6.38021641,11.1780662 5.90192379,10.9019238 L4.10769515,9.8660254 C3.62940253,9.58988303 3.46552738,8.97829262 3.74166975,8.5 Z M8.5,3.74166975 C8.97829262,3.46552738 9.58988303,3.62940253 9.8660254,4.10769515 L11.1961524,6.41154273 C11.4722948,6.88983536 11.3084196,7.50142576 10.830127,7.77756814 C10.3518344,8.05371051 9.74024399,7.88983536 9.46410162,7.41154273 L8.1339746,5.10769515 C7.85783222,4.62940253 8.02170738,4.01781213 8.5,3.74166975 Z" id="dial" fill="#FFFFFF"></path>
+                        <path d="M13.9320478,22.0621778 C14.888633,22.6144626 16.1118138,22.2867123 16.6640986,21.330127 C17.7163833,19.5075164 21.2225342,10.0844727 20.9320478,9.93782217 C20.6415613,9.79117169 14.2522817,17.5075164 13.1999969,19.330127 C12.6477122,20.2867123 12.9754625,21.5098931 13.9320478,22.0621778 Z" id="dial" fill="#FFFFFF"></path>
+                    </g>
+                    <path d="M12,20 L12,17 L12,17 C12,15.8954305 12.8954305,15 14,15 L25,15" id="Path-2" stroke="#A295EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path-3" stroke="#A295EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="22 11 26 15 22 19"></polyline>
+                    <path d="M15,20 L15,23 L15,23 C15,24.1045695 15.8954305,25 17,25 L28,25" id="Path-2-Copy" stroke="#83A7F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(21.500000, 22.500000) scale(-1, 1) translate(-21.500000, -22.500000) "></path>
+                    <polyline id="Path-3-Copy" stroke="#83A7F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.000000, 25.000000) scale(-1, 1) translate(-16.000000, -25.000000) " points="14 21 18 25 14 29"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

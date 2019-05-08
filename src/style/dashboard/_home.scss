@@ -1,0 +1,172 @@
+.dashboard-home {
+  h5 {
+    font-weight: normal;
+  }
+
+  .verification-warning {
+    margin-top: $margin-base-2;
+    height: $margin-base * 8;
+    padding: $margin-base + 8 $margin-base-2;
+    background-color: rgba(#1ec4e9, 0.2);
+    border-radius: $margin-base + 2;
+    display: grid;
+    grid-template-columns: auto 240px;
+    align-items: center;
+    p {
+      color: #112225;
+      font-size: $margin-base + 4;
+      line-height: $margin-base-2;
+      margin: 0;
+      .bold {
+        font-weight: bold;
+      }
+    }
+    .right {
+      display: flex;
+      .button {
+        width: 160px;
+      }
+      .icon {
+        background-color: $kinto-white;
+        border-radius: $margin-base-2;
+        margin-left: $margin-base-2;
+        height: $margin-base-4;
+        min-width: $margin-base-4;
+        @include backgroundImage('/images/icon-email-large.svg');
+      }
+    }
+  }
+
+  .onboarding-progress {
+    border-radius: $margin-base + 2;
+    background-color: $kinto-white;
+    @extend .box-shadow-standard;
+    display: grid;
+    grid-template-columns: 240px auto;
+    margin: $margin-base-2 0 $margin-base-4;
+    .tooltip {
+      height: $margin-base + 4;
+      width: $margin-base + 4;
+      margin-right: $margin-base-2;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    button,
+    a.button {
+      max-width: 120px;
+      min-width: 120px;
+      margin: 0;
+    }
+    .left {
+      padding: $margin-base-4;
+      border-right: solid 2px $kinto-grayscale-2;
+      .percentage-progress {
+        @include backgroundImage('/images/donut-0.svg', 160px, 160px);
+        &.progress-25 {
+          @include backgroundImage('/images/donut-25.svg', 160px, 160px);
+        }
+        &.progress-50 {
+          @include backgroundImage('/images/donut-50.svg', 160px, 160px);
+        }
+        &.progress-75 {
+          @include backgroundImage('/images/donut-75.svg', 160px, 160px);
+        }
+        &.progress-100 {
+          @include backgroundImage('/images/donut-100.svg', 160px, 160px);
+        }
+      }
+    }
+    .right {
+      padding: $margin-base-4;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+          width: 100%;
+          margin: 0;
+          .emoji {
+            margin-right: $margin-base;
+          }
+        }
+        .check {
+          flex-grow: 0;
+          flex-shrink: 0;
+          height: $margin-base-4;
+          width: $margin-base-4;
+          margin-right: $margin-base-2;
+          border-radius: 50%;
+          background-color: $kinto-tinted-grayscale-3;
+          &.checked {
+            @include backgroundImage(
+              '/images/icon-status-success-large.svg',
+              $margin-base-4,
+              $margin-base-4
+            );
+          }
+        }
+        padding-bottom: $margin-base-4;
+        border-bottom: solid 1px $kinto-grayscale-1;
+      }
+      .bottom {
+        padding-top: $margin-base-4;
+        a {
+          margin: 0;
+          .tooltip {
+            margin-top: 2px;
+          }
+        }
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: $margin-base;
+          .check {
+            flex-grow: 0;
+            flex-shrink: 0;
+            height: $margin-base-2;
+            width: $margin-base-2;
+            border-radius: 50%;
+            margin: 0 $margin-base-3 0 $margin-base;
+            background-color: $kinto-tinted-grayscale-3;
+            &.checked {
+              @include backgroundImage(
+                '/images/icon-status-success-large.svg',
+                $margin-base-2,
+                $margin-base-2
+              );
+            }
+          }
+          h3 {
+            .emoji {
+              margin-right: $margin-base;
+            }
+            text-align: left;
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  a:not(.button) {
+    display: flex;
+    margin-bottom: $margin-base;
+    height: $margin-base-2;
+    line-height: $margin-base-2;
+    .icon {
+      margin-right: $margin-base;
+      &.github {
+        display: inline-block;
+        @include backgroundImage('/images/icon-github-small.svg', $margin-base-2, $margin-base-2);
+      }
+      &.slack {
+        @include backgroundImage(
+          '/images/icon-slack-community-small.svg',
+          $margin-base-2,
+          $margin-base-2
+        );
+      }
+    }
+  }
+}

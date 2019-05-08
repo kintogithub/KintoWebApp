@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox/large/checked/regular</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#DEEAFB" offset="0%"></stop>
+            <stop stop-color="#D8E6FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-System" transform="translate(-506.000000, -3069.000000)">
+            <g id="UI-Elements" transform="translate(120.000000, 361.000000)">
+                <g id="checkbox/large/checked/regular" transform="translate(386.000000, 2708.000000)">
+                    <rect id="base" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="30"></rect>
+                    <polyline id="Path-2" stroke="#245B70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="7.8359375 16.1914062 13.8359375 22.1914062 22.8359375 9.19140625"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>illustration/kintoblock/website</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="66" rx="2"></rect>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration/kintoblock/website">
+            <g transform="translate(0.000000, 7.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#ECE9FB" xlink:href="#path-1"></use>
+                <rect id="Rectangle-6" fill="#F9D5F2" mask="url(#mask-2)" x="4" y="22" width="34" height="26"></rect>
+                <rect id="Rectangle-6-Copy-3" fill="#D7D1F8" mask="url(#mask-2)" x="4" y="52" width="54" height="2"></rect>
+                <rect id="Rectangle-6-Copy-4" fill="#D7D1F8" mask="url(#mask-2)" x="4" y="56" width="54" height="2"></rect>
+                <rect id="Rectangle-6-Copy-5" fill="#D7D1F8" mask="url(#mask-2)" x="4" y="60" width="72" height="2"></rect>
+                <rect id="Rectangle-6-Copy" fill="#D6D1F8" mask="url(#mask-2)" x="42" y="22" width="34" height="26"></rect>
+                <polygon id="Combined-Shape" fill="#9486EC" mask="url(#mask-2)" points="67.8784412 50 70.1467285 55.34375 67.5265492 56.5032292 65.2206194 51.0707989 62 54 62 40 72 50"></polygon>
+                <rect id="Rectangle-2" fill="#9486EC" mask="url(#mask-2)" x="0" y="0" width="80" height="16"></rect>
+                <rect id="Rectangle" fill="#C6BEF4" mask="url(#mask-2)" x="28" y="4" width="48" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy" fill="#F5B9EA" mask="url(#mask-2)" x="4" y="4" width="8" height="8" rx="4"></rect>
+                <path d="M9.35355339,9.64644661 C9.54881554,9.84170876 9.54881554,10.1582912 9.35355339,10.3535534 C9.15829124,10.5488155 8.84170876,10.5488155 8.64644661,10.3535534 L6.64644661,8.35355339 C6.45118446,8.15829124 6.45118446,7.84170876 6.64644661,7.64644661 L8.64644661,5.64644661 C8.84170876,5.45118446 9.15829124,5.45118446 9.35355339,5.64644661 C9.54881554,5.84170876 9.54881554,6.15829124 9.35355339,6.35355339 L7.70710678,8 L9.35355339,9.64644661 Z" id="Path-2" fill="#7A68E8" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <rect id="Rectangle-Copy-2" fill="#F5B9EA" mask="url(#mask-2)" x="16" y="4" width="8" height="8" rx="4"></rect>
+                <path d="M18.6464466,6.35355339 C18.4511845,6.15829124 18.4511845,5.84170876 18.6464466,5.64644661 C18.8417088,5.45118446 19.1582912,5.45118446 19.3535534,5.64644661 L21.3535534,7.64644661 C21.5488155,7.84170876 21.5488155,8.15829124 21.3535534,8.35355339 L19.3535534,10.3535534 C19.1582912,10.5488155 18.8417088,10.5488155 18.6464466,10.3535534 C18.4511845,10.1582912 18.4511845,9.84170876 18.6464466,9.64644661 L20.2928932,8 L18.6464466,6.35355339 Z" id="Path-2-Copy-3" fill="#7A68E8" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

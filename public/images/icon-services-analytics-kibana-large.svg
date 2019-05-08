@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-services-analytics-kibana-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/services/analytics/kibana/large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-services-analytics-kibana-large">
+            <circle id="Oval-4" fill="#FFFFFF" cx="40" cy="40" r="40"></circle>
+            <path d="M40.11,38.5 L21.59,60.73 L21.59,65.73 L23.94,65.73 L44.57,41 C43.1394838,40.0702291 41.6496311,39.2351098 40.11,38.5 Z" id="Shape" fill="#009B90" fill-rule="nonzero"></path>
+            <path d="M21.59,15.63 L21.59,34.42 C24.515625,34.42 27.4208181,34.9379385 30.2487793,35.5002441 C33.6591783,36.1783604 36.487793,37.2089844 40.11,38.5 L59.16,15.63 L21.59,15.63 Z" id="Shape" fill="#EF5098" fill-rule="nonzero"></path>
+            <path d="M44.57,41 L23.93,65.74 L59.16,65.74 C59.16,55.66 53.44,46.7 44.57,41 Z" id="Shape" fill="#40BEB0" fill-rule="nonzero"></path>
+            <path d="M21.59,60.73 L40.11,38.5 C34.3099248,35.790869 27.9815166,34.4008732 21.58,34.43 L21.59,60.73 Z" id="Shape" fill="#353535" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>donut-small-25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="197.464484%" fx="0%" fy="197.464484%" r="93.0550018%" id="radialGradient-1">
+            <stop stop-color="#FFDB18" offset="0%"></stop>
+            <stop stop-color="#FFDB18" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="100%" id="radialGradient-2">
+            <stop stop-color="#1EC4E9" offset="0%"></stop>
+            <stop stop-color="#1EC4E9" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <path d="M10,0 C15.5228475,0 20,4.4771525 20,10 L16,10 C16,6.6862915 13.3137085,4 10,4 L10,0 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="donut-small-25">
+            <circle id="Oval-Copy-4" stroke="#556F7D" stroke-width="4" cx="10" cy="10" r="8"></circle>
+            <g id="Combined-Shape">
+                <use fill="#9BD8A0" xlink:href="#path-3"></use>
+                <use fill="url(#radialGradient-1)" xlink:href="#path-3"></use>
+                <use fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

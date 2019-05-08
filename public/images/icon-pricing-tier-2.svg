@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pricing-tier-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="1.72203635%" y1="1.72203635%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#50F6D6" offset="0%"></stop>
+            <stop stop-color="#30D4FF" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="30" cy="30" r="30"></circle>
+        <circle id="path-3" cx="30" cy="36" r="20"></circle>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-4">
+            <stop stop-color="#FF943C" stop-opacity="0.900447237" offset="0%"></stop>
+            <stop stop-color="#FFAF48" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFDB18" offset="0%"></stop>
+            <stop stop-color="#FFF817" stop-opacity="0.602383379" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---dashboard---account---billing---1-workspace---free-tooltips-copy-2" transform="translate(-850.000000, -540.000000)">
+            <g id="content">
+                <g id="Rectangle-+-STAGING-Mask" transform="translate(710.000000, 460.000000)">
+                    <g id="icon/pricing/tier-2" transform="translate(140.000000, 80.000000)">
+                        <g id="Oval-6-Copy" opacity="0.600000024" fill-rule="nonzero">
+                            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                            <use fill-opacity="0.203832654" fill="#000000" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="Oval-6" fill-rule="nonzero">
+                            <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                            <use fill-opacity="0.203832654" fill="#000000" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M26,31 L34,31 C34,38.3333333 34.6666667,43.3333333 36,46 C37.3333333,48.6666667 40.1,50 44.3,50 C40.2333333,54 35.4666667,56 30,56 C24.5333333,56 19.7666667,54 15.7,50 C19.9,50 22.6666667,48.6666667 24,46 C25.3333333,43.3333333 26,38.3333333 26,31 Z" id="Rectangle" fill="url(#linearGradient-4)" fill-rule="evenodd"></path>
+                        <path d="M28,31 L32,31 C32,38.3333333 32.3333333,43.3333333 33,46 C33.6666667,48.6666667 34.6666667,51.7 36,55.1 C34,55.7 32,56 30,56 C28,56 26,55.7 24,55.1 C25.3333333,51.7 26.3333333,48.6666667 27,46 C27.6666667,43.3333333 28,38.3333333 28,31 Z" id="Rectangle-Copy" fill="url(#linearGradient-5)" fill-rule="evenodd"></path>
+                        <g id="rocket" stroke-width="1" fill-rule="evenodd" transform="translate(20.000000, 12.000000)">
+                            <path d="M1.14046078,19.96139 C1.90276493,18.9317889 3.04622117,17.5160875 4.57082948,15.7142857 L5.71428571,23.8223938 C4.95198156,24.8519949 4.06262671,25.3667954 3.04622117,25.3667954 L0.382073212,25.3667954 L0.382073212,25.3667798 C0.171060004,25.3667798 -2.72846449e-12,25.1939238 -2.72848411e-12,24.980695 C-2.72848411e-12,24.9786445 1.61647734e-05,24.9765941 4.84927868e-05,24.9745439 C0.0373504114,22.6089199 0.417487839,20.9378685 1.14046078,19.96139 Z" id="Rectangle" fill="#F46464"></path>
+                            <path d="M18.8595392,19.96139 C19.5825122,20.9378685 19.9626496,22.6089199 19.9999515,24.9745439 C19.9999838,24.9765941 20,24.9786445 20,24.980695 C20,25.1939238 19.82894,25.3667798 19.6179268,25.3667798 L19.6179268,25.3667954 L16.9537788,25.3667954 C15.9373733,25.3667954 15.0480184,24.8519949 14.2857143,23.8223938 L15.4291705,15.7142857 C16.9537788,17.5160875 18.0972351,18.9317889 18.8595392,19.96139 Z" id="Rectangle-Copy-3" fill="#F46464"></path>
+                            <path d="M10,25.8135687 C13.5297752,25.8135687 16.8173048,21.7559091 16.3912233,13.7672366 C15.9651417,5.77856418 10.9732858,0 10,0 C9.02671416,2.40705115e-16 4.03485826,5.77856418 3.60877671,13.7672366 C3.18269516,21.7559091 6.47022484,25.8135687 10,25.8135687 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                            <circle id="Oval-3" fill="#1EC4E9" cx="10" cy="12.8571429" r="2.85714286"></circle>
+                            <path d="M10,29.822118 C9.39207615,29.822118 8.71409444,27.89593 8.66944495,25.5198566 C8.62479545,23.1437832 8.10617059,20.3571429 10,20.3571429 C11.8938294,20.3571429 11.3752046,23.1437832 11.3305551,25.5198566 C11.2859056,27.89593 10.6079239,29.822118 10,29.822118 Z" id="Oval-6" fill="#F46464"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

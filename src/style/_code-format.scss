@@ -1,0 +1,74 @@
+.code {
+  font-family: $code-font;
+  font-size: $margin-base + 6;
+  color: $kinto-grayscale-7;
+  font-weight: bold;
+  line-height: $default-line-height;
+}
+
+.message-box {
+  padding: $margin-base-3;
+  display: grid;
+  grid-template-columns: 1fr $margin-base * 8;
+  grid-column-gap: $margin-base-2;
+  height: 140px;
+  align-items: stretch;
+  .left {
+    align-self: stretch;
+    .endpoint-name.box {
+      display: flex;
+    }
+    .code {
+      display: inline-block;
+      height: $margin-base * 8;
+      overflow: hidden;
+      text-overflow: clip;
+      font-weight: normal;
+      &.text-color {
+        display: inline;
+        padding-top: 0;
+        font-weight: bold;
+      }
+    }
+    height: $margin-base * 8;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .toggle-expand {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .collapse-icon {
+        margin-left: $margin-base;
+      }
+    }
+    h6 {
+      margin: 0;
+      .collapse-icon {
+        position: absolute;
+      }
+    }
+    button.button.secondary {
+      min-width: $margin-base * 8;
+      width: $margin-base * 8;
+    }
+  }
+  &.expanded {
+    height: auto;
+    .left {
+      height: auto;
+      .code {
+        height: auto;
+      }
+    }
+    .right {
+      min-height: $margin-base * 8;
+    }
+  }
+  &.dark {
+    background: $kinto-tinted-grayscale-1;
+  }
+}

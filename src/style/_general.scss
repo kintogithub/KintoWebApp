@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $base-font;
+}
+
+body {
+  margin: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.kintoblocks-master-container {
+  min-height: calc(100vh - 140px);
+}
+
+.content {
+  max-width: $content-width;
+  margin: $margin-base * 6 auto 0;
+  padding: $margin-base * 6 $margin-base 0;
+
+  @include tablet {
+    max-width: $tablet-content-width;
+
+    &.smaller-tablet {
+      max-width: $smaller-tablet-content-width;
+    }
+  }
+
+  @include abovetablet {
+    padding: $margin-base * 6 0 0;
+  }
+}
+
+.bg-light-blue {
+  background-color: $kinto-tinted-grayscale-1;
+}
+
+.unstyled-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  li a {
+    text-decoration: none;
+  }
+}
+
+textarea,
+input,
+button {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hide-text {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  &:hover {
+    color: transparent;
+  }
+}
+
+.hide {
+  display: none;
+}
+.hide-important {
+  display: none !important;
+}
+// override browser default color and border
+button.dropdown-button.menu,
+button.dropdown-button {
+  border: none;
+  background-color: transparent !important;
+}
+
+// for items we have faded for alpha release
+.dimmed {
+  opacity: 0.2;
+}
+
+.no-click {
+  cursor: default;
+}
+
+.coming {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: -16px;
+  left: -50px;
+  background-color: $kinto-green-light;
+  color: $kinto-white;
+  padding-top: 36px;
+  margin: 0;
+  padding-bottom: $margin-base;
+  width: 135px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box-shadow-standard {
+  box-shadow: 0 2px 4px 0 $kinto-box-shadow, 0 $margin-base $margin-base-4 0 $kinto-box-shadow;
+}
+
+// custom iScroll styles
+
+.iScrollHorizontalScrollbar {
+  background: rgba(17, 34, 37, 0.1);
+  border-radius: 5px 5px 5px 5px;
+  height: $margin-base;
+  .iScrollIndicator {
+    background: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgba($kinto-tinted-grayscale-9, 0.1);
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+      0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+    height: $margin-base;
+  }
+}
+
+.iScrollVerticalScrollbar {
+  background: rgba(17, 34, 37, 0.1);
+  border-radius: 5px 5px 5px 5px;
+  width: $margin-base;
+  .iScrollIndicator {
+    width: $margin-base;
+    background: $kinto-white;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgba($kinto-tinted-grayscale-9, 0.1);
+    box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+      0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+  }
+}
+
+.action-bottom-section {
+  border-radius: $margin-base + 2;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+    0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+  .top {
+    background-color: $kinto-white;
+    border-radius: 8px 8px 0 0;
+    padding: $margin-base * 6 $margin-base-4 $margin-base-2;
+  }
+  .bottom {
+    padding: $margin-base-2 $margin-base-4 $margin-base * 6 $margin-base-4;
+    background-color: $kinto-tinted-grayscale-1;
+  }
+}

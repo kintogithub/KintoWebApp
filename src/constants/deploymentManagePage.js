@@ -1,0 +1,8 @@
+export const externalAccess = 'external'
+export const internalAccess = 'internal'
+export const publicAccess = 'public'
+export const show = 'show'
+export const hide = 'hide'
+export const active = 'active'
+export const collapsed = 'collapsed'
+export const expanded = 'expanded'

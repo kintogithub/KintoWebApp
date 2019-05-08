@@ -1,0 +1,122 @@
+.workspace-toolbar {
+  padding: $margin-base * 2;
+  background-color: $kinto-white;
+  border-radius: 8px;
+  @extend .form-shadow;
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: $margin-base * 2;
+  .user-section {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    .avatar {
+      position: relative;
+      background-origin: border-box;
+      border: solid rgba(0, 0, 0, 0.1) 1px;
+    }
+    h5.bold {
+      display: inline-block;
+      margin: 0 0 0 $margin-base;
+      line-height: $margin-base * 5;
+      font-weight: bold;
+    }
+  }
+  .shared {
+    margin-left: $margin-base-4;
+    padding-left: $margin-base-4;
+    border-left: 2px solid $kinto-tinted-grayscale-3;
+  }
+  .dot.small {
+    background: $kinto-tinted-grayscale-3;
+    height: 6px;
+    width: 6px;
+    border-radius: 6px;
+    margin: 0 $margin-base-2 0 $margin-base;
+  }
+}
+
+.workspace-modal {
+  min-width: $margin-base * 74;
+  .workspace-toolbar-modal {
+    .search {
+      margin: $margin-base * 3 0 $margin-base * 1.5;
+      input {
+        background-color: $kinto-white;
+        padding-left: $margin-base-2;
+      }
+      .inner-search-icon {
+        right: 6px;
+        left: auto;
+      }
+    }
+    .workspace-form {
+      width: 100%;
+      border: solid 2px $kinto-tinted-grayscale-2;
+      border-radius: 4px;
+      padding: $margin-base * 2;
+      min-height: 480px;
+      .member-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $margin-base * 1.5;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        select {
+          margin-right: $margin-base * 2;
+          margin-bottom: 0;
+          width: $margin-base * 15;
+        }
+        input:not([type='checkbox']) {
+          width: $margin-base * 37;
+          margin-right: $margin-base * 2;
+          margin-bottom: 0;
+        }
+        input.checkbox {
+          @extend .checkbox;
+          margin: 0;
+          width: $margin-base-2;
+        }
+      }
+    }
+    button {
+      width: 213px;
+      margin: $margin-base * 3 0;
+      float: right;
+      display: inline-block;
+      &.secondary {
+        margin-right: $margin-base-2;
+      }
+    }
+  }
+}
+
+.members {
+  display: flex;
+  align-items: center;
+}
+
+.members-enter {
+  opacity: 0.01;
+}
+
+.members-enter.members-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.members-leave {
+  opacity: 1;
+}
+
+.members-leave.members-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.workspace-toggles {
+  display: flex;
+  justify-content: flex-end;
+}

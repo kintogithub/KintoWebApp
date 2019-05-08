@@ -1,0 +1,65 @@
+.loading-spinner {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  padding-bottom: $margin-base * 6;
+  height: 100vh;
+  background-color: rgba($kinto-tinted-grayscale-1, 0.9);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .loading-icon {
+    background-color: $kinto-white;
+    @include backgroundImage('/images/logo-full-color.svg', 150px, 150px);
+    background-size: 50%;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px 0 $kinto-box-shadow,
+      0 $margin-base $margin-base-4 0 $kinto-box-shadow;
+  }
+  h2 {
+    color: $kinto-grayscale-7;
+    opacity: 0;
+    &.start {
+      animation: start 1.8s ease-in-out infinite;
+    }
+  }
+  span {
+    opacity: 0;
+    &.one {
+      animation: loadingDots 1s ease-in infinite alternate;
+    }
+    &.two {
+      animation: loadingDots 1s ease-in infinite alternate;
+      animation-delay: 0.4s;
+    }
+    &.three {
+      animation: loadingDots 1s ease-in infinite alternate;
+      animation-delay: 0.8s;
+    }
+  }
+  @keyframes loadingDots {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

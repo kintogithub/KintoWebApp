@@ -1,0 +1,18 @@
+// TODO raven doesn't have variables in the design for the colors
+.text-color {
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 3px;
+  &.green {
+    background: #a9e4db;
+    color: #1b725a;
+  }
+  &.blue {
+    background: #a7dbfd;
+    color: #496cac;
+  }
+  &.orange {
+    background: #f5d5c0;
+    color: #cf7542;
+  }
+}

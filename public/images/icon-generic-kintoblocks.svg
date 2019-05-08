@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-generic-kintoblocks</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#B9D5EC" offset="0%"></stop>
+            <stop stop-color="#98B4CD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1x---dashboard---account---overview---simplified" transform="translate(-720.000000, -220.000000)" fill="url(#linearGradient-1)">
+            <g id="content">
+                <g id="content-box" transform="translate(350.000000, 180.000000)">
+                    <g id="Group-2">
+                        <g id="Group-3" transform="translate(360.000000, 40.000000)">
+                            <g id="Group-7" transform="translate(10.000000, 0.000000)">
+                                <g id="icon/generic/kintoblock/gradient">
+                                    <path d="M44.056161,2.38597707 L70.056161,17.6800947 C72.4996706,19.1174533 74,21.7406542 74,24.5755684 L74,55.4244316 C74,58.2593458 72.4996706,60.8825467 70.056161,62.3199053 L44.056161,77.6140229 C41.5525681,79.0867246 38.4474319,79.0867246 35.943839,77.6140229 L9.94383899,62.3199053 C7.50032942,60.8825467 6,58.2593458 6,55.4244316 L6,24.5755684 C6,21.7406542 7.50032942,19.1174533 9.94383899,17.6800947 L35.943839,2.38597707 C38.4474319,0.913275361 41.5525681,0.913275361 44.056161,2.38597707 Z" id="Mask"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

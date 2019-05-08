@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>help-tooltip-left-checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,2.42538274e-05 L36.2918515,0.000220054076 C38.5644651,0.00023383397 40.6420222,1.2842397 41.6583712,3.31692442 L50.0000243,20.0001213 L41.6583754,36.6835121 C40.6420256,38.7162229 38.5644434,40.0002425 36.2918062,40.0002425 L4,40.0002425 C1.790861,40.0002425 7.37596886e-15,38.2093815 7.10542736e-15,36.0002425 L-2.42537539e-05,4 C-2.42537539e-05,1.790861 1.79083675,4.05812251e-16 3.99997575,0 C3.99998383,-1.48510845e-21 3.99999192,2.45106158e-11 4,7.35309591e-11 Z" id="path-1"></path>
+        <filter x="-138.0%" y="-142.5%" width="376.0%" height="445.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.462745098   0 0 0 0 0.57254902  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.462745098   0 0 0 0 0.57254902  0 0 0 0.40455163 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help-tooltip-left-checked" transform="translate(50.000000, 50.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#7A68E8" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <circle id="Combined-Shape" fill="#6759B7" cx="20.0000243" cy="20.0002425" r="10"></circle>
+            <path d="M23.1807923,15.4267802 C23.4975068,14.9743309 24.1210373,14.8642961 24.5734866,15.1810106 C25.0259359,15.4977251 25.1359707,16.1212556 24.8192562,16.5737049 L19.5692562,24.0737049 C19.2126773,24.5831033 18.4825965,24.6470284 18.0429175,24.2073493 L15.0429175,21.2073493 C14.6523932,20.816825 14.6523932,20.18366 15.0429175,19.7931358 C15.4334418,19.4026115 16.0666067,19.4026115 16.457131,19.7931358 L18.6143148,21.9503195 L23.1807923,15.4267802 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

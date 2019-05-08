@@ -1,0 +1,423 @@
+.status-and-history-wrapper {
+  .tag,
+  .group-tag {
+    border-radius: 4px;
+    padding: 4px 5px;
+    font-size: $margin-base + 2;
+    font-weight: bold;
+    text-align: center;
+    line-height: $margin-base + 6;
+    margin-right: $margin-base;
+    border: 1px solid $kinto-tinted-grayscale-6;
+    color: $kinto-tinted-grayscale-7;
+    text-align: center;
+    &.index-0,
+    &.main {
+      color: $kinto-white;
+      border: none;
+      &.success {
+        background: $kinto-green;
+      }
+      &.failed {
+        background: $kinto-coral;
+      }
+      &.shutdown {
+        background: $kinto-grayscale-7;
+      }
+      &.running {
+        background: $kinto-orange;
+      }
+      &.pending {
+        background: $kinto-yellow;
+      }
+    }
+  }
+}
+
+.status-and-history {
+  background-color: $kinto-white;
+  border-radius: $margin-base + 2 $margin-base + 2 0 0;
+  padding: $margin-base-2 $margin-base-2;
+  cursor: pointer;
+  @extend .box-shadow-standard;
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $margin-base-2;
+    .left {
+      .upper {
+        display: flex;
+        align-items: center;
+        margin-bottom: $margin-base + 8;
+        .icon {
+          margin-right: $margin-base;
+          &.shutdown {
+            @include backgroundImage('/images/icon-status-down.svg');
+          }
+          &.failed {
+            @include backgroundImage('/images/icon-status-failed.svg');
+          }
+          &.running {
+            @include backgroundImage('/images/icon-status-running.svg');
+            animation: spin 3s linear infinite;
+          }
+        }
+        .time-and-date {
+          color: $kinto-tinted-grayscale-6;
+          font-size: $margin-base + 4;
+          font-weight: normal;
+          line-height: $default-line-height;
+        }
+      }
+      .lower {
+        border: 2px solid $kinto-tinted-grayscale-2;
+        border-radius: 4px;
+        padding: $margin-base;
+        background-color: $kinto-grayscale-1;
+        color: $kinto-tinted-grayscale-7;
+        font-size: $margin-base + 4;
+        font-weight: normal;
+        height: 142px;
+      }
+    }
+    .right {
+      border: 2px solid $kinto-tinted-grayscale-2;
+      border-radius: 4px;
+      .upper {
+        background-color: $kinto-tinted-grayscale-2;
+        height: $margin-base-4;
+        display: grid;
+        grid-template-columns: $margin-base-2 $margin-base-2;
+        justify-content: start;
+        grid-column-gap: $margin-base;
+        align-items: center;
+        padding: $margin-base $margin-base-2;
+        .icon {
+          height: $margin-base-2;
+          width: $margin-base-2;
+          margin-left: 0;
+          &.microservices {
+            @include backgroundImage(
+              '/images/illustration-kintoblock-microservice.svg'
+            );
+          }
+        }
+        h5 {
+          margin-bottom: 0;
+          height: $margin-base-2;
+          line-height: $margin-base-2;
+        }
+      }
+      .lower {
+        height: 140px;
+        background-color: $kinto-grayscale-1;
+        position: relative;
+        padding: 15px $margin-base-2;
+        .progress {
+          width: 160px;
+          height: 160px;
+          .progress-bar {
+            position: absolute;
+            right: $margin-base-2;
+            top: -30px;
+            width: 160px;
+            height: 160px;
+          }
+        }
+
+        .rocket-wrapper {
+          position: relative;
+          .rocket {
+            position: absolute;
+            bottom: 0;
+            right: 185px;
+            @include backgroundImage(
+              '/images/icon-deployment-type-standard.svg',
+              $margin-base-4,
+              $margin-base-4
+            );
+          }
+          .flame {
+            opacity: 0;
+            @include backgroundImage('/images/flames.svg', $margin-base-4, $margin-base-4);
+            position: absolute;
+            height: $margin-base-2;
+            width: $margin-base-2;
+            position: absolute;
+            bottom: -5px;
+            right: 209px;
+          }
+          &.running {
+            .rocket {
+              animation: flyingRocket 1s ease-in-out infinite alternate;
+            }
+            .flame {
+              animation: flyingFlames 1s ease-in-out infinite alternate;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.deployment-history {
+  min-height: $margin-base * 8;
+  box-shadow: 0 2px 4px 0 rgba($kinto-tinted-grayscale-7, 0.1),
+    0 $margin-base $margin-base-4 0 rgba($kinto-tinted-grayscale-7, 0.1);
+  border-radius: 0 0 $margin-base + 2 $margin-base + 2;
+  padding: $margin-base-3;
+  .icon.toggle {
+    margin-left: 0;
+    margin-right: $margin-base;
+    @include backgroundImage(
+      '/images/icon-gray-expand-collapse.svg',
+      $margin-base-2,
+      $margin-base-2
+    );
+    display: inline-block;
+  }
+  .closed {
+    display: flex;
+    align-items: center;
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+  .bottom {
+    padding-top: $margin-base;
+    display: grid;
+    grid-template-columns: $margin-base-2 1fr;
+    grid-column-gap: $margin-base-2;
+    align-items: center;
+    h6 {
+      margin: 0;
+    }
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.release {
+  display: grid;
+  width: 100%;
+  grid-template-columns: $margin-base-2 1fr;
+  grid-column-gap: $margin-base-2;
+  justify-content: center;
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .dot {
+      &.index-0 {
+        margin: $margin-base-2 auto 15px;
+        min-width: $margin-base-2;
+        min-height: $margin-base-2;
+        background: $kinto-blue;
+        border-radius: $margin-base;
+        border: solid 5px rgba($kinto-blue-light, 0.4);
+        background-clip: content-box;
+      }
+      &:not(.index-0):before {
+        content: '';
+        background: $kinto-grayscale-4;
+        border-radius: 0 0 2px 2px;
+        width: 4px;
+        height: $margin-base + 2;
+        position: absolute;
+        top: -2px;
+        left: 8px;
+      }
+      min-width: $margin-base;
+      min-height: $margin-base;
+      background: $kinto-tinted-grayscale-6;
+      border-radius: 5px;
+      margin: 25px auto 15px;
+    }
+    .vertical-line {
+      background: $kinto-grayscale-4;
+      border-radius: 2px 2px 2px 2px;
+      width: 4px;
+      height: 100%;
+    }
+  }
+  .right-wrapper {
+    background: $kinto-grayscale-1;
+    @extend .box-shadow-standard;
+    border-radius: 4px;
+    margin-bottom: $margin-base-3;
+    overflow: hidden;
+    .heading {
+      background: $kinto-white;
+      box-shadow: 0 2px 0 0 $kinto-tinted-grayscale-2;
+      display: grid;
+      grid-template-columns: 120px auto;
+      justify-content: space-between;
+      padding: $margin-base;
+      align-items: center;
+      .left {
+        justify-self: start;
+        color: $kinto-tinted-grayscale-9;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin: 0;
+      }
+      .right {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        justify-content: end;
+        grid-column-gap: $margin-base;
+        .button {
+          min-width: 120px;
+          padding: 0 $margin-base;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .icon.tag {
+            justify-self: flex-end;
+            margin-right: -30px;
+            margin-left: $margin-base-2;
+            border: none;
+            @include backgroundImage('/images/icon-type-tag.svg', $margin-base-2, $margin-base-2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.deployment-steps {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  &:last-child {
+    margin-bottom: 5px;
+  }
+  padding: $margin-base-2;
+  .column1 {
+    padding-top: $margin-base;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span last-line;
+  }
+}
+
+.deployment-steps .right {
+  display: grid;
+  grid-template-columns: 180px 130px $margin-base-3 460px;
+  grid-column-gap: $margin-base;
+  grid-column-start: 2;
+  justify-content: start;
+  .column2,
+  .column3,
+  .column4,
+  .column5 {
+    padding-top: $margin-base;
+    align-self: start;
+    display: grid;
+    grid-row-gap: $margin-base-2;
+  }
+  .column2 {
+    padding-left: $margin-base;
+    color: $kinto-tinted-grayscale-6;
+    font-size: $margin-base + 4;
+    font-weight: bold;
+    line-height: $default-line-height;
+    text-transform: capitalize;
+  }
+  .column3 {
+    justify-self: end;
+    .version-name {
+      color: $kinto-tinted-grayscale-6;
+      font-size: $margin-base + 4;
+      font-weight: normal;
+      text-align: right;
+      line-height: $default-line-height;
+    }
+  }
+  .column4 {
+    .icon {
+      margin-left: $margin-base;
+      &.shutdown {
+        @include backgroundImage('/images/icon-status-down.svg');
+      }
+      &.failed {
+        @include backgroundImage('/images/icon-status-failed.svg');
+      }
+      &.running {
+        @include backgroundImage('/images/icon-status-running.svg');
+        animation: spin 3s linear infinite;
+      }
+      &.pending {
+        @include backgroundImage('/images/icon-mustard-alert-large.svg');
+        animation: pulse 0.7s linear infinite alternate;
+      }
+    }
+  }
+  .column5 {
+    color: $kinto-tinted-grayscale-7;
+    font-size: $margin-base + 4;
+    font-weight: bold;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    .completion-time {
+      font-weight: normal;
+    }
+  }
+}
+
+// animations
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flyingRocket {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -40px;
+  }
+}
+
+@keyframes flyingFlames {
+  0% {
+    bottom: -5;
+    opacity: 1;
+    transform: scale(1) rotate(220deg);
+  }
+  25% {
+    transform: scale(0.5) rotate(220deg);
+  }
+  50% {
+    transform: scale(1) rotate(220deg);
+  }
+  75% {
+    transform: scale(0.5) rotate(220deg);
+  }
+  100% {
+    bottom: -45px;
+    opacity: 1;
+    transform: scale(1) rotate(220deg);
+  }
+}

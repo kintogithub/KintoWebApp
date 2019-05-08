@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-generic-kintoblock-small-5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#44EDB5" offset="0%"></stop>
+            <stop stop-color="#3CBF7D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M22.3205081,1.53589838 L35.6410162,9.22649731 L35.6410162,9.22649731 C36.8786205,9.94102849 37.6410162,11.2615366 37.6410162,12.6905989 L37.6410162,28.0717968 L37.6410162,28.0717968 C37.6410162,29.5008591 36.8786205,30.8213672 35.6410162,31.5358984 L22.3205081,39.2264973 L22.3205081,39.2264973 C21.0829038,39.9410285 19.5581124,39.9410285 18.3205081,39.2264973 L5,31.5358984 L5,31.5358984 C3.76239569,30.8213672 3,29.5008591 3,28.0717968 L3,12.6905989 L3,12.6905989 C3,11.2615366 3.76239569,9.94102849 5,9.22649731 L18.3205081,1.53589838 L18.3205081,1.53589838 C19.5581124,0.821367205 21.0829038,0.821367205 22.3205081,1.53589838 Z" id="icon-generic-kintoblock-small-1-copy-5" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

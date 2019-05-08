@@ -1,0 +1,106 @@
+.member-list-circles {
+  display: flex;
+  .avatar:last-child {
+    margin-right: 0;
+  }
+  &.dark {
+    padding: $margin-base 15px;
+    background: $kinto-tinted-grayscale-3;
+  }
+}
+
+.avatar-text {
+  background: url('/images/avatar-color-1.jpg') center no-repeat;
+  background-size: contain;
+}
+
+.avatar {
+  height: $margin-base-4;
+  width: $margin-base-4;
+  border-radius: $margin-base-2;
+  text-align: center;
+  line-height: $margin-base-4;
+  font-weight: bold;
+  font-size: $margin-base + 6;
+  margin-right: $margin-base;
+  text-transform: uppercase;
+  position: relative;
+  &.other {
+    background-color: $kinto-tinted-grayscale-1;
+  }
+  &.owner{
+    margin-right: 0;
+  }
+  &.text {
+    background: url('/images/avatar-color-1.jpg') center no-repeat;
+    background-size: contain;
+  }
+  &.small {
+    height: $margin-base-3;
+    width: $margin-base-3;
+    border-radius: 15px;
+    line-height: $margin-base-3;
+    font-size: $margin-base + 4;
+    &:first-child {
+      background-origin: border-box;
+      border: solid rgba(0,0,0,0.1) 1px;
+      line-height: 28px;
+    }
+    .highlight {
+      height: $margin-base + 2;
+      width: $margin-base + 2;
+      background-color: $kinto-yellow;
+      border-radius: 5px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+    }
+  }
+  &.edit.small {
+    height: $margin-base-2;
+    width: $margin-base-2;
+    margin-top: $margin-base/2;
+  }
+  &.edit {
+    background: url('/images/icon-gray-edit-double.svg') center no-repeat;
+    background-size: contain;
+  }
+  &.plus {
+    font-size: $margin-base + 2;
+    background: $kinto-white;
+  }
+  .highlight {
+    height: $margin-base-2;
+    width: $margin-base-2;
+    background-color: $kinto-yellow;
+    border-radius: $margin-base;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    &.admin-star {
+      @include backgroundImage('/images/icon-status-admin.svg')
+      line-height: $margin-base + 8;
+    }
+    &.owner {
+      @include backgroundImage('/images/icon-status-owner.svg')
+      line-height: $margin-base + 8;
+    }
+  }
+}
+
+// individual situations
+.workspaces-select {
+  .member-list-circles {
+    background: $kinto-tinted-grayscale-3;
+    padding: $margin-base 15px;
+  }
+}
+
+.members {
+  .avatar {
+    &.plus {
+      font-size: $margin-base + 2;
+      background: $kinto-tinted-grayscale-1;
+    }
+  }
+}

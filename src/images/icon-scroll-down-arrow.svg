@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-scroll-down-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage-(Temp)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440---homepage-(temp)" transform="translate(-1150.000000, -740.000000)" fill="#83A7F3">
+            <g id="hero" transform="translate(0.000000, 20.000000)">
+                <g id="icon-scroll-down-arrow" transform="translate(1150.000000, 720.000000)">
+                    <path d="M18,27.1715729 L11.4142136,20.5857864 C10.633165,19.8047379 9.36683502,19.8047379 8.58578644,20.5857864 C7.80473785,21.366835 7.80473785,22.633165 8.58578644,23.4142136 L18.5857864,33.4142136 C19.366835,34.1952621 20.633165,34.1952621 21.4142136,33.4142136 L31.4142136,23.4142136 C32.1952621,22.633165 32.1952621,21.366835 31.4142136,20.5857864 C30.633165,19.8047379 29.366835,19.8047379 28.5857864,20.5857864 L22,27.1715729 L22,8.85714286 C22,7.83147118 21.1045695,7 20,7 C18.8954305,7 18,7.83147118 18,8.85714286 L18,27.1715729 Z M20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,2 @@
+export const DEPENDENCY_BLOCK = 'KINTOBLOCK'
+export const DEPENDENCY_MONGO = 'MONGO'
